@@ -2,6 +2,7 @@ import Navigation from "@/components/Navigation";
 import Hero from "@/components/Hero";
 import FeatureCard from "@/components/FeatureCard";
 import { Microscope, Globe, Users, TreePine, Waves, Fish } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const Index = () => {
   const features = [
@@ -78,18 +79,18 @@ const Index = () => {
               how the ocean shapes our planet and our lives.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <a 
-                href="/oceanography" 
+              <Link 
+                to="/oceanography"
                 className="inline-flex items-center justify-center px-8 py-3 bg-white text-primary font-semibold rounded-lg hover:bg-white/90 transition-colors"
               >
                 Begin Learning
-              </a>
-              <a 
-                href="/humans-ocean" 
+              </Link>
+              <Link 
+                to="/humans-ocean"
                 className="inline-flex items-center justify-center px-8 py-3 border border-white/30 text-white font-semibold rounded-lg hover:bg-white/10 transition-colors"
               >
                 Ocean & Humans
-              </a>
+              </Link>
             </div>
           </div>
         </div>
