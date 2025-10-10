@@ -7,59 +7,59 @@ const Oceanography = () => {
   const branches = [
     {
       title: "Physical Oceanography",
-      description: "Studies ocean currents, waves, tides, and the physical properties of seawater including temperature, salinity, and density.",
+      description: "Studies the physical properties and processes of the ocean including pressure, temperature, density, sound, light transmission, as well as waves, tides, and ocean circulation patterns.",
       icon: Globe,
       color: "bg-gradient-ocean",
-      topics: ["Ocean Currents", "Waves & Tides", "Temperature & Salinity", "Ocean Circulation"]
+      topics: ["Pressure & Density", "Temperature Profiles", "Waves & Tides", "Ocean Circulation", "Sound & Light"]
     },
     {
-      title: "Geological Oceanography", 
-      description: "Examines the ocean floor, marine sediments, plate tectonics, and the geological history of ocean basins.",
+      title: "Geological Oceanography (Marine Geology)", 
+      description: "Examines plate tectonics, the ocean floor, continental margins, marine sediments, hydrothermal vents, and the geological history of ocean basins.",
       icon: Mountain,
       color: "bg-gradient-depth",
-      topics: ["Seafloor Spreading", "Marine Sediments", "Hydrothermal Vents", "Ocean Basin Formation"]
+      topics: ["Plate Tectonics", "Seafloor Spreading", "Continental Margins", "Hydrothermal Vents", "Ocean Sediments"]
     },
     {
       title: "Chemical Oceanography",
-      description: "Focuses on the chemical composition of seawater, marine chemistry cycles, and chemical interactions in the ocean.",
+      description: "Focuses on the chemical composition and properties of seawater, including salinity, dissolved gases (oxygen and CO₂), pH, ocean acidification, and nutrient cycles.",
       icon: Beaker,
       color: "bg-gradient-wave",
-      topics: ["Ocean Chemistry", "Carbon Cycle", "pH & Acidification", "Nutrient Cycles"]
+      topics: ["Salinity Patterns", "Dissolved Oxygen", "Ocean Acidification", "Carbon Cycle", "Nitrogen & Nutrients"]
     },
     {
       title: "Biological Oceanography",
-      description: "Studies marine organisms, ocean ecosystems, food webs, and the distribution of life in the ocean.",
+      description: "Studies marine life and ecosystems, including primary production by phytoplankton, marine food webs, and the distribution of organisms throughout the ocean.",
       icon: Fish,
       color: "bg-gradient-coral",
-      topics: ["Marine Ecosystems", "Plankton", "Food Webs", "Marine Biodiversity"]
+      topics: ["Primary Production", "Phytoplankton", "Marine Food Webs", "Ocean Ecosystems"]
     }
   ];
 
   const timeline = [
     { 
-      period: "Ancient Times", 
-      event: "Polynesian Navigation", 
-      description: "Pacific islanders develop sophisticated ocean navigation techniques using stars, currents, and wave patterns." 
+      period: "Mid-18th Century", 
+      event: "Industrial Era Begins", 
+      description: "The use of fossil fuels drives machinery and trains, marking the beginning of significant human impact on ocean chemistry and climate." 
     },
     { 
-      period: "1519-1522", 
-      event: "Magellan's Expedition", 
-      description: "First circumnavigation of the globe, proving the Earth is round and mapping ocean routes." 
+      period: "1914", 
+      event: "International Ice Patrol", 
+      description: "Following the Titanic disaster, the International Ice Observation and Ice Patrol Service is established to monitor icebergs in shipping lanes." 
     },
     { 
-      period: "1872-1876", 
-      event: "HMS Challenger", 
-      description: "First scientific expedition dedicated to oceanography, discovering deep-sea life and mapping ocean depths." 
+      period: "1979-Present", 
+      event: "Satellite Monitoring", 
+      description: "Satellite data begins tracking Arctic sea ice extent, revealing a 3% per decade decline and providing crucial climate change evidence." 
     },
     { 
-      period: "1957-1958", 
-      event: "International Geophysical Year", 
-      description: "Global cooperation in ocean research leads to major discoveries about ocean circulation and climate." 
+      period: "1988", 
+      event: "IPCC Established", 
+      description: "The United Nations establishes the Intergovernmental Panel on Climate Change to review scientific literature and issue reports on climate change." 
     },
     { 
-      period: "1960s-Present", 
-      event: "Satellite Era", 
-      description: "Satellites and submersibles revolutionize ocean observation, enabling global monitoring and deep-sea exploration." 
+      period: "2000", 
+      event: "Southern Ocean Recognition", 
+      description: "The Southern Ocean (all water from Antarctica to 60°S) is submitted for recognition as the fifth major ocean basin." 
     }
   ];
 
@@ -89,8 +89,8 @@ const Oceanography = () => {
               What is Oceanography?
             </h2>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-              Oceanography is the scientific study of the ocean, integrating multiple disciplines 
-              to understand the complex systems that govern our blue planet.
+              Oceanography is the interdisciplinary scientific study of the ocean, combining geology, chemistry, 
+              physics, and biology to understand the complex processes and systems of our planet's oceans.
             </p>
           </div>
 
@@ -136,17 +136,17 @@ const Oceanography = () => {
               <p className="text-muted-foreground">of Earth's surface is covered by oceans</p>
             </div>
             <div className="bg-background p-6 rounded-xl shadow-sm">
-              <div className="text-3xl font-bold text-accent mb-2">50%</div>
-              <p className="text-muted-foreground">of oxygen we breathe comes from marine plants</p>
+              <div className="text-3xl font-bold text-accent mb-2">97%</div>
+              <p className="text-muted-foreground">of Earth's water is in the oceans</p>
             </div>
             <div className="bg-background p-6 rounded-xl shadow-sm">
-              <div className="text-3xl font-bold text-coral mb-2">80%</div>
-              <p className="text-muted-foreground">of ocean life remains unexplored</p>
+              <div className="text-3xl font-bold text-coral mb-2">3,800m</div>
+              <p className="text-muted-foreground">average depth of the world ocean</p>
             </div>
           </div>
           <p className="text-lg text-muted-foreground leading-relaxed">
-            Understanding our oceans is crucial for climate science, marine conservation, 
-            sustainable fisheries, and predicting how our planet will respond to environmental changes.
+            Understanding oceanography is vital for climate science, resource extraction, international trade, 
+            marine biology, environmental science, and predicting how our planet responds to change.
           </p>
         </div>
       </section>
@@ -157,10 +157,10 @@ const Oceanography = () => {
           <div className="text-center mb-16">
             <Clock className="h-12 w-12 mx-auto mb-4 text-primary" />
             <h2 className="text-4xl font-bold mb-6 bg-gradient-depth bg-clip-text text-transparent">
-              Timeline of Ocean Exploration
+              Milestones in Oceanography
             </h2>
             <p className="text-xl text-muted-foreground">
-              From ancient navigation to modern deep-sea exploration
+              Key developments in ocean science and observation
             </p>
           </div>
 

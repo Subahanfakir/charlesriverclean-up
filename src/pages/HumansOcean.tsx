@@ -7,69 +7,69 @@ import { AlertTriangle, Droplets, Thermometer, Users, Factory, Recycle } from "l
 const HumansOcean = () => {
   const impacts = [
     {
-      title: "Plastic Pollution",
+      title: "Ocean Acidification",
       icon: Recycle,
       severity: "Critical",
-      description: "8 million tons of plastic enter our oceans annually, forming massive garbage patches and harming marine life.",
-      stats: "5.25 trillion pieces of plastic debris in oceans",
-      solutions: ["Reduce single-use plastics", "Support plastic alternatives", "Participate in beach cleanups"],
+      description: "Ocean pH has declined from 8.2 to 8.1 in the last century (30% increase in acidity). By 2100, pH may drop to 7.8 (120% increase in acidity), dissolving calcium carbonate shells of marine organisms.",
+      stats: "Atmospheric CO₂ increase causes declining ocean pH and carbonate availability",
+      solutions: ["Reduce CO₂ emissions", "Support ocean monitoring", "Protect shell-forming species"],
       color: "bg-gradient-coral"
     },
     {
-      title: "Climate Change",
+      title: "Climate Change & Ocean Warming",
       icon: Thermometer,
       severity: "Urgent",
-      description: "Rising temperatures cause sea level rise, ocean acidification, and coral bleaching events.",
-      stats: "Ocean pH has dropped 0.1 units since 1750",
-      solutions: ["Reduce carbon footprint", "Support renewable energy", "Advocate for climate policies"],
+      description: "Global temperature has increased 0.8°C since industrialization (1750), with two-thirds of warming since 1975. Sea level has risen 20cm since 1750 and is projected to rise 0.5-2.0m by 2100.",
+      stats: "Committed to 1.3-1.9m future sea level rise even if we stop emissions today",
+      solutions: ["Reduce fossil fuel use", "Support renewable energy", "Advocate for climate policies"],
       color: "bg-gradient-ocean"
     },
     {
-      title: "Overfishing",
+      title: "El Niño & Ocean Disruption",
       icon: Factory,
       severity: "High",
-      description: "Industrial fishing has depleted 90% of large fish populations and disrupted marine ecosystems.",
-      stats: "34% of fish stocks are overfished globally",
-      solutions: ["Choose sustainable seafood", "Support fishing quotas", "Eat lower on the food chain"],
+      description: "El Niño-Southern Oscillation (ENSO) events disrupt normal ocean circulation patterns. The 2014-2016 El Niño was one of strongest on record, causing droughts, floods, and fishery collapses affecting 100 million people.",
+      stats: "Peru suspended anchovy fishing in 2015-16 with 20% reduction in yearly catch",
+      solutions: ["Monitor ENSO conditions", "Support climate-resilient fisheries", "Prepare for extreme weather"],
       color: "bg-gradient-wave"
     }
   ];
 
   const connections = [
     {
-      title: "Food Security",
-      description: "Over 3 billion people depend on fish as their primary source of protein",
+      title: "Food Security & Fisheries",
+      description: "Ocean provides critical protein source. Upwelling regions like Peru create productive fishing grounds. Climate change and ENSO events disrupt these systems.",
       impact: "Global Impact",
       color: "border-l-accent"
     },
     {
-      title: "Coastal Communities",
-      description: "40% of the world's population lives within 100km of the coast",
+      title: "Sea Level Rise Threat",
+      description: "By 2070, ~150 million coastal people at flood risk. Cities at risk: Shanghai, Mumbai, Miami, New York. Assets at risk: $35 trillion.",
       impact: "Social Impact", 
       color: "border-l-primary"
     },
     {
-      title: "Economic Value",
-      description: "Ocean economy worth $2.5 trillion annually worldwide",
+      title: "Climate & Hurricane Intensity",
+      description: "Warming oceans fuel stronger hurricanes. Atlantic sea-surface temperature strongly correlates with hurricane intensity since 1975.",
       impact: "Economic Impact",
       color: "border-l-coral"
     },
     {
-      title: "Cultural Heritage",
-      description: "Indigenous communities have sustainable ocean relationships spanning thousands of years",
-      impact: "Cultural Impact",
+      title: "Polar Ice Loss",
+      description: "Arctic sea ice declining 3% per decade since 1979. Greenland melt would raise sea level 7m; complete Antarctic melt would raise it 60m.",
+      impact: "Environmental Impact",
       color: "border-l-seafoam"
     }
   ];
 
   const ethicalQuestions = [
     {
-      question: "Should deep-sea mining be allowed to extract rare earth metals?",
-      context: "Deep-sea mining could provide materials for renewable energy technology but may destroy unique ecosystems we barely understand.",
+      question: "Should deep-sea mining be allowed at hydrothermal vents and seamounts?",
+      context: "Hydrothermal vents support unique chemosynthetic ecosystems found nowhere else. Mining could destroy these fragile communities that took millions of years to develop. However, vents contain valuable minerals needed for green technology.",
       considerations: [
-        "Environmental: Unknown impacts on deep-sea life",
-        "Economic: Valuable minerals for green technology", 
-        "Ethical: Right to exploit unexplored ecosystems"
+        "Environmental: Unique vent ecosystems may be irreplaceable",
+        "Economic: Minerals needed for batteries and technology", 
+        "Ethical: Do we have the right to destroy what we barely understand?"
       ]
     },
     {
@@ -82,12 +82,12 @@ const HumansOcean = () => {
       ]
     },
     {
-      question: "How should we balance economic needs with ocean conservation?",
-      context: "Coastal communities often depend on ocean resources for survival, but overfishing and pollution threaten long-term sustainability.",
+      question: "Are we obligated to reduce emissions given ocean acidification impacts?",
+      context: "Ocean pH has already declined 30% and is projected to increase 120% by 2100. This dissolves shells of pteropods, corals, and shellfish - the base of marine food webs. Yet reducing emissions requires economic transformation.",
       considerations: [
-        "Economic: Immediate livelihoods at stake",
-        "Environmental: Long-term ecosystem health",
-        "Social: Intergenerational equity"
+        "Environmental: Entire marine ecosystems at risk",
+        "Economic: Cost of transitioning from fossil fuels",
+        "Ethical: Responsibility to future generations and marine life"
       ]
     }
   ];

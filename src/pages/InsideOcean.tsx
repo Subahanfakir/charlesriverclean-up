@@ -17,18 +17,18 @@ const InsideOcean = () => {
         sections: [
           {
             title: "Ocean Currents",
-            content: "Massive rivers of water flowing through the ocean, driven by wind patterns, temperature differences, and the Earth's rotation. The Gulf Stream alone carries 30 times more water than all the world's rivers combined.",
-            facts: ["Surface currents are driven by wind", "Deep currents are driven by density differences", "Currents redistribute heat globally"]
+            content: "Surface currents (top 10% of ocean) driven by wind patterns. Deep currents (90% of ocean) driven by density differences from temperature and salinity - called thermohaline circulation. Move at 10-20 km/year vs. surface currents at km/hour.",
+            facts: ["Surface gyres driven by winds", "Deep water forms at poles", "Thermohaline circulation takes centuries"]
           },
           {
             title: "Waves",
-            content: "Most ocean waves are created by wind friction on the water surface. Wave height depends on wind speed, duration, and fetch (distance over which wind blows).",
-            facts: ["Waves can travel thousands of miles", "Wave energy doesn't move water forward", "Tsunamis are caused by underwater earthquakes"]
+            content: "Wind-driven waves created by friction on water surface. Wave height depends on wind speed, duration, and fetch. Waves transfer energy, not water. Deep water waves occur where depth > half wavelength.",
+            facts: ["Energy moves, water stays", "Tsunamis from earthquakes", "Rogue waves from constructive interference"]
           },
           {
             title: "Tides",
-            content: "The gravitational pull of the moon and sun creates predictable rises and falls in sea level. Tidal ranges vary dramatically around the world.",
-            facts: ["Bay of Fundy has 16-meter tidal range", "Spring tides occur during new/full moons", "Neap tides occur during quarter moons"]
+            content: "Gravitational forces from moon and sun create tidal bulges. Earth-moon system rotates around barycenter (center of mass). Dynamic theory explains amphidromic circulation patterns in ocean basins.",
+            facts: ["Diurnal: 1 high/low per day", "Semidiurnal: 2 high/low per day", "Mixed tides vary in height"]
           }
         ]
       }
@@ -44,18 +44,18 @@ const InsideOcean = () => {
         sections: [
           {
             title: "Salinity",
-            content: "Average ocean salinity is 35 parts per thousand (3.5%). This varies due to evaporation, precipitation, river input, and ice formation.",
-            facts: ["Dead Sea: 34% salinity", "Arctic Ocean: 3.2% salinity", "Salinity affects water density"]
+            content: "Average ocean salinity is 35 PSU (practical salinity units) or 35 parts per thousand. Conservative ions maintain constant proportions regardless of salinity. Affected by evaporation (increases), precipitation, river input, and ice formation/melting.",
+            facts: ["Major ions are conservative", "Density increases with salinity", "Mediterranean: high evaporation"]
           },
           {
             title: "Ocean Acidification",
-            content: "As oceans absorb CO₂ from the atmosphere, they become more acidic. pH has dropped from 8.2 to 8.1 since pre-industrial times.",
-            facts: ["Ocean absorbs 25% of human CO₂", "pH drop affects shell-forming organisms", "Coral reefs are particularly vulnerable"]
+            content: "Ocean pH declined from 8.2 to 8.1 in last century (30% increase in acidity). By 2100, may drop to 7.8 (120% increase). CO₂ dissolves forming carbonic acid, bicarbonate, and carbonate. Lower pH dissolves calcium carbonate shells.",
+            facts: ["Ocean holds 45x more carbon than atmosphere", "pH 8.1 is still basic but trending acidic", "Carbonate ions decline with pH"]
           },
           {
-            title: "Oxygen Levels",
-            content: "Oxygen enters the ocean through air-sea exchange and photosynthesis. Oxygen minimum zones occur at intermediate depths.",
-            facts: ["Phytoplankton produce 50% of Earth's oxygen", "Deep waters have less oxygen", "Dead zones are expanding globally"]
+            title: "Dissolved Oxygen",
+            content: "O₂ enters ocean through air-sea exchange and photosynthesis. Consumed by respiration and decomposition. Cold water holds more dissolved gas. Oxygen minimum zones at intermediate depths. Hypoxia = O₂ < 2 mg/L, Anoxia = O₂ < 0.5 mg/L.",
+            facts: ["Surface: high O₂ from photosynthesis", "Mid-depth: O₂ minimum from respiration", "Deep: higher O₂ in cold dense water"]
           }
         ]
       }
@@ -70,19 +70,19 @@ const InsideOcean = () => {
         description: "The ocean floor is one of the most geologically active places on Earth, constantly being created and destroyed.",
         sections: [
           {
-            title: "Mid-Ocean Ridges",
-            content: "Underwater mountain ranges where new oceanic crust is formed. The Mid-Atlantic Ridge spreads at 2-3 cm per year.",
-            facts: ["65,000 km of ridges globally", "Seafloor spreading creates new crust", "Hydrothermal vents support unique life"]
+            title: "Divergent Boundaries",
+            content: "Mid-ocean ridges where plates move apart and new crust forms through seafloor spreading. Magma rises from mantle, cools to form basaltic oceanic crust. Ridge systems span 65,000 km globally.",
+            facts: ["Atlantic spreads 2-3 cm/year", "Creates youngest crust", "Hydrothermal vents at ridges"]
           },
           {
-            title: "Ocean Trenches",
-            content: "The deepest parts of the ocean, formed where oceanic plates subduct beneath other plates. Mariana Trench is 11 km deep.",
-            facts: ["Challenger Deep: deepest known point", "Subduction creates trenches", "Extreme pressure: 1000x surface pressure"]
+            title: "Convergent Boundaries & Trenches",
+            content: "Convergent boundaries where plates collide. Ocean trenches form at subduction zones where denser oceanic plate sinks. Challenger Deep in Mariana Trench: 11,022m deep. Pressure increases 1 atm per 10m depth.",
+            facts: ["Mariana Trench: deepest at 11,022m", "Pressure at 1000m = 101 atm", "Trenches act as sediment traps"]
           },
           {
             title: "Hydrothermal Vents",
-            content: "Underwater hot springs where superheated water rich in minerals erupts from the seafloor, supporting unique ecosystems.",
-            facts: ["Water temperatures reach 400°C", "Support chemosynthetic life", "Discovered only in 1977"]
+            content: "Hot springs at mid-ocean ridges where seawater seeps into crust, gets superheated (up to 400°C), and erupts with dissolved minerals. Support chemosynthetic ecosystems independent of sunlight. Bacteria convert chemical energy to organic compounds.",
+            facts: ["Water can exceed 400°C", "Chemosynthesis, not photosynthesis", "Unique vent communities"]
           }
         ]
       }
@@ -97,9 +97,9 @@ const InsideOcean = () => {
         description: "The ocean teems with life, from microscopic plankton to massive whales, forming complex food webs.",
         sections: [
           {
-            title: "Plankton",
-            content: "Floating organisms that form the base of marine food webs. Phytoplankton are marine plants, zooplankton are animals.",
-            facts: ["Phytoplankton produce 50% of oxygen", "Support all marine food webs", "Respond quickly to climate changes"]
+            title: "Primary Production & Plankton",
+            content: "Phytoplankton (diatoms, dinoflagellates, coccolithophores) conduct photosynthesis using nutrients (nitrate, phosphate, silica). Confined to euphotic zone (0-200m). Primary producers support all marine food webs.",
+            facts: ["Require nutrients and light", "Diatoms use silica tests", "Coccolithophores use calcium carbonate"]
           },
           {
             title: "Coral Reefs",
@@ -108,8 +108,8 @@ const InsideOcean = () => {
           },
           {
             title: "Deep Sea Life",
-            content: "Adapted to extreme conditions of pressure, cold, and darkness. Many species exhibit bioluminescence.",
-            facts: ["95% of deep sea unexplored", "Pressure increases 1 atm per 10m", "No sunlight below 1000m"]
+            content: "75% of ocean's living space is in bathypelagic zone and below (>1000m). Organisms adapted to aphotic zone (no light), extreme pressure (1 atm/10m depth), and cold temperatures. Many exhibit bioluminescence.",
+            facts: ["Pressure at 1000m = 101 atm", "Aphotic zone below 1000m", "Boyle's Law: pressure compresses gases"]
           }
         ]
       }
@@ -213,11 +213,11 @@ const InsideOcean = () => {
 
           <div className="space-y-4">
             {[
-              { zone: "Sunlight Zone", depth: "0-200m", temp: "20-25°C", description: "Where most marine life exists, photosynthesis occurs", color: "bg-gradient-wave" },
-              { zone: "Twilight Zone", depth: "200-1000m", temp: "4-20°C", description: "Limited light, many bioluminescent creatures", color: "bg-gradient-ocean" },
-              { zone: "Midnight Zone", depth: "1000-4000m", temp: "1-4°C", description: "Complete darkness, extreme pressure", color: "bg-gradient-depth" },
-              { zone: "Abyssal Zone", depth: "4000-6000m", temp: "1-3°C", description: "Near-freezing temperatures, sparse life", color: "bg-gradient-coral" },
-              { zone: "Hadal Zone", depth: "6000m+", temp: "1-2°C", description: "Ocean trenches, extreme conditions", color: "bg-primary" }
+              { zone: "Epipelagic (Sunlight)", depth: "0-200m", temp: "Variable", description: "Euphotic/photic zone where photosynthesis occurs, 75% of living space below", color: "bg-gradient-wave" },
+              { zone: "Mesopelagic (Twilight)", depth: "200-1000m", temp: "Cooler", description: "Dysphotic zone with some light but not enough for photosynthesis", color: "bg-gradient-ocean" },
+              { zone: "Bathypelagic (Midnight)", depth: "1000-4000m", temp: "Cold", description: "Aphotic zone with no light, contains 75% of ocean's living space", color: "bg-gradient-depth" },
+              { zone: "Abyssopelagic (Abyssal)", depth: "4000-6000m", temp: "Near-freezing", description: "Extends to seafloor in most areas, extreme pressure", color: "bg-gradient-coral" },
+              { zone: "Hadalpelagic (Hadal)", depth: "6000m+", temp: "1-4°C", description: "Deep ocean trenches like Mariana (11,022m deep), crushing pressure", color: "bg-primary" }
             ].map((zone, index) => (
               <Card key={zone.zone} className="overflow-hidden">
                 <div className="flex">
