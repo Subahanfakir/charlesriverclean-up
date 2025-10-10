@@ -41,6 +41,23 @@ const Index = () => {
       <Navigation />
       <Hero />
       
+      {/* Why the Ocean Matters */}
+      <section className="py-16 px-4 bg-muted">
+        <div className="container mx-auto max-w-4xl text-center">
+          <h2 className="text-3xl md:text-4xl font-bold mb-6 bg-gradient-ocean bg-clip-text text-transparent">
+            Why the Ocean Matters
+          </h2>
+          <p className="text-lg text-muted-foreground mb-8 leading-relaxed">
+            "Over 70% of the earth's surface is ocean, with an average depth of 3,800 m (2.4 miles). 
+            The oceans contain 97% of the earth's water, and without them, Earth would be an uninhabitable 
+            rock in space. Yet we know less about our own ocean than we do about the surface of some other planets."
+          </p>
+          <p className="text-base text-muted-foreground italic">
+            — Introduction to Oceanography by Paul Webb
+          </p>
+        </div>
+      </section>
+
       {/* Features Section */}
       <section className="py-20 px-4">
         <div className="container mx-auto max-w-6xl">
@@ -49,8 +66,8 @@ const Index = () => {
               Explore Ocean Science
             </h2>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-              Journey through the fascinating world of oceanography, from basic science to human impact, 
-              and discover why our oceans are crucial for life on Earth.
+              An interactive digital guide inspired by Paul Webb's Introduction to Oceanography, 
+              exploring the four main branches of ocean science.
             </p>
           </div>
           
