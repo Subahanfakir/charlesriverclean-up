@@ -7,32 +7,25 @@ import { Link } from "react-router-dom";
 const Index = () => {
   const features = [
     {
-      title: "Oceanography 101",
-      description: "Discover the four main branches of oceanography and explore the history of ocean exploration from ancient navigation to modern technology.",
-      icon: Microscope,
-      link: "/oceanography",
+      title: "Ocean Currents & Circulation",
+      description: "Explore surface gyres, deep ocean thermohaline circulation, upwelling zones, and how water moves around the globe.",
+      icon: Waves,
+      link: "/inside-ocean",
       gradient: "bg-gradient-ocean"
     },
     {
-      title: "Inside the Ocean",
-      description: "Dive deep into ocean currents, marine chemistry, geological formations, and the incredible diversity of marine life.",
-      icon: Fish,
-      link: "/inside-ocean",
+      title: "Currents & Climate",
+      description: "Discover how the Gulf Stream, El Niño, and ocean circulation patterns shape weather and climate around the world.",
+      icon: Globe,
+      link: "/humans-ocean",
       gradient: "bg-gradient-wave"
     },
     {
-      title: "Humans & the Ocean",
-      description: "Examine our relationship with the ocean, from pollution and climate change to cultural connections and ethical considerations.",
-      icon: Users,
-      link: "/humans-ocean",
-      gradient: "bg-gradient-coral"
-    },
-    {
-      title: "Future of Our Oceans",
-      description: "Learn what you can do to help protect our oceans and explore the latest in ocean conservation and research.",
-      icon: TreePine,
+      title: "Energy of the Sea",
+      description: "Learn about waves, tides, and how the ocean stores and transfers energy across vast distances.",
+      icon: Fish,
       link: "/future",
-      gradient: "bg-gradient-depth"
+      gradient: "bg-gradient-coral"
     }
   ];
 
@@ -41,19 +34,22 @@ const Index = () => {
       <Navigation />
       <Hero />
       
-      {/* Why the Ocean Matters */}
+      {/* The Ocean Engine */}
       <section className="py-16 px-4 bg-muted">
         <div className="container mx-auto max-w-4xl text-center">
-          <h2 className="text-3xl md:text-4xl font-bold mb-6 bg-gradient-ocean bg-clip-text text-transparent">
-            Why the Ocean Matters
+          <h2 className="text-3xl md:text-4xl font-bold mb-4 bg-gradient-ocean bg-clip-text text-transparent">
+            The Ocean Engine
           </h2>
+          <h3 className="text-xl md:text-2xl text-primary mb-6">
+            How Ocean Currents Shape Our World
+          </h3>
           <p className="text-lg text-muted-foreground mb-8 leading-relaxed">
-            "Over 70% of the earth's surface is ocean, with an average depth of 3,800 m (2.4 miles). 
-            The oceans contain 97% of the earth's water, and without them, Earth would be an uninhabitable 
-            rock in space. Yet we know less about our own ocean than we do about the surface of some other planets."
+            "The oceans are a major contributor to global climate patterns... Knowledge of oceanography 
+            is important for understanding winds and currents, tides and wave patterns. The ocean covers 
+            71% of the Earth's surface and contains 97% of Earth's water."
           </p>
           <p className="text-base text-muted-foreground italic">
-            — Introduction to Oceanography by Paul Webb
+            — From <em>Introduction to Oceanography</em> by Paul Webb (CC-BY 4.0)
           </p>
         </div>
       </section>
@@ -63,15 +59,15 @@ const Index = () => {
         <div className="container mx-auto max-w-6xl">
           <div className="text-center mb-16 animate-slide-up">
             <h2 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-ocean bg-clip-text text-transparent">
-              Explore Ocean Science
+              A Living Machine Connecting All Continents
             </h2>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-              An interactive digital guide inspired by Paul Webb's Introduction to Oceanography, 
-              exploring the four main branches of ocean science.
+              Based on Webb's Chapters 6, 9, and 10, this project explores how ocean currents, waves, and 
+              circulation drive our climate, weather, and marine ecosystems.
             </p>
           </div>
           
-          <div className="grid md:grid-cols-2 lg:grid-cols-2 gap-8">
+          <div className="grid md:grid-cols-1 lg:grid-cols-3 gap-8">
             {features.map((feature, index) => (
               <div 
                 key={feature.title} 
@@ -90,23 +86,22 @@ const Index = () => {
         <div className="container mx-auto px-4 text-center">
           <div className="max-w-3xl mx-auto">
             <Waves className="h-16 w-16 mx-auto mb-6 animate-wave" />
-            <h2 className="text-4xl font-bold mb-6">Ready to Dive In?</h2>
+            <h2 className="text-4xl font-bold mb-6">Understand the Ocean's Power</h2>
             <p className="text-xl mb-8 text-white/90">
-              Start your journey into the fascinating world of oceanography and discover 
-              how the ocean shapes our planet and our lives.
+              Discover how ocean motion connects continents, regulates our climate, and sustains life on Earth.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link 
-                to="/oceanography"
+                to="/inside-ocean"
                 className="inline-flex items-center justify-center px-8 py-3 bg-white text-primary font-semibold rounded-lg hover:bg-white/90 transition-colors"
               >
-                Begin Learning
+                Explore Currents
               </Link>
               <Link 
                 to="/humans-ocean"
                 className="inline-flex items-center justify-center px-8 py-3 border border-white/30 text-white font-semibold rounded-lg hover:bg-white/10 transition-colors"
               >
-                Ocean & Humans
+                Climate Connection
               </Link>
             </div>
           </div>
