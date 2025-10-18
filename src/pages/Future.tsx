@@ -1,92 +1,75 @@
 import Navigation from "@/components/Navigation";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
-import { Heart, Lightbulb, ExternalLink, TreePine, BookOpen, Users } from "lucide-react";
-import { Link } from "react-router-dom";
+import { Waves, Wind, Droplets } from "lucide-react";
 
 const Future = () => {
-  const actions = [
+  const topics = [
     {
-      category: "Individual Actions",
-      icon: Heart,
-      color: "bg-gradient-coral",
-      items: [
-        { action: "Reduce plastic use", impact: "Prevents ocean pollution", difficulty: "Easy" },
-        { action: "Choose sustainable seafood", impact: "Supports healthy fisheries", difficulty: "Medium" },
-        { action: "Reduce carbon footprint", impact: "Helps prevent ocean acidification", difficulty: "Medium" },
-        { action: "Support ocean conservation organizations", impact: "Funds research and protection", difficulty: "Easy" },
-        { action: "Participate in beach cleanups", impact: "Removes harmful debris", difficulty: "Easy" }
+      title: "Tides",
+      icon: Waves,
+      color: "bg-gradient-ocean",
+      sections: [
+        {
+          title: "Tidal Forces",
+          content: "Moon's gravity pulls ocean water creating bulge facing Moon. Centrifugal force from Earth-Moon rotation creates bulge on opposite side. Result: two high tides and two low tides per day (in most places). Sun contributes ~45% as much tidal force as Moon.",
+          facts: ["Moon creates 2 bulges", "Sun enhances/diminishes tides", "Earth rotates under bulges"]
+        },
+        {
+          title: "Spring & Neap Tides",
+          content: "Spring tides: Sun and Moon aligned (new/full moon), gravitational forces add together, highest tidal range. Neap tides: Sun and Moon perpendicular (quarter moons), forces partially cancel, lowest tidal range. Cycle repeats every ~14 days.",
+          facts: ["Spring: highest range", "Neap: lowest range", "14-day cycle"]
+        },
+        {
+          title: "Tidal Classifications",
+          content: "Diurnal: one high and one low tide per day (Gulf of Mexico). Semidiurnal: two equal high and two equal low tides per day (US East Coast). Mixed: two unequal highs and two unequal lows per day (US West Coast). Pattern depends on basin shape and latitude.",
+          facts: ["East Coast: semidiurnal", "Gulf: diurnal", "West Coast: mixed"]
+        }
       ]
     },
     {
-      category: "Community Engagement",
-      icon: Users,
+      title: "Waves",
+      icon: Wind,
       color: "bg-gradient-wave",
-      items: [
-        { action: "Educate others about ocean issues", impact: "Spreads awareness", difficulty: "Medium" },
-        { action: "Advocate for marine protected areas", impact: "Protects critical habitats", difficulty: "Hard" },
-        { action: "Support sustainable fishing policies", impact: "Ensures long-term food security", difficulty: "Hard" },
-        { action: "Join citizen science projects", impact: "Contributes to research", difficulty: "Medium" },
-        { action: "Vote for environmentally conscious leaders", impact: "Creates policy change", difficulty: "Easy" }
+      sections: [
+        {
+          title: "Wave Energy",
+          content: "Waves transport energy across ocean basins without moving water forward. Energy created by wind friction on surface. Wave size depends on wind speed, wind duration, and fetch (distance). Water particles move in circular orbits. Energy decreases exponentially with depth.",
+          facts: ["Energy travels, water stays", "Orbital motion below surface", "Depth of wave influence = ½ wavelength"]
+        },
+        {
+          title: "Wave Power",
+          content: "Ocean waves contain enormous energy potential. Global wave power estimated at 2-3 terawatts. Wave energy devices convert wave motion to electricity. Most promising in high-latitude storm belts. Renewable, predictable, high energy density compared to solar/wind.",
+          facts: ["2-3 TW global potential", "Higher energy density than wind", "Predictable and consistent"]
+        },
+        {
+          title: "Tidal Energy",
+          content: "Tidal currents can drive underwater turbines. Tidal range creates potential energy. Best sites: narrow channels with large tidal range (>5m). Examples: Bay of Fundy (16m range), Severn Estuary. Predictable 100 years in advance. No greenhouse gas emissions.",
+          facts: ["Requires >5m tidal range", "100% predictable", "Zero emissions"]
+        }
       ]
-    }
-  ];
-
-  const resources = [
-    {
-      title: "The Oceanography Society",
-      description: "Professional society promoting oceanographic research and education",
-      url: "https://tos.org/",
-      type: "Professional"
     },
     {
-      title: "IPCC Ocean Reports",
-      description: "Scientific assessments on climate change impacts on oceans",
-      url: "https://www.ipcc.ch/",
-      type: "Research"
-    },
-    {
-      title: "Women in Ocean Science",
-      description: "Supporting women pursuing careers in marine sciences",
-      url: "https://www.whoi.edu/what-we-do/educate/undergraduate-programs/",
-      type: "Education"
-    },
-    {
-      title: "Ocean Conservancy",
-      description: "Leading organization working to protect ocean health",
-      url: "https://oceanconservancy.org/",
-      type: "Conservation"
-    },
-    {
-      title: "National Geographic Ocean",
-      description: "Educational resources and ocean exploration content",
-      url: "https://www.nationalgeographic.com/environment/oceans/",
-      type: "Education"
-    },
-    {
-      title: "Monterey Bay Aquarium Seafood Watch",
-      description: "Guide to sustainable seafood choices",
-      url: "https://www.seafoodwatch.org/",
-      type: "Practical"
-    }
-  ];
-
-  const reflections = [
-    {
-      title: "The Ocean's Gift to Us",
-      content: "Through studying oceanography, I've come to understand that the ocean isn't just a body of water—it's the life support system of our planet. Every breath we take, every drop of rain, every stable climate pattern we depend on is connected to the ocean.",
-      icon: Heart
-    },
-    {
-      title: "Our Responsibility",
-      content: "We are the first generation to truly understand our impact on the ocean, and we may be the last that can do something meaningful about it. This knowledge comes with responsibility—to act, to advocate, and to ensure future generations inherit healthy oceans.",
-      icon: Lightbulb
-    },
-    {
-      title: "Hope for the Future",
-      content: "Despite the challenges, I'm hopeful. Young people around the world are rising to protect our oceans. Science is advancing rapidly. New technologies offer solutions. When we work together, we can create positive change.",
-      icon: TreePine
+      title: "Ocean's Future",
+      icon: Droplets,
+      color: "bg-gradient-coral",
+      sections: [
+        {
+          title: "Changing Circulation",
+          content: "Atlantic Meridional Overturning Circulation (AMOC) may be slowing due to freshwater input from melting ice. Slowdown would alter heat distribution, cooling Europe while tropics warm more. Models predict 15-50% slowdown by 2100. Would disrupt marine ecosystems and fisheries.",
+          facts: ["AMOC shows signs of slowing", "Europe could cool", "Ecosystem disruption likely"]
+        },
+        {
+          title: "Ocean as Climate Solution",
+          content: "Ocean has absorbed 30% of CO₂ emissions and 90% of excess heat, slowing atmospheric warming. But capacity is finite. Continued absorption causes acidification. Future depends on reducing emissions to prevent overwhelming ocean's buffering capacity.",
+          facts: ["30% of CO₂ absorbed", "90% of heat absorbed", "Capacity is limited"]
+        },
+        {
+          title: "Understanding & Monitoring",
+          content: "Argo floats: 4,000+ autonomous devices measuring temperature, salinity, and depth worldwide. Satellites monitor sea surface temperature, height, and color. Data reveals ocean's changing state. Better understanding leads to better predictions and policy decisions.",
+          facts: ["4,000 Argo floats deployed", "Satellite monitoring essential", "Data drives climate models"]
+        }
+      ]
     }
   ];
 
@@ -98,168 +81,69 @@ const Future = () => {
       <section className="pt-24 pb-16 bg-gradient-depth text-white">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
-            <TreePine className="h-16 w-16 mx-auto mb-6 animate-wave" />
-            <h1 className="text-5xl md:text-6xl font-bold mb-6">Future of Our Oceans</h1>
+            <Droplets className="h-16 w-16 mx-auto mb-6 animate-wave" />
+            <h1 className="text-5xl md:text-6xl font-bold mb-6">Energy of the Sea</h1>
             <p className="text-xl text-white/90 leading-relaxed">
-              The choices we make today will determine the health of our oceans tomorrow. 
-              Together, we can create a sustainable future for our blue planet.
+              Explore how tides and waves store and transfer energy—from the physics of ocean motion 
+              to renewable energy potential.
             </p>
           </div>
         </div>
       </section>
 
-      {/* What You Can Do */}
+      {/* Content */}
       <section className="py-20 px-4">
-        <div className="container mx-auto max-w-6xl">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold mb-6 bg-gradient-ocean bg-clip-text text-transparent">
-              What You Can Do
-            </h2>
-            <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-              Every action matters. Here are concrete steps you can take to help protect our oceans.
-            </p>
-          </div>
+        <div className="container mx-auto max-w-6xl space-y-20">
+          {topics.map((topic) => (
+            <div key={topic.title}>
+              <div className="text-center mb-12">
+                <div className={`inline-flex p-4 rounded-xl ${topic.color} text-white mb-6`}>
+                  <topic.icon className="h-12 w-12" />
+                </div>
+                <h2 className="text-4xl font-bold mb-4 bg-gradient-ocean bg-clip-text text-transparent">
+                  {topic.title}
+                </h2>
+              </div>
 
-          <div className="grid lg:grid-cols-2 gap-12">
-            {actions.map((category, categoryIndex) => (
-              <Card key={category.category} className="overflow-hidden">
-                <div className={`h-2 ${category.color}`} />
-                <CardHeader>
-                  <div className="flex items-center mb-4">
-                    <div className={`p-3 rounded-lg ${category.color} text-white mr-4`}>
-                      <category.icon className="h-6 w-6" />
-                    </div>
-                    <CardTitle className="text-2xl">{category.category}</CardTitle>
-                  </div>
-                </CardHeader>
-                <CardContent>
-                  <div className="space-y-4">
-                    {category.items.map((item, itemIndex) => (
-                      <div key={itemIndex} className="border rounded-lg p-4 hover:bg-muted/50 transition-colors">
-                        <div className="flex items-start justify-between mb-2">
-                          <h4 className="font-semibold text-base">{item.action}</h4>
+              <div className="grid md:grid-cols-3 gap-8">
+                {topic.sections.map((section) => (
+                  <Card key={section.title} className="group hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+                    <div className={`h-2 ${topic.color}`} />
+                    <CardHeader>
+                      <CardTitle className="text-xl mb-3">{section.title}</CardTitle>
+                      <CardDescription className="text-base leading-relaxed">
+                        {section.content}
+                      </CardDescription>
+                    </CardHeader>
+                    <CardContent>
+                      <div className="space-y-2">
+                        <h4 className="font-semibold text-sm text-muted-foreground mb-3">Key Facts:</h4>
+                        {section.facts.map((fact, factIndex) => (
                           <Badge 
-                            variant={item.difficulty === "Easy" ? "secondary" : item.difficulty === "Medium" ? "default" : "destructive"}
-                            className="text-xs"
+                            key={factIndex} 
+                            variant="secondary" 
+                            className="text-xs mr-2 mb-2 px-3 py-1"
                           >
-                            {item.difficulty}
+                            {fact}
                           </Badge>
-                        </div>
-                        <p className="text-sm text-muted-foreground">{item.impact}</p>
+                        ))}
                       </div>
-                    ))}
-                  </div>
-                </CardContent>
-              </Card>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Personal Reflection */}
-      <section className="py-20 bg-muted">
-        <div className="container mx-auto px-4 max-w-4xl">
-          <div className="text-center mb-16">
-            <BookOpen className="h-12 w-12 mx-auto mb-4 text-primary" />
-            <h2 className="text-4xl font-bold mb-6 bg-gradient-wave bg-clip-text text-transparent">
-              Personal Reflection
-            </h2>
-            <p className="text-xl text-muted-foreground">
-              What I've learned from studying oceanography
-            </p>
-          </div>
-
-          <div className="space-y-8">
-            {reflections.map((reflection, index) => (
-              <Card key={index} className="border-l-4 border-l-primary">
-                <CardHeader>
-                  <div className="flex items-center mb-4">
-                    <div className="p-2 rounded-lg bg-primary text-primary-foreground mr-4">
-                      <reflection.icon className="h-5 w-5" />
-                    </div>
-                    <CardTitle className="text-xl">{reflection.title}</CardTitle>
-                  </div>
-                  <CardDescription className="text-base leading-relaxed text-foreground">
-                    {reflection.content}
-                  </CardDescription>
-                </CardHeader>
-              </Card>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Further Reading */}
-      <section className="py-20 px-4">
-        <div className="container mx-auto max-w-6xl">
-          <div className="text-center mb-16">
-            <ExternalLink className="h-12 w-12 mx-auto mb-4 text-primary" />
-            <h2 className="text-4xl font-bold mb-6 bg-gradient-coral bg-clip-text text-transparent">
-              Continue Your Journey
-            </h2>
-            <p className="text-xl text-muted-foreground">
-              Explore these resources to deepen your understanding of oceanography
-            </p>
-          </div>
-
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {resources.map((resource, index) => (
-              <Card key={index} className="group hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
-                <CardHeader>
-                  <div className="flex items-center justify-between mb-2">
-                    <Badge variant="outline" className="text-xs">
-                      {resource.type}
-                    </Badge>
-                    <ExternalLink className="h-4 w-4 text-muted-foreground group-hover:text-primary transition-colors" />
-                  </div>
-                  <CardTitle className="text-lg leading-tight">{resource.title}</CardTitle>
-                  <CardDescription className="text-sm leading-relaxed">
-                    {resource.description}
-                  </CardDescription>
-                </CardHeader>
-                <CardContent>
-                  <Button 
-                    variant="ghost" 
-                    className="p-0 h-auto text-primary hover:text-primary/80"
-                    onClick={() => window.open(resource.url, '_blank')}
-                  >
-                    Visit Resource
-                    <ExternalLink className="ml-2 h-3 w-3" />
-                  </Button>
-                </CardContent>
-              </Card>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Call to Action */}
-      <section className="py-20 bg-gradient-ocean text-white">
-        <div className="container mx-auto px-4 text-center">
-          <div className="max-w-3xl mx-auto">
-            <h2 className="text-4xl font-bold mb-6">The Ocean Needs You</h2>
-            <p className="text-xl mb-8 text-white/90 leading-relaxed">
-              You now understand the science behind our oceans and the challenges they face. 
-              The question is: what will you do with this knowledge?
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Link 
-                to="/"
-                className="inline-flex items-center justify-center px-8 py-3 bg-white text-primary font-semibold rounded-lg hover:bg-white/90 transition-colors"
-              >
-                Explore More
-              </Link>
-              <Button 
-                variant="outline" 
-                size="lg"
-                className="border-white/30 text-white hover:bg-white/10 backdrop-blur-sm"
-                onClick={() => window.open('https://oceanconservancy.org/', '_blank')}
-              >
-                Take Action Today
-                <ExternalLink className="ml-2 h-4 w-4" />
-              </Button>
+                    </CardContent>
+                  </Card>
+                ))}
+              </div>
             </div>
-          </div>
+          ))}
+        </div>
+      </section>
+
+      {/* Attribution */}
+      <section className="py-12 bg-muted">
+        <div className="container mx-auto px-4 text-center max-w-3xl">
+          <p className="text-sm text-muted-foreground">
+            Content based on <em>Introduction to Oceanography</em> by Paul Webb (Chapters 10 & 11), 
+            used under CC-BY 4.0 license
+          </p>
         </div>
       </section>
     </div>

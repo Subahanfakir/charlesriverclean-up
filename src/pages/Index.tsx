@@ -1,31 +1,38 @@
 import Navigation from "@/components/Navigation";
 import Hero from "@/components/Hero";
 import FeatureCard from "@/components/FeatureCard";
-import { Microscope, Globe, Users, TreePine, Waves, Fish } from "lucide-react";
+import { Microscope, Globe, Users, TreePine, Waves, Fish, Droplets } from "lucide-react";
 import { Link } from "react-router-dom";
 
 const Index = () => {
   const features = [
     {
       title: "Ocean Currents & Circulation",
-      description: "Explore surface gyres, deep ocean thermohaline circulation, upwelling zones, and how water moves around the globe.",
+      description: "Explore surface gyres, thermohaline circulation, upwelling zones, and how water moves around the globe.",
       icon: Waves,
       link: "/inside-ocean",
       gradient: "bg-gradient-ocean"
     },
     {
+      title: "Chemical Oceanography",
+      description: "Understand salinity, dissolved gases, ocean acidification, and nutrient cycles in seawater.",
+      icon: Fish,
+      link: "/chemical-ocean",
+      gradient: "bg-gradient-wave"
+    },
+    {
       title: "Currents & Climate",
-      description: "Discover how the Gulf Stream, El Niño, and ocean circulation patterns shape weather and climate around the world.",
+      description: "Discover how the Gulf Stream, El Niño, and ocean circulation patterns shape weather and climate.",
       icon: Globe,
       link: "/humans-ocean",
-      gradient: "bg-gradient-wave"
+      gradient: "bg-gradient-coral"
     },
     {
       title: "Energy of the Sea",
       description: "Learn about waves, tides, and how the ocean stores and transfers energy across vast distances.",
-      icon: Fish,
+      icon: Droplets,
       link: "/future",
-      gradient: "bg-gradient-coral"
+      gradient: "bg-gradient-depth"
     }
   ];
 
@@ -67,7 +74,7 @@ const Index = () => {
             </p>
           </div>
           
-          <div className="grid md:grid-cols-1 lg:grid-cols-3 gap-8">
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
             {features.map((feature, index) => (
               <div 
                 key={feature.title} 

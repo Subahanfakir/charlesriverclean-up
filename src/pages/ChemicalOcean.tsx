@@ -1,80 +1,75 @@
 import Navigation from "@/components/Navigation";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { Beaker, Droplet, Wind, Leaf } from "lucide-react";
+import { Beaker, Droplets, FlaskConical } from "lucide-react";
 
 const ChemicalOcean = () => {
   const topics = [
     {
-      title: "Salinity: What's in Seawater?",
-      description: "Salinity is the measure of dissolved salts in seawater, averaging about 35 parts per thousand (ppt) or 3.5%. The major ions in seawater are chloride (Cl⁻) and sodium (Na⁺), which make up about 85% of the dissolved material. Ocean salinity varies with evaporation, precipitation, river input, and ice formation. The saltiest ocean regions are in subtropical areas with high evaporation and low precipitation.",
-      icon: Droplet,
+      title: "Salinity & Major Ions",
+      icon: Droplets,
       color: "bg-gradient-ocean",
-      facts: [
-        "Average ocean salinity: 35 ppt (3.5%)",
-        "Major ions: Chloride (55%) and Sodium (30%)",
-        "Salinity increases with evaporation",
-        "Freshwater input decreases salinity"
+      sections: [
+        {
+          title: "Salinity Basics",
+          content: "Average ocean salinity is 35 PSU (practical salinity units) or 35 parts per thousand. Six major ions comprise 99.4% of dissolved salts: Chloride (55%), Sodium (30.6%), Sulfate (7.7%), Magnesium (3.7%), Calcium (1.2%), Potassium (1.1%).",
+          facts: ["Chloride + Sodium = table salt", "Rule of constant proportions", "Measured by conductivity"]
+        },
+        {
+          title: "Conservative vs. Non-Conservative Ions",
+          content: "Conservative ions maintain constant proportions regardless of total salinity - the major six ions. Non-conservative ions fluctuate based on biological uptake, input sources, or chemical reactions. Mixing time ~1000 years vs. residence times of millions of years for major ions.",
+          facts: ["Major ions are conservative", "Nutrients are non-conservative", "Residence time > mixing time"]
+        },
+        {
+          title: "Salinity Variations",
+          content: "Affected by: evaporation (increases salinity), precipitation (decreases), river input (decreases), ice formation/melting (formation increases, melting decreases). Mediterranean: high evaporation, ~40 PSU. Baltic Sea: high river input, ~10 PSU. Dead Sea: ~330 PSU.",
+          facts: ["Tropics: high evaporation", "Polar: low evaporation + melting", "Equator: high rain lowers salinity"]
+        }
       ]
     },
     {
-      title: "Dissolved Oxygen",
-      description: "Oxygen enters the ocean through air-sea gas exchange at the surface and through photosynthesis by phytoplankton. Surface waters are typically saturated with oxygen, but oxygen decreases with depth as it is consumed by respiration and decomposition. A prominent feature of the ocean is the oxygen minimum zone (OMZ) at mid-depths (200-1000m), where oxygen can drop to very low levels due to high biological oxygen demand.",
-      icon: Wind,
+      title: "Dissolved Gases",
+      icon: FlaskConical,
       color: "bg-gradient-wave",
-      facts: [
-        "Surface waters: saturated with O₂",
-        "Oxygen minimum zones at 200-1000 m depth",
-        "Produced by photosynthesis, consumed by respiration",
-        "Essential for marine aerobic life"
+      sections: [
+        {
+          title: "Oxygen (O₂)",
+          content: "Enters ocean via air-sea exchange and photosynthesis. Consumed by respiration and decomposition. Surface: highest O₂ from photosynthesis. Oxygen minimum layer (200-1000m): O₂ removed by respiration, too deep for photosynthesis. Deep water: cold temperature and high pressure increase solubility.",
+          facts: ["Surface: ~8 mg/L O₂", "Mid-depth: oxygen minimum", "Deep: O₂ from cold polar water"]
+        },
+        {
+          title: "Carbon Dioxide (CO₂)",
+          content: "Ocean holds 50 times more CO₂ than atmosphere and 20 times more than land/vegetation. CO₂ dissolves forming carbonic acid (H₂CO₃), then dissociates to bicarbonate (HCO₃⁻) and carbonate (CO₃²⁻). Cold water holds more dissolved CO₂. Ocean acts as CO₂ sink absorbing ~30% of human emissions.",
+          facts: ["Ocean: 45x more carbon than atmosphere", "Solubility increases in cold water", "Absorbs anthropogenic CO₂"]
+        },
+        {
+          title: "Nitrogen & Nutrients",
+          content: "Nitrogen gas (N₂) dissolved from atmosphere. Bacteria fix N₂ into usable forms: nitrate (NO₃⁻), nitrite (NO₂⁻), ammonia (NH₃). Phosphate (PO₄³⁻) from weathering and decomposition. Silica (SiO₂) needed by diatoms. Nutrients consumed in surface, regenerated at depth through decomposition.",
+          facts: ["Limiting nutrients control productivity", "Upwelling brings nutrients up", "Deep water is nutrient-rich"]
+        }
       ]
     },
     {
       title: "Ocean Acidification",
-      description: "The ocean absorbs about 30% of the CO₂ emitted into the atmosphere. When CO₂ dissolves in seawater, it forms carbonic acid, which lowers the pH of the ocean. Since the Industrial Revolution, ocean pH has decreased by about 0.1 pH units (a 30% increase in acidity). This ocean acidification makes it harder for organisms like corals, shellfish, and pteropods to build calcium carbonate shells and skeletons.",
       icon: Beaker,
       color: "bg-gradient-coral",
-      facts: [
-        "Ocean pH has decreased by 0.1 units since pre-industrial times",
-        "Oceans absorb ~30% of atmospheric CO₂",
-        "Threatens coral reefs and shell-forming organisms",
-        "pH expected to drop another 0.3-0.4 units by 2100"
+      sections: [
+        {
+          title: "pH Decline",
+          content: "Pre-industrial ocean pH: 8.2 (basic). Current pH: 8.1 (30% increase in H⁺ ions/acidity). By 2100: projected pH 7.8 (120% increase in acidity). pH scale is logarithmic: each 0.1 decrease = 30% more acidic. Ocean is becoming less basic/more acidic.",
+          facts: ["pH 8.1 is still basic but declining", "30% more acidic since 1750", "Fastest change in 300 million years"]
+        },
+        {
+          title: "Carbonate Chemistry",
+          content: "CO₂ + H₂O → H₂CO₃ (carbonic acid). H₂CO₃ → H⁺ + HCO₃⁻ (bicarbonate). HCO₃⁻ → H⁺ + CO₃²⁻ (carbonate). Lower pH means more H⁺ ions, which combine with CO₃²⁻ to form HCO₃⁻, reducing carbonate availability. Carbonate needed for shells and skeletons.",
+          facts: ["CO₂ creates carbonic acid", "H⁺ ions consume carbonate", "Less CO₃²⁻ available"]
+        },
+        {
+          title: "Biological Impacts",
+          content: "Organisms using calcium carbonate (CaCO₃) affected: corals, mollusks, pteropods, coccolithophores. Shells/skeletons dissolve in acidic water. Pteropods (sea butterflies) are base of Arctic food web. Coral reefs provide habitat for 25% of marine species. Acidification threatens entire food webs.",
+          facts: ["Pteropod shells dissolving", "Coral growth slows 15-20%", "Shellfish larvae vulnerable"]
+        }
       ]
-    },
-    {
-      title: "Nutrients & the Carbon Cycle",
-      description: "Nutrients like nitrogen, phosphorus, and iron are essential for phytoplankton growth. The ocean plays a crucial role in the global carbon cycle through the biological pump: phytoplankton absorb CO₂ during photosynthesis, and when they die, their carbon sinks to the deep ocean, storing it for centuries. This biological carbon pump helps regulate Earth's climate by removing CO₂ from the atmosphere.",
-      icon: Leaf,
-      color: "bg-gradient-depth",
-      facts: [
-        "Nitrogen often limits phytoplankton growth",
-        "Biological pump stores carbon in deep ocean",
-        "Upwelling brings nutrients to surface",
-        "Ocean stores 50x more carbon than atmosphere"
-      ]
-    }
-  ];
-
-  const properties = [
-    {
-      property: "Temperature",
-      range: "-2°C to 30°C",
-      description: "Affects density, gas solubility, and marine life distribution"
-    },
-    {
-      property: "pH",
-      range: "7.5 to 8.3",
-      description: "Ocean is slightly alkaline but becoming more acidic"
-    },
-    {
-      property: "Dissolved Oxygen",
-      range: "0 to 10 mL/L",
-      description: "Varies with temperature, depth, and biological activity"
-    },
-    {
-      property: "Nutrients (Nitrate)",
-      range: "0 to 40 μM",
-      description: "Low in surface waters, high in deep waters and upwelling zones"
     }
   ];
 
@@ -83,169 +78,72 @@ const ChemicalOcean = () => {
       <Navigation />
       
       {/* Hero Section */}
-      <section className="pt-24 pb-16 bg-gradient-wave text-white">
+      <section className="pt-24 pb-16 bg-gradient-coral text-white">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
             <Beaker className="h-16 w-16 mx-auto mb-6 animate-wave" />
-            <h1 className="text-5xl md:text-6xl font-bold mb-6">The Chemistry of the Sea</h1>
-            <p className="text-xl text-white/90 leading-relaxed mb-4">
-              Chemical Oceanography: Understanding Seawater Composition
-            </p>
-            <p className="text-lg text-white/80 leading-relaxed">
-              Explore the chemical composition and properties of seawater, including salinity, 
-              dissolved gases, pH, ocean acidification, and nutrient cycles.
+            <h1 className="text-5xl md:text-6xl font-bold mb-6">Chemical Oceanography</h1>
+            <p className="text-xl text-white/90 leading-relaxed">
+              Understanding the ocean's chemistry—from salinity and dissolved gases to ocean acidification 
+              and its impacts on marine life.
             </p>
           </div>
         </div>
       </section>
 
-      {/* Introduction */}
-      <section className="py-16 px-4 bg-muted">
-        <div className="container mx-auto max-w-4xl">
-          <div className="text-center">
-            <h2 className="text-3xl font-bold mb-6">The Ocean: A Chemical Soup</h2>
-            <p className="text-lg text-muted-foreground leading-relaxed mb-4">
-              Seawater is much more than just water and salt. It contains dissolved gases, nutrients, 
-              and trace elements that are essential for marine life and play critical roles in global 
-              biogeochemical cycles. The chemical properties of seawater influence ocean circulation, 
-              climate, and the distribution of life in the ocean.
-            </p>
-            <p className="text-lg text-muted-foreground leading-relaxed">
-              Understanding ocean chemistry is crucial for addressing modern environmental challenges 
-              like ocean acidification, deoxygenation, and the impacts of climate change on marine ecosystems.
-            </p>
-          </div>
-        </div>
-      </section>
-
-      {/* Main Topics */}
+      {/* Content Sections */}
       <section className="py-20 px-4">
-        <div className="container mx-auto max-w-6xl">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold mb-6 bg-gradient-ocean bg-clip-text text-transparent">
-              Chemical Processes
-            </h2>
-            <p className="text-xl text-muted-foreground">
-              The chemistry that drives ocean systems
-            </p>
-          </div>
+        <div className="container mx-auto max-w-6xl space-y-20">
+          {topics.map((topic, topicIndex) => (
+            <div key={topic.title}>
+              <div className="text-center mb-12">
+                <div className={`inline-flex p-4 rounded-xl ${topic.color} text-white mb-6`}>
+                  <topic.icon className="h-12 w-12" />
+                </div>
+                <h2 className="text-4xl font-bold mb-4 bg-gradient-ocean bg-clip-text text-transparent">
+                  {topic.title}
+                </h2>
+              </div>
 
-          <div className="grid lg:grid-cols-2 gap-8">
-            {topics.map((topic) => (
-              <Card key={topic.title} className="group hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
-                <div className={`h-2 ${topic.color}`} />
-                <CardHeader>
-                  <div className="flex items-center mb-4">
-                    <div className={`p-3 rounded-lg ${topic.color} text-white mr-4`}>
-                      <topic.icon className="h-6 w-6" />
-                    </div>
-                    <CardTitle className="text-xl">{topic.title}</CardTitle>
-                  </div>
-                  <CardDescription className="text-base leading-relaxed">
-                    {topic.description}
-                  </CardDescription>
-                </CardHeader>
-                <CardContent>
-                  <div className="space-y-2">
-                    {topic.facts.map((fact, index) => (
-                      <div key={index} className="flex items-start">
-                        <Badge variant="secondary" className="mr-2 mt-0.5">•</Badge>
-                        <span className="text-sm text-muted-foreground">{fact}</span>
+              <div className="grid md:grid-cols-3 gap-8">
+                {topic.sections.map((section) => (
+                  <Card key={section.title} className="group hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+                    <div className={`h-2 ${topic.color}`} />
+                    <CardHeader>
+                      <CardTitle className="text-xl mb-3">{section.title}</CardTitle>
+                      <CardDescription className="text-base leading-relaxed">
+                        {section.content}
+                      </CardDescription>
+                    </CardHeader>
+                    <CardContent>
+                      <div className="space-y-2">
+                        <h4 className="font-semibold text-sm text-muted-foreground mb-3">Key Facts:</h4>
+                        {section.facts.map((fact, factIndex) => (
+                          <Badge 
+                            key={factIndex} 
+                            variant="secondary" 
+                            className="text-xs mr-2 mb-2 px-3 py-1"
+                          >
+                            {fact}
+                          </Badge>
+                        ))}
                       </div>
-                    ))}
-                  </div>
-                </CardContent>
-              </Card>
-            ))}
-          </div>
+                    </CardContent>
+                  </Card>
+                ))}
+              </div>
+            </div>
+          ))}
         </div>
       </section>
 
-      {/* Chemical Properties */}
-      <section className="py-20 bg-muted">
-        <div className="container mx-auto px-4 max-w-5xl">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold mb-6 bg-gradient-coral bg-clip-text text-transparent">
-              Key Chemical Properties
-            </h2>
-            <p className="text-xl text-muted-foreground">
-              Measuring and understanding seawater chemistry
-            </p>
-          </div>
-
-          <div className="grid md:grid-cols-2 gap-6">
-            {properties.map((item) => (
-              <Card key={item.property} className="hover:shadow-lg transition-shadow">
-                <CardHeader>
-                  <div className="flex items-center justify-between mb-2">
-                    <CardTitle className="text-lg">{item.property}</CardTitle>
-                    <Badge variant="outline" className="text-sm">{item.range}</Badge>
-                  </div>
-                  <CardDescription className="text-base">
-                    {item.description}
-                  </CardDescription>
-                </CardHeader>
-              </Card>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Ocean Acidification Impact */}
-      <section className="py-20 px-4">
-        <div className="container mx-auto max-w-4xl">
-          <Card className="border-l-4 border-l-coral shadow-lg bg-gradient-to-r from-coral/5 to-transparent">
-            <CardHeader>
-              <CardTitle className="text-2xl text-coral">Ocean Acidification: A Growing Threat</CardTitle>
-            </CardHeader>
-            <CardContent className="space-y-4">
-              <p className="text-base leading-relaxed">
-                <strong>The Problem:</strong> Human activities have increased atmospheric CO₂ from about 280 ppm 
-                (pre-industrial) to over 420 ppm today. The ocean has absorbed much of this excess CO₂, which 
-                has helped slow global warming but at the cost of changing ocean chemistry.
-              </p>
-              <p className="text-base leading-relaxed">
-                <strong>The Impact:</strong> Ocean acidification affects shell-forming organisms like corals, 
-                oysters, clams, and tiny pteropods (sea butterflies) that form the base of many food webs. 
-                As the ocean becomes more acidic, it becomes harder for these organisms to build and maintain 
-                their calcium carbonate structures.
-              </p>
-              <p className="text-base leading-relaxed">
-                <strong>The Future:</strong> If CO₂ emissions continue unabated, ocean pH could drop by another 
-                0.3-0.4 units by 2100, threatening marine ecosystems and the billions of people who depend on 
-                the ocean for food and livelihoods.
-              </p>
-            </CardContent>
-          </Card>
-        </div>
-      </section>
-
-      {/* Fun Facts */}
-      <section className="py-20 px-4 bg-muted">
-        <div className="container mx-auto max-w-4xl">
-          <Card className="border-l-4 border-l-primary shadow-lg">
-            <CardHeader>
-              <CardTitle className="text-2xl">Chemical Facts About the Ocean</CardTitle>
-            </CardHeader>
-            <CardContent className="space-y-4">
-              <p className="text-base leading-relaxed">
-                💧 If you evaporated all the water from the ocean, the remaining salt would cover the entire 
-                land surface of Earth to a depth of about 150 meters (500 feet).
-              </p>
-              <p className="text-base leading-relaxed">
-                🌊 The ocean contains about 50 times more carbon than the atmosphere, making it a critical 
-                component of Earth's climate system.
-              </p>
-              <p className="text-base leading-relaxed">
-                🐚 The pH scale is logarithmic, so a decrease of 0.1 pH units represents a 30% increase in 
-                acidity—a significant change for marine life adapted to stable conditions.
-              </p>
-              <p className="text-base leading-relaxed">
-                🌬️ About 50-80% of Earth's oxygen production comes from the ocean, mostly from phytoplankton 
-                photosynthesis.
-              </p>
-            </CardContent>
-          </Card>
+      {/* Attribution */}
+      <section className="py-12 bg-muted">
+        <div className="container mx-auto px-4 text-center max-w-3xl">
+          <p className="text-sm text-muted-foreground">
+            Content based on <em>Introduction to Oceanography</em> by Paul Webb (Chapter 5), 
+            used under CC-BY 4.0 license
+          </p>
         </div>
       </section>
     </div>
