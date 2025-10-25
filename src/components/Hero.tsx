@@ -40,33 +40,33 @@ const Hero = () => {
         </div>
         
         <h1 className="text-5xl md:text-7xl font-bold text-white mb-6 leading-tight">
-          Welcome to the{" "}
-          <span className="bg-gradient-wave bg-clip-text text-transparent">
-            Blue Planet
+          Charles River Cleanup
+          <span className="bg-gradient-wave bg-clip-text text-transparent block mt-2">
+            Oceanography in Action
           </span>
         </h1>
         
         <p className="text-xl md:text-2xl text-white/90 mb-4 max-w-3xl mx-auto leading-relaxed">
-          Explore the interdisciplinary science of oceanography and discover how the oceans shape our world
+          Applying Physical & Chemical Oceanography to Urban River Restoration
         </p>
         
         <p className="text-lg text-white/80 mb-8 max-w-2xl mx-auto">
-          A digital dive into the physical, geological, chemical, and biological aspects of our oceans—and why they matter to humanity
+          A volunteer project documenting sediment management, pollution removal, and ecosystem health at the Charles River Conservancy
         </p>
 
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
-          <Link to="/oceanography">
+          <Link to="/inside-ocean">
             <Button size="lg" className="bg-accent hover:bg-accent/90 text-accent-foreground font-semibold px-8 py-3">
-              Start Exploring
+              View Project
             </Button>
           </Link>
-          <Link to="/humans-ocean">
+          <Link to="/chemical-ocean">
             <Button 
               variant="outline" 
               size="lg" 
               className="border-white/30 text-white hover:bg-white/10 backdrop-blur-sm px-8 py-3"
             >
-              Our Ocean Impact
+              Oceanography Concepts
             </Button>
           </Link>
         </div>
@@ -75,7 +75,7 @@ const Hero = () => {
         <div className="bg-white/10 backdrop-blur-md rounded-xl p-6 border border-white/20 max-w-2xl mx-auto">
           <p className="text-white/90 text-sm leading-relaxed">
             <strong>Final Project for EE 144:</strong> Introduction to Oceanography<br />
-            Exploring the science of the oceans and their critical importance to our planet
+            Volunteer experience at Charles River Conservancy, October 25, 2025
           </p>
         </div>
       </div>

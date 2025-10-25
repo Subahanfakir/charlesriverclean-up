@@ -1,36 +1,36 @@
 import Navigation from "@/components/Navigation";
 import Hero from "@/components/Hero";
 import FeatureCard from "@/components/FeatureCard";
-import { Microscope, Globe, Users, TreePine, Waves, Fish, Droplets } from "lucide-react";
+import { Waves, Droplets, Leaf, Trash2 } from "lucide-react";
 import { Link } from "react-router-dom";
 
 const Index = () => {
   const features = [
     {
-      title: "Ocean Currents & Circulation",
-      description: "Explore surface gyres, thermohaline circulation, upwelling zones, and how water moves around the globe.",
+      title: "Project Overview & Photos",
+      description: "Documentation of the volunteer cleanup event with photo evidence of restoration work and ecosystem management.",
       icon: Waves,
       link: "/inside-ocean",
       gradient: "bg-gradient-ocean"
     },
     {
-      title: "Chemical Oceanography",
-      description: "Understand salinity, dissolved gases, ocean acidification, and nutrient cycles in seawater.",
-      icon: Fish,
+      title: "Chemical & Biological Impacts",
+      description: "Eutrophication, algal blooms, dissolved oxygen, and how nutrient pollution affects the Charles River ecosystem.",
+      icon: Droplets,
       link: "/chemical-ocean",
       gradient: "bg-gradient-wave"
     },
     {
-      title: "Currents & Climate",
-      description: "Discover how the Gulf Stream, El Niño, and ocean circulation patterns shape weather and climate.",
-      icon: Globe,
+      title: "Physical & Geological Processes",
+      description: "Sediment transport, tidal currents, erosion, and the role of terrigenous material in estuarine systems.",
+      icon: Leaf,
       link: "/humans-ocean",
       gradient: "bg-gradient-coral"
     },
     {
-      title: "Energy of the Sea",
-      description: "Learn about waves, tides, and how the ocean stores and transfers energy across vast distances.",
-      icon: Droplets,
+      title: "Pollution & Conservation",
+      description: "Understanding anthropogenic impacts, microplastics, and how volunteer action protects water quality.",
+      icon: Trash2,
       link: "/future",
       gradient: "bg-gradient-depth"
     }
@@ -41,22 +41,22 @@ const Index = () => {
       <Navigation />
       <Hero />
       
-      {/* The Ocean Engine */}
+      {/* Project Context */}
       <section className="py-16 px-4 bg-muted">
         <div className="container mx-auto max-w-4xl text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-4 bg-gradient-ocean bg-clip-text text-transparent">
-            The Ocean Engine
+            Volunteering Meets Science
           </h2>
           <h3 className="text-xl md:text-2xl text-primary mb-6">
-            How Ocean Currents Shape Our World
+            Charles River Conservancy Cleanup — October 25, 2025
           </h3>
           <p className="text-lg text-muted-foreground mb-8 leading-relaxed">
-            "The oceans are a major contributor to global climate patterns... Knowledge of oceanography 
-            is important for understanding winds and currents, tides and wave patterns. The ocean covers 
-            71% of the Earth's surface and contains 97% of Earth's water."
+            This project documents a volunteer cleanup event at Herter Park in Allston/Brighton, where I removed 
+            litter, raked leaves, and witnessed firsthand the chemical and physical oceanography principles that 
+            govern estuarine ecosystems like the Charles River.
           </p>
           <p className="text-base text-muted-foreground italic">
-            — From <em>Introduction to Oceanography</em> by Paul Webb (CC-BY 4.0)
+            Applying concepts from Webb's <em>Introduction to Oceanography</em> to real-world conservation
           </p>
         </div>
       </section>
@@ -66,11 +66,11 @@ const Index = () => {
         <div className="container mx-auto max-w-6xl">
           <div className="text-center mb-16 animate-slide-up">
             <h2 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-ocean bg-clip-text text-transparent">
-              A Living Machine Connecting All Continents
+              Oceanography Concepts in an Urban River
             </h2>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-              Based on Webb's Chapters 6, 9, and 10, this project explores how ocean currents, waves, and 
-              circulation drive our climate, weather, and marine ecosystems.
+              From sediment transport to eutrophication, this volunteer experience reveals the physical and chemical 
+              processes shaping the Charles River—an estuarine system facing urban pollution and ecological challenges.
             </p>
           </div>
           
@@ -93,22 +93,22 @@ const Index = () => {
         <div className="container mx-auto px-4 text-center">
           <div className="max-w-3xl mx-auto">
             <Waves className="h-16 w-16 mx-auto mb-6 animate-wave" />
-            <h2 className="text-4xl font-bold mb-6">Understand the Ocean's Power</h2>
+            <h2 className="text-4xl font-bold mb-6">Conservation Begins with Understanding</h2>
             <p className="text-xl mb-8 text-white/90">
-              Discover how ocean motion connects continents, regulates our climate, and sustains life on Earth.
+              See how volunteer action protects urban waterways and learn the science behind ecosystem restoration.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link 
                 to="/inside-ocean"
                 className="inline-flex items-center justify-center px-8 py-3 bg-white text-primary font-semibold rounded-lg hover:bg-white/90 transition-colors"
               >
-                Explore Currents
+                View Project Photos
               </Link>
               <Link 
-                to="/humans-ocean"
+                to="/chemical-ocean"
                 className="inline-flex items-center justify-center px-8 py-3 border border-white/30 text-white font-semibold rounded-lg hover:bg-white/10 transition-colors"
               >
-                Climate Connection
+                Learn the Science
               </Link>
             </div>
           </div>
