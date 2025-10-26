@@ -78,72 +78,31 @@ const ChemicalOcean = () => {
       <Navigation />
       
       {/* Hero Section */}
-      <section className="pt-24 pb-16 bg-gradient-coral text-white">
-        <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto text-center">
-            <Beaker className="h-16 w-16 mx-auto mb-6 animate-wave" />
-            <h1 className="text-5xl md:text-6xl font-bold mb-6">Chemical Oceanography</h1>
-            <p className="text-xl text-white/90 leading-relaxed">
-              Understanding the ocean's chemistry—from salinity and dissolved gases to ocean acidification 
-              and its impacts on marine life.
-            </p>
-          </div>
-        </div>
-      </section>
-
-      {/* Content Sections */}
-      <section className="py-20 px-4">
-        <div className="container mx-auto max-w-6xl space-y-20">
-          {topics.map((topic, topicIndex) => (
-            <div key={topic.title}>
-              <div className="text-center mb-12">
-                <div className={`inline-flex p-4 rounded-xl ${topic.color} text-white mb-6`}>
-                  <topic.icon className="h-12 w-12" />
-                </div>
-                <h2 className="text-4xl font-bold mb-4 bg-gradient-ocean bg-clip-text text-transparent">
-                  {topic.title}
-                </h2>
-              </div>
-
-              <div className="grid md:grid-cols-3 gap-8">
-                {topic.sections.map((section) => (
-                  <Card key={section.title} className="group hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
-                    <div className={`h-2 ${topic.color}`} />
-                    <CardHeader>
-                      <CardTitle className="text-xl mb-3">{section.title}</CardTitle>
-                      <CardDescription className="text-base leading-relaxed">
-                        {section.content}
-                      </CardDescription>
-                    </CardHeader>
-                    <CardContent>
-                      <div className="space-y-2">
-                        <h4 className="font-semibold text-sm text-muted-foreground mb-3">Key Facts:</h4>
-                        {section.facts.map((fact, factIndex) => (
-                          <Badge 
-                            key={factIndex} 
-                            variant="secondary" 
-                            className="text-xs mr-2 mb-2 px-3 py-1"
-                          >
-                            {fact}
-                          </Badge>
-                        ))}
-                      </div>
-                    </CardContent>
-                  </Card>
-                ))}
-              </div>
-            </div>
-          ))}
-        </div>
-      </section>
-
-      {/* Attribution */}
-      <section className="py-12 bg-muted">
-        <div className="container mx-auto px-4 text-center max-w-3xl">
-          <p className="text-sm text-muted-foreground">
-            Content based on <em>Introduction to Oceanography</em> by Paul Webb (Chapter 5), 
-            used under CC-BY 4.0 license
+      <section className="py-20 px-4 bg-gradient-wave text-white">
+        <div className="container mx-auto max-w-4xl text-center">
+          <Droplets className="h-16 w-16 mx-auto mb-6 animate-wave" />
+          <h1 className="text-4xl md:text-5xl font-bold mb-6">
+            Chemical & Biological Impacts
+          </h1>
+          <p className="text-xl text-white/90">
+            Eutrophication, Algal Blooms, Dissolved Oxygen in the Charles River
           </p>
+        </div>
+      </section>
+
+      <section className="py-16 px-4">
+        <div className="container mx-auto max-w-4xl">
+          <Card className="mb-12">
+            <CardContent className="p-8">
+              <h2 className="text-2xl font-bold mb-4 text-primary">Evidence of Eutrophication</h2>
+              <div className="aspect-video bg-muted rounded-lg flex items-center justify-center border-2 border-dashed">
+                <p className="text-muted-foreground font-mono">{"<img src=\"YOUR_GREEN_WATER_PHOTO\" />"}</p>
+              </div>
+              <p className="mt-4 text-muted-foreground">
+                INSERT PHOTOS showing bright green algal blooms and decaying organic matter
+              </p>
+            </CardContent>
+          </Card>
         </div>
       </section>
     </div>
