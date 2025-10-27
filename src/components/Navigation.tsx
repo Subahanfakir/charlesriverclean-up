@@ -9,10 +9,10 @@ const Navigation = () => {
 
   const navItems = [
     { path: "/", label: "Home" },
-    { path: "/oceanography", label: "Oceanography 101" },
-    { path: "/inside-ocean", label: "Inside the Ocean" },
-    { path: "/humans-ocean", label: "Humans & Ocean" },
-    { path: "/future", label: "Future of Oceans" },
+    { path: "/inside-ocean", label: "Project Overview" },
+    { path: "/chemical-ocean", label: "Chemical & Biological" },
+    { path: "/humans-ocean", label: "Physical & Geological" },
+    { path: "/future", label: "Pollution & Conservation" },
   ];
 
   const isActive = (path: string) => location.pathname === path;

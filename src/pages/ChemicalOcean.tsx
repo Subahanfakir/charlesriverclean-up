@@ -1,110 +1,177 @@
 import Navigation from "@/components/Navigation";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { Badge } from "@/components/ui/badge";
-import { Beaker, Droplets, FlaskConical } from "lucide-react";
 
 const ChemicalOcean = () => {
-  const topics = [
-    {
-      title: "Salinity & Major Ions",
-      icon: Droplets,
-      color: "bg-gradient-ocean",
-      sections: [
-        {
-          title: "Salinity Basics",
-          content: "Average ocean salinity is 35 PSU (practical salinity units) or 35 parts per thousand. Six major ions comprise 99.4% of dissolved salts: Chloride (55%), Sodium (30.6%), Sulfate (7.7%), Magnesium (3.7%), Calcium (1.2%), Potassium (1.1%).",
-          facts: ["Chloride + Sodium = table salt", "Rule of constant proportions", "Measured by conductivity"]
-        },
-        {
-          title: "Conservative vs. Non-Conservative Ions",
-          content: "Conservative ions maintain constant proportions regardless of total salinity - the major six ions. Non-conservative ions fluctuate based on biological uptake, input sources, or chemical reactions. Mixing time ~1000 years vs. residence times of millions of years for major ions.",
-          facts: ["Major ions are conservative", "Nutrients are non-conservative", "Residence time > mixing time"]
-        },
-        {
-          title: "Salinity Variations",
-          content: "Affected by: evaporation (increases salinity), precipitation (decreases), river input (decreases), ice formation/melting (formation increases, melting decreases). Mediterranean: high evaporation, ~40 PSU. Baltic Sea: high river input, ~10 PSU. Dead Sea: ~330 PSU.",
-          facts: ["Tropics: high evaporation", "Polar: low evaporation + melting", "Equator: high rain lowers salinity"]
-        }
-      ]
-    },
-    {
-      title: "Dissolved Gases",
-      icon: FlaskConical,
-      color: "bg-gradient-wave",
-      sections: [
-        {
-          title: "Oxygen (O₂)",
-          content: "Enters ocean via air-sea exchange and photosynthesis. Consumed by respiration and decomposition. Surface: highest O₂ from photosynthesis. Oxygen minimum layer (200-1000m): O₂ removed by respiration, too deep for photosynthesis. Deep water: cold temperature and high pressure increase solubility.",
-          facts: ["Surface: ~8 mg/L O₂", "Mid-depth: oxygen minimum", "Deep: O₂ from cold polar water"]
-        },
-        {
-          title: "Carbon Dioxide (CO₂)",
-          content: "Ocean holds 50 times more CO₂ than atmosphere and 20 times more than land/vegetation. CO₂ dissolves forming carbonic acid (H₂CO₃), then dissociates to bicarbonate (HCO₃⁻) and carbonate (CO₃²⁻). Cold water holds more dissolved CO₂. Ocean acts as CO₂ sink absorbing ~30% of human emissions.",
-          facts: ["Ocean: 45x more carbon than atmosphere", "Solubility increases in cold water", "Absorbs anthropogenic CO₂"]
-        },
-        {
-          title: "Nitrogen & Nutrients",
-          content: "Nitrogen gas (N₂) dissolved from atmosphere. Bacteria fix N₂ into usable forms: nitrate (NO₃⁻), nitrite (NO₂⁻), ammonia (NH₃). Phosphate (PO₄³⁻) from weathering and decomposition. Silica (SiO₂) needed by diatoms. Nutrients consumed in surface, regenerated at depth through decomposition.",
-          facts: ["Limiting nutrients control productivity", "Upwelling brings nutrients up", "Deep water is nutrient-rich"]
-        }
-      ]
-    },
-    {
-      title: "Ocean Acidification",
-      icon: Beaker,
-      color: "bg-gradient-coral",
-      sections: [
-        {
-          title: "pH Decline",
-          content: "Pre-industrial ocean pH: 8.2 (basic). Current pH: 8.1 (30% increase in H⁺ ions/acidity). By 2100: projected pH 7.8 (120% increase in acidity). pH scale is logarithmic: each 0.1 decrease = 30% more acidic. Ocean is becoming less basic/more acidic.",
-          facts: ["pH 8.1 is still basic but declining", "30% more acidic since 1750", "Fastest change in 300 million years"]
-        },
-        {
-          title: "Carbonate Chemistry",
-          content: "CO₂ + H₂O → H₂CO₃ (carbonic acid). H₂CO₃ → H⁺ + HCO₃⁻ (bicarbonate). HCO₃⁻ → H⁺ + CO₃²⁻ (carbonate). Lower pH means more H⁺ ions, which combine with CO₃²⁻ to form HCO₃⁻, reducing carbonate availability. Carbonate needed for shells and skeletons.",
-          facts: ["CO₂ creates carbonic acid", "H⁺ ions consume carbonate", "Less CO₃²⁻ available"]
-        },
-        {
-          title: "Biological Impacts",
-          content: "Organisms using calcium carbonate (CaCO₃) affected: corals, mollusks, pteropods, coccolithophores. Shells/skeletons dissolve in acidic water. Pteropods (sea butterflies) are base of Arctic food web. Coral reefs provide habitat for 25% of marine species. Acidification threatens entire food webs.",
-          facts: ["Pteropod shells dissolving", "Coral growth slows 15-20%", "Shellfish larvae vulnerable"]
-        }
-      ]
-    }
-  ];
-
   return (
     <div className="min-h-screen bg-background">
       <Navigation />
       
-      {/* Hero Section */}
-      <section className="py-20 px-4 bg-gradient-wave text-white">
-        <div className="container mx-auto max-w-4xl text-center">
-          <Droplets className="h-16 w-16 mx-auto mb-6 animate-wave" />
-          <h1 className="text-4xl md:text-5xl font-bold mb-6">
+      <main className="container mx-auto px-4 pt-24 pb-16">
+        {/* Hero Section */}
+        <div className="text-center mb-16 animate-fade-in">
+          <h1 className="text-4xl md:text-5xl font-bold mb-4 bg-gradient-ocean bg-clip-text text-transparent">
             Chemical & Biological Impacts
           </h1>
-          <p className="text-xl text-white/90">
-            Eutrophication, Algal Blooms, Dissolved Oxygen in the Charles River
+          <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+            Exploring the chemical processes and biological consequences in the Charles River ecosystem
           </p>
         </div>
-      </section>
 
-      <section className="py-16 px-4">
-        <div className="container mx-auto max-w-4xl">
-          <Card className="mb-12">
-            <CardContent className="p-8">
-              <h2 className="text-2xl font-bold mb-4 text-primary">Evidence of Eutrophication</h2>
-              <div className="aspect-video bg-muted rounded-lg flex items-center justify-center border-2 border-dashed">
-                <p className="text-muted-foreground font-mono">{"<img src=\"YOUR_GREEN_WATER_PHOTO\" />"}</p>
+        {/* Evidence Card */}
+        <Card className="mb-12 overflow-hidden border-primary/20">
+          <CardHeader className="bg-gradient-subtle">
+            <CardTitle className="text-2xl">Visual Evidence of Eutrophication</CardTitle>
+            <CardDescription>Algal bloom observed during the cleanup event</CardDescription>
+          </CardHeader>
+          <CardContent className="p-6">
+            <div className="grid md:grid-cols-2 gap-6">
+              {/* Photo Placeholder 1: Green Scummy Water */}
+              <div className="space-y-3">
+                <div className="bg-muted rounded-lg aspect-video flex items-center justify-center border-2 border-dashed border-muted-foreground/25">
+                  <p className="text-muted-foreground text-center px-4">
+                    📸 INSERT PHOTO: Bright Green, Scummy Water
+                    <br />
+                    <span className="text-sm">(Evidence of algal bloom in inlet)</span>
+                  </p>
+                </div>
+                <div className="space-y-2">
+                  <h3 className="font-semibold text-primary">Eutrophication & Primary Production</h3>
+                  <p className="text-sm text-muted-foreground">
+                    The vibrant green color indicates an intense algal bloom caused by excessive nutrients (non-conservative ions) from urban runoff. This represents unchecked primary production.
+                  </p>
+                </div>
               </div>
-              <p className="mt-4 text-muted-foreground">
-                INSERT PHOTOS showing bright green algal blooms and decaying organic matter
+
+              {/* Photo Placeholder 2: Surface Scum */}
+              <div className="space-y-3">
+                <div className="bg-muted rounded-lg aspect-video flex items-center justify-center border-2 border-dashed border-muted-foreground/25">
+                  <p className="text-muted-foreground text-center px-4">
+                    📸 INSERT PHOTO: Green Surface Scum Near Dock
+                    <br />
+                    <span className="text-sm">(Algae + decaying leaves at water's edge)</span>
+                  </p>
+                </div>
+                <div className="space-y-2">
+                  <h3 className="font-semibold text-primary">Hypoxia Potential</h3>
+                  <p className="text-sm text-muted-foreground">
+                    The accumulation of decaying organic material (leaves + algae) consumes dissolved oxygen through respiration, creating hypoxic conditions that threaten aquatic life.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </CardContent>
+        </Card>
+
+        {/* Nutrient Budget Section */}
+        <Card className="mb-12 border-primary/20">
+          <CardHeader className="bg-gradient-subtle">
+            <CardTitle className="text-2xl">Nutrient Budget & Non-Conservative Ions</CardTitle>
+            <CardDescription>How excess nutrients fuel algal blooms</CardDescription>
+          </CardHeader>
+          <CardContent className="p-6">
+            <div className="grid md:grid-cols-2 gap-6">
+              {/* Photo Placeholder 3: Bags of Leaves */}
+              <div className="space-y-3">
+                <div className="bg-muted rounded-lg aspect-video flex items-center justify-center border-2 border-dashed border-muted-foreground/25">
+                  <p className="text-muted-foreground text-center px-4">
+                    📸 INSERT PHOTO: Bags of Leaves Lined Up
+                    <br />
+                    <span className="text-sm">(Massive volume of collected organic debris)</span>
+                  </p>
+                </div>
+                <div className="space-y-2">
+                  <h3 className="font-semibold text-primary">Preventing Nutrient Loading</h3>
+                  <p className="text-sm text-muted-foreground">
+                    These bags contain terrigenous sediment that, if left to decay, would release nitrogen and phosphorus (non-conservative nutrients) into the water, fueling further algal growth.
+                  </p>
+                </div>
+              </div>
+
+              {/* Explanation Section */}
+              <div className="space-y-4">
+                <h3 className="font-semibold text-lg">The Nutrient Cycle Problem</h3>
+                <ul className="space-y-2 text-sm text-muted-foreground">
+                  <li>• <strong>Urban Runoff:</strong> Carries fertilizers, pet waste, and decomposing organic matter into the river</li>
+                  <li>• <strong>Non-Conservative Nutrients:</strong> Nitrogen (N) and Phosphorus (P) are consumed by phytoplankton, driving excessive primary production</li>
+                  <li>• <strong>Algal Blooms:</strong> Rapid growth of microscopic algae turns water green and cloudy</li>
+                  <li>• <strong>Oxygen Depletion:</strong> When algae die and decompose, bacteria consume dissolved O₂, creating "dead zones"</li>
+                  <li>• <strong>Volunteer Impact:</strong> Removing leaf litter prevents this nutrient input from ever reaching the water</li>
+                </ul>
+              </div>
+            </div>
+          </CardContent>
+        </Card>
+
+        {/* Dissolved Oxygen Section */}
+        <Card className="mb-12 border-primary/20">
+          <CardHeader className="bg-gradient-subtle">
+            <CardTitle className="text-2xl">Dissolved Oxygen & Respiration</CardTitle>
+            <CardDescription>The hidden crisis beneath the surface</CardDescription>
+          </CardHeader>
+          <CardContent className="p-6 space-y-4">
+            <div className="prose prose-sm max-w-none text-muted-foreground">
+              <p>
+                Dissolved oxygen (DO) is a <strong>conservative property</strong> in the open ocean but becomes <strong>non-conservative</strong> in eutrophic estuaries like the Charles River. Here's why:
               </p>
-            </CardContent>
-          </Card>
-        </div>
-      </section>
+              <ul>
+                <li><strong>Photosynthesis vs. Respiration:</strong> During the day, algae produce O₂ through photosynthesis. At night, they consume O₂ through respiration—along with bacteria decomposing organic matter.</li>
+                <li><strong>Temperature Dependency:</strong> Warm water (common in summer) holds less dissolved oxygen than cold water, compounding the problem.</li>
+                <li><strong>Biochemical Oxygen Demand (BOD):</strong> The amount of oxygen required to break down organic material. High BOD = rapid oxygen depletion.</li>
+                <li><strong>Hypoxic Zones:</strong> When DO drops below 2-3 mg/L, fish and invertebrates suffocate. This is a direct consequence of unchecked eutrophication.</li>
+              </ul>
+            </div>
+
+            {/* Photo Placeholder 4: Water's Edge */}
+            <div className="grid md:grid-cols-2 gap-6 mt-6">
+              <div className="space-y-3">
+                <div className="bg-muted rounded-lg aspect-video flex items-center justify-center border-2 border-dashed border-muted-foreground/25">
+                  <p className="text-muted-foreground text-center px-4">
+                    📸 INSERT PHOTO: Water's Edge with Leaves/Trash
+                    <br />
+                    <span className="text-sm">(Accumulated organic debris)</span>
+                  </p>
+                </div>
+                <p className="text-sm text-muted-foreground">
+                  This debris is a ticking time bomb for dissolved oxygen. As it decomposes, bacteria will consume O₂ faster than it can be replenished by diffusion or photosynthesis.
+                </p>
+              </div>
+
+              <div className="flex items-center">
+                <div className="space-y-3">
+                  <h3 className="font-semibold text-primary">Why Volunteer Cleanups Matter</h3>
+                  <p className="text-sm text-muted-foreground">
+                    By removing organic debris <em>before</em> it enters the water, volunteers directly prevent oxygen depletion events. This is anthropogenic intervention with a <strong>positive</strong> impact on the chemical budget.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </CardContent>
+        </Card>
+
+        {/* pH and Ocean Acidification Analog */}
+        <Card className="border-primary/20">
+          <CardHeader className="bg-gradient-subtle">
+            <CardTitle className="text-2xl">pH Fluctuations & Acidification</CardTitle>
+            <CardDescription>Urban rivers as microcosms of global ocean chemistry</CardDescription>
+          </CardHeader>
+          <CardContent className="p-6 space-y-4">
+            <div className="prose prose-sm max-w-none text-muted-foreground">
+              <p>
+                While the Charles River is not acidifying like the global ocean, it experiences <strong>dramatic pH swings</strong> due to biological activity:
+              </p>
+              <ul>
+                <li><strong>Daytime:</strong> Algae consume CO₂ during photosynthesis, raising pH (more basic)</li>
+                <li><strong>Nighttime:</strong> Respiration releases CO₂, lowering pH (more acidic)</li>
+                <li><strong>Runoff Impact:</strong> Acid rain and pollutants can further depress pH</li>
+                <li><strong>Carbonate Chemistry:</strong> While seawater buffers pH well, freshwater systems like rivers are more vulnerable to pH changes</li>
+              </ul>
+              <p className="mt-4">
+                This serves as a powerful analogy for <strong>ocean acidification</strong>, where rising atmospheric CO₂ dissolves in seawater, forming carbonic acid and lowering pH. In both cases, the chemistry is driven by CO₂—either from respiration/decomposition (river) or fossil fuels (ocean).
+              </p>
+            </div>
+          </CardContent>
+        </Card>
+      </main>
     </div>
   );
 };
