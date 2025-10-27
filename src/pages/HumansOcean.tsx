@@ -1,150 +1,237 @@
 import Navigation from "@/components/Navigation";
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { Globe, Thermometer, Wind, Waves } from "lucide-react";
+import { Waves, Camera } from "lucide-react";
 
 const HumansOcean = () => {
-  const topics = [
-    {
-      title: "Ocean Currents & Climate",
-      icon: Globe,
-      color: "bg-gradient-ocean",
-      content: "Ocean currents transport heat from equator to poles, moderating global climate. Without ocean heat transport, tropics would be unbearably hot and poles even colder.",
-      sections: [
-        {
-          title: "Gulf Stream Impact",
-          content: "The Gulf Stream transports warm tropical water northward along US East Coast to Europe. Northwestern Europe is 5-10°C warmer than same latitudes elsewhere. London (51°N) has milder winters than Calgary (51°N) due to ocean heat transport.",
-          facts: ["Moderates European climate", "Transports 100 Sverdrups", "May slow with climate change"]
-        },
-        {
-          title: "Global Heat Distribution",
-          content: "Oceans transfer ~20% of heat from tropics to poles through currents. Surface currents move warm water poleward. Thermohaline circulation moves cold water equatorward at depth. This heat redistribution prevents extreme temperature gradients.",
-          facts: ["Balances incoming solar radiation", "Moderates seasonal extremes", "Takes centuries to circulate"]
-        }
-      ]
-    },
-    {
-      title: "El Niño & La Niña",
-      icon: Thermometer,
-      color: "bg-gradient-wave",
-      content: "El Niño-Southern Oscillation (ENSO) is periodic warming/cooling of tropical Pacific affecting global weather patterns.",
-      sections: [
-        {
-          title: "Normal Conditions",
-          content: "Trade winds blow westward across Pacific. Warm water piles up in western Pacific. Thermocline tilts: deep in west, shallow in east. Upwelling along South America brings cold, nutrient-rich water supporting fisheries.",
-          facts: ["Strong upwelling off Peru", "High fish productivity", "Walker circulation active"]
-        },
-        {
-          title: "El Niño Events",
-          content: "Trade winds weaken. Warm water flows eastward. Thermocline flattens. Upwelling reduced/stops along South America. Fish populations crash. Heavy rain in eastern Pacific, drought in western Pacific/Indonesia. Global climate disruptions.",
-          facts: ["Occurs every 2-7 years", "2015-16 event affected 100M people", "Peru fishing suspended"]
-        },
-        {
-          title: "La Niña Events",
-          content: "Trade winds strengthen. Thermocline tilts more than normal. Enhanced upwelling. Colder than average eastern Pacific. Opposite weather patterns from El Niño. More hurricanes in Atlantic.",
-          facts: ["Stronger upwelling", "Increased Pacific fish productivity", "Drought in southern US"]
-        }
-      ]
-    },
-    {
-      title: "Ocean & Climate Change",
-      icon: Wind,
-      color: "bg-gradient-coral",
-      content: "Ocean absorbs 90% of excess heat from greenhouse effect and 30% of CO₂ emissions, moderating climate change but altering ocean chemistry.",
-      sections: [
-        {
-          title: "Ocean Warming",
-          content: "Global ocean temperature increased 0.11°C per decade since 1971. Surface warms fastest. Thermal expansion contributes ~30% of sea level rise. Warming slows thermohaline circulation. Stratification increases, reducing nutrient mixing.",
-          facts: ["Absorbs 90% of excess heat", "Thermal expansion raises sea level", "May slow AMOC circulation"]
-        },
-        {
-          title: "Sea Level Rise",
-          content: "Sea level rose 20cm since 1750. Current rate: 3.4mm/year. Projected rise by 2100: 0.5-2.0m. Even if emissions stop today, committed to 1.3-1.9m rise from thermal expansion already in system. Threatens 150M coastal residents by 2070.",
-          facts: ["20cm rise since 1750", "Accelerating: 3.4mm/year now", "Cities at risk: Miami, Shanghai, Mumbai"]
-        },
-        {
-          title: "Hurricane Intensity",
-          content: "Warmer sea surface temperatures fuel stronger hurricanes. Atlantic sea-surface temperature strongly correlates with hurricane intensity since 1975. Category 4-5 hurricanes increasing. More intense rainfall from warmer atmosphere holding more moisture.",
-          facts: ["Warmer water = more energy", "Category 4-5 storms increasing", "Economic damages rising"]
-        }
-      ]
-    }
-  ];
-
   return (
     <div className="min-h-screen bg-background">
       <Navigation />
       
       {/* Hero Section */}
-      <section className="pt-24 pb-16 bg-gradient-depth text-white">
-        <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto text-center">
-            <Waves className="h-16 w-16 mx-auto mb-6 animate-wave" />
-            <h1 className="text-5xl md:text-6xl font-bold mb-6">Currents & Climate</h1>
-            <p className="text-xl text-white/90 leading-relaxed">
-              Discover how ocean circulation patterns shape global weather, regulate Earth's temperature, 
-              and respond to climate change.
-            </p>
-          </div>
-        </div>
-      </section>
-
-      {/* Content */}
-      <section className="py-20 px-4">
-        <div className="container mx-auto max-w-6xl space-y-20">
-          {topics.map((topic) => (
-            <div key={topic.title}>
-              <div className="text-center mb-12">
-                <div className={`inline-flex p-4 rounded-xl ${topic.color} text-white mb-6`}>
-                  <topic.icon className="h-12 w-12" />
-                </div>
-                <h2 className="text-4xl font-bold mb-4 bg-gradient-ocean bg-clip-text text-transparent">
-                  {topic.title}
-                </h2>
-                <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-                  {topic.content}
-                </p>
-              </div>
-
-              <div className="grid md:grid-cols-2 gap-8">
-                {topic.sections.map((section) => (
-                  <Card key={section.title} className="group hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
-                    <div className={`h-2 ${topic.color}`} />
-                    <CardHeader>
-                      <CardTitle className="text-xl mb-3">{section.title}</CardTitle>
-                      <CardDescription className="text-base leading-relaxed">
-                        {section.content}
-                      </CardDescription>
-                    </CardHeader>
-                    <CardContent>
-                      <div className="space-y-2">
-                        <h4 className="font-semibold text-sm text-muted-foreground mb-3">Key Points:</h4>
-                        {section.facts.map((fact, factIndex) => (
-                          <Badge 
-                            key={factIndex} 
-                            variant="secondary" 
-                            className="text-xs mr-2 mb-2 px-3 py-1"
-                          >
-                            {fact}
-                          </Badge>
-                        ))}
-                      </div>
-                    </CardContent>
-                  </Card>
-                ))}
-              </div>
-            </div>
-          ))}
-        </div>
-      </section>
-
-      {/* Attribution */}
-      <section className="py-12 bg-muted">
-        <div className="container mx-auto px-4 text-center max-w-3xl">
-          <p className="text-sm text-muted-foreground">
-            Content based on <em>Introduction to Oceanography</em> by Paul Webb (Chapters 8, 9 & 14), 
-            used under CC-BY 4.0 license
+      <section className="py-20 px-4 bg-gradient-coral text-white">
+        <div className="container mx-auto max-w-4xl text-center">
+          <Waves className="h-16 w-16 mx-auto mb-6 animate-wave" />
+          <h1 className="text-4xl md:text-5xl font-bold mb-6">
+            Physical & Geological Processes
+          </h1>
+          <p className="text-xl text-white/90">
+            Sediment Transport, Tidal Currents, and Estuarine Dynamics
           </p>
+        </div>
+      </section>
+
+      <section className="py-16 px-4">
+        <div className="container mx-auto max-w-4xl space-y-12">
+          
+          {/* Photo 8: Water's Edge with Leaves and Trash */}
+          <Card className="border-primary/20">
+            <CardContent className="p-6">
+              <div className="grid md:grid-cols-2 gap-6">
+                <div className="space-y-4">
+                  <div className="aspect-video bg-muted rounded-lg flex items-center justify-center border-2 border-dashed border-muted-foreground/30">
+                    <div className="text-center p-4">
+                      <Camera className="h-12 w-12 mx-auto mb-2 text-muted-foreground/50" />
+                      <p className="text-sm text-muted-foreground font-mono">
+                        {"INSERT PHOTO: Water's edge with accumulated leaves and trash"}
+                      </p>
+                    </div>
+                  </div>
+                  <div>
+                    <h3 className="font-semibold text-lg mb-2">Sediment Transport & Erosion</h3>
+                    <p className="text-muted-foreground mb-3">
+                      Accumulated debris at the water's edge shows active sediment transport
+                    </p>
+                    <div className="flex flex-wrap gap-2">
+                      <Badge variant="secondary">Sediment Transport</Badge>
+                      <Badge variant="secondary">Erosion</Badge>
+                    </div>
+                  </div>
+                </div>
+                <div className="bg-muted p-6 rounded-lg space-y-3">
+                  <h4 className="font-semibold text-primary mb-3">🌊 Oceanography Connection</h4>
+                  <p className="text-sm mb-3">
+                    This accumulation shows <strong>poorly sorted sediment</strong> (leaves, sticks, dirt, trash) 
+                    deposited by the current. The mixture of materials reveals active transport processes.
+                  </p>
+                  <div className="bg-background p-3 rounded">
+                    <p className="text-xs font-semibold mb-1">Key Concepts:</p>
+                    <ul className="text-xs space-y-1 list-disc list-inside">
+                      <li>Fluctuating tides drive erosion</li>
+                      <li>Shallow water waves affect deposition</li>
+                      <li>Common site for sediment accumulation</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </CardContent>
+          </Card>
+
+          {/* Photo 9: Wide Shot of River */}
+          <Card className="border-primary/20">
+            <CardContent className="p-6">
+              <div className="grid md:grid-cols-2 gap-6">
+                <div className="space-y-4">
+                  <div className="aspect-video bg-muted rounded-lg flex items-center justify-center border-2 border-dashed border-muted-foreground/30">
+                    <div className="text-center p-4">
+                      <Camera className="h-12 w-12 mx-auto mb-2 text-muted-foreground/50" />
+                      <p className="text-sm text-muted-foreground font-mono">
+                        {"INSERT PHOTO: Wide shot of river, dock, and city background"}
+                      </p>
+                    </div>
+                  </div>
+                  <div>
+                    <h3 className="font-semibold text-lg mb-2">Estuarine Environment</h3>
+                    <p className="text-muted-foreground mb-3">
+                      The Charles River estuary with urban development and hard stabilization
+                    </p>
+                    <div className="flex flex-wrap gap-2">
+                      <Badge variant="secondary">Estuary</Badge>
+                      <Badge variant="secondary">Hard Stabilization</Badge>
+                    </div>
+                  </div>
+                </div>
+                <div className="bg-muted p-6 rounded-lg space-y-3">
+                  <h4 className="font-semibold text-primary mb-3">🌊 Estuarine Dynamics</h4>
+                  <p className="text-sm mb-3">
+                    This view confirms the Charles River as an <strong>estuary</strong>—a semi-enclosed coastal 
+                    body where freshwater mixes with seawater. The docks and pilings are <strong>hard stabilization 
+                    structures</strong> that affect local currents and erosion patterns.
+                  </p>
+                  <div className="bg-background p-3 rounded">
+                    <p className="text-xs font-semibold mb-1">Key Concepts:</p>
+                    <ul className="text-xs space-y-1 list-disc list-inside">
+                      <li>Freshwater-saltwater mixing zone</li>
+                      <li>Tidal influence on water level</li>
+                      <li>Human structures alter flow patterns</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </CardContent>
+          </Card>
+
+          {/* Photo 10: Submerged Dock Area */}
+          <Card className="border-primary/20">
+            <CardContent className="p-6">
+              <div className="grid md:grid-cols-2 gap-6">
+                <div className="space-y-4">
+                  <div className="aspect-video bg-muted rounded-lg flex items-center justify-center border-2 border-dashed border-muted-foreground/30">
+                    <div className="text-center p-4">
+                      <Camera className="h-12 w-12 mx-auto mb-2 text-muted-foreground/50" />
+                      <p className="text-sm text-muted-foreground font-mono">
+                        {"INSERT PHOTO: Submerged dock with clear water showing leaves on bottom"}
+                      </p>
+                    </div>
+                  </div>
+                  <div>
+                    <h3 className="font-semibold text-lg mb-2">Tidal Currents & Wave Behavior</h3>
+                    <p className="text-muted-foreground mb-3">
+                      Shallow water reveals tidal influence and wave-driven sediment movement
+                    </p>
+                    <div className="flex flex-wrap gap-2">
+                      <Badge variant="secondary">Tidal Currents</Badge>
+                      <Badge variant="secondary">Shallow Water Waves</Badge>
+                    </div>
+                  </div>
+                </div>
+                <div className="bg-muted p-6 rounded-lg space-y-3">
+                  <h4 className="font-semibold text-primary mb-3">🌊 Tidal & Wave Dynamics</h4>
+                  <p className="text-sm mb-3">
+                    This sheltered area is subject to <strong>flood and ebb currents</strong> driven by the tide. 
+                    The shallow depth means any boat wakes behave as <strong>shallow water waves</strong> 
+                    (wavelength {'>'} 20× water depth), impacting the surrounding banks.
+                  </p>
+                  <div className="bg-background p-3 rounded">
+                    <p className="text-xs font-semibold mb-1">Key Concepts:</p>
+                    <ul className="text-xs space-y-1 list-disc list-inside">
+                      <li>Flood tide: incoming water</li>
+                      <li>Ebb tide: outgoing water</li>
+                      <li>Wave energy affects bank erosion</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </CardContent>
+          </Card>
+
+          {/* Photo 11: Vegetated Bank */}
+          <Card className="border-primary/20">
+            <CardContent className="p-6">
+              <div className="grid md:grid-cols-2 gap-6">
+                <div className="space-y-4">
+                  <div className="aspect-video bg-muted rounded-lg flex items-center justify-center border-2 border-dashed border-muted-foreground/30">
+                    <div className="text-center p-4">
+                      <Camera className="h-12 w-12 mx-auto mb-2 text-muted-foreground/50" />
+                      <p className="text-sm text-muted-foreground font-mono">
+                        {"INSERT PHOTO: Me collecting debris near vegetated bank"}
+                      </p>
+                    </div>
+                  </div>
+                  <div>
+                    <h3 className="font-semibold text-lg mb-2">Ecosystem Health & Bank Stabilization</h3>
+                    <p className="text-muted-foreground mb-3">
+                      Dense vegetation provides natural erosion control through root systems
+                    </p>
+                    <div className="flex flex-wrap gap-2">
+                      <Badge variant="secondary">Root Stabilization</Badge>
+                      <Badge variant="secondary">Erosion Prevention</Badge>
+                    </div>
+                  </div>
+                </div>
+                <div className="bg-muted p-6 rounded-lg space-y-3">
+                  <h4 className="font-semibold text-primary mb-3">🌊 Natural vs. Hard Stabilization</h4>
+                  <p className="text-sm mb-3">
+                    The dense vegetation on the bank is a form of <strong>soft stabilization</strong>. Root 
+                    systems anchor the terrigenous sediment and prevent rapid erosion from water movement. 
+                    This is far more sustainable than hard stabilization (concrete walls, pilings).
+                  </p>
+                  <div className="bg-background p-3 rounded">
+                    <p className="text-xs font-semibold mb-1">Key Concepts:</p>
+                    <ul className="text-xs space-y-1 list-disc list-inside">
+                      <li>Roots bind soil particles together</li>
+                      <li>Vegetation absorbs wave energy</li>
+                      <li>Prevents sediment runoff into river</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </CardContent>
+          </Card>
+
+          {/* Summary Card */}
+          <Card className="bg-primary/5 border-primary/20">
+            <CardHeader>
+              <CardTitle>Physical & Geological Summary</CardTitle>
+            </CardHeader>
+            <CardContent>
+              <p className="text-muted-foreground mb-4">
+                The Charles River estuary demonstrates classic physical oceanography principles: tidal currents 
+                drive sediment transport, wave action causes erosion, and both natural and human-made structures 
+                influence water flow patterns. Understanding these processes is crucial for effective river 
+                management and conservation.
+              </p>
+              <div className="grid md:grid-cols-2 gap-4 text-sm">
+                <div className="bg-background p-4 rounded-lg">
+                  <h4 className="font-semibold mb-2">Physical Processes:</h4>
+                  <ul className="list-disc list-inside space-y-1 text-muted-foreground">
+                    <li>Tidal flood and ebb currents</li>
+                    <li>Shallow water wave behavior</li>
+                    <li>Sediment transport and deposition</li>
+                  </ul>
+                </div>
+                <div className="bg-background p-4 rounded-lg">
+                  <h4 className="font-semibold mb-2">Geological Features:</h4>
+                  <ul className="list-disc list-inside space-y-1 text-muted-foreground">
+                    <li>Terrigenous sediment inputs</li>
+                    <li>Bank erosion and stabilization</li>
+                    <li>Hard vs. soft stabilization methods</li>
+                  </ul>
+                </div>
+              </div>
+            </CardContent>
+          </Card>
+
         </div>
       </section>
     </div>
