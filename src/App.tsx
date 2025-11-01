@@ -17,7 +17,7 @@ const App = () => (
     <TooltipProvider>
       <Toaster />
       <Sonner />
-      <BrowserRouter>
+      <BrowserRouter basename="/blueplanet-dive">
         <Routes>
           <Route path="/" element={<Index />} />
           <Route path="/inside-ocean" element={<InsideOcean />} />
