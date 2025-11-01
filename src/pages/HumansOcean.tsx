@@ -22,10 +22,38 @@ const HumansOcean = () => {
       </section>
 
       <section className="py-16 px-4">
-        <div className="container mx-auto max-w-4xl space-y-12">
+        <div className="container mx-auto max-w-5xl space-y-12">
           
-          {/* Photo 8: Water's Edge with Leaves and Trash */}
-          <Card className="border-primary/20">
+          {/* Introduction */}
+          <Card className="bg-primary/5 border-primary/20">
+            <CardHeader>
+              <CardTitle className="text-2xl">Understanding Physical Oceanography in an Urban Estuary</CardTitle>
+            </CardHeader>
+            <CardContent className="space-y-4 text-muted-foreground">
+              <p>
+                The Charles River demonstrates fundamental <strong>physical and geological oceanography principles</strong> 
+                despite being an urban waterway. Through direct observation during the volunteer cleanup, I identified 
+                several key processes that shape estuarine environments worldwide.
+              </p>
+              <div className="grid md:grid-cols-3 gap-4 pt-4">
+                <div className="bg-background p-4 rounded-lg text-center">
+                  <div className="text-2xl font-bold text-primary mb-1">Tidal</div>
+                  <div className="text-sm">Flood & Ebb Currents</div>
+                </div>
+                <div className="bg-background p-4 rounded-lg text-center">
+                  <div className="text-2xl font-bold text-primary mb-1">Sediment</div>
+                  <div className="text-sm">Transport & Deposition</div>
+                </div>
+                <div className="bg-background p-4 rounded-lg text-center">
+                  <div className="text-2xl font-bold text-primary mb-1">Wave</div>
+                  <div className="text-sm">Energy & Erosion</div>
+                </div>
+              </div>
+            </CardContent>
+          </Card>
+
+          {/* Photo 1: Water's Edge with Leaves and Trash */}
+          <Card className="border-primary/20 shadow-lg">
             <CardContent className="p-6">
               <div className="grid md:grid-cols-2 gap-6">
                 <div className="space-y-4">
@@ -38,9 +66,9 @@ const HumansOcean = () => {
                     </div>
                   </div>
                   <div>
-                    <h3 className="font-semibold text-lg mb-2">Sediment Transport & Erosion</h3>
+                    <h3 className="font-semibold text-xl mb-2 text-primary">Sediment Transport & Erosion</h3>
                     <p className="text-muted-foreground mb-3">
-                      Accumulated debris at the water's edge shows active sediment transport
+                      Accumulated debris at the water's edge reveals active sediment transport and deposition patterns
                     </p>
                     <div className="flex flex-wrap gap-2">
                       <Badge variant="secondary">Sediment Transport</Badge>
@@ -48,18 +76,20 @@ const HumansOcean = () => {
                     </div>
                   </div>
                 </div>
-                <div className="bg-muted p-6 rounded-lg space-y-3">
-                  <h4 className="font-semibold text-primary mb-3">🌊 Oceanography Connection</h4>
+                <div className="bg-gradient-coral/10 p-6 rounded-lg space-y-3 border border-primary/20">
+                  <h4 className="font-semibold text-primary text-lg mb-3">🌊 Oceanography Connection</h4>
                   <p className="text-sm mb-3">
-                    This accumulation shows <strong>poorly sorted sediment</strong> (leaves, sticks, dirt, trash) 
-                    deposited by the current. The mixture of materials reveals active transport processes.
+                    This accumulation shows <strong>poorly sorted sediment</strong>—a mixture of leaves, sticks, dirt, 
+                    and anthropogenic trash deposited by water currents. The variety of particle sizes indicates that 
+                    the current velocity fluctuates, carrying larger materials during high flow and depositing them 
+                    when velocity decreases.
                   </p>
                   <div className="bg-background p-3 rounded">
-                    <p className="text-xs font-semibold mb-1">Key Concepts:</p>
+                    <p className="text-xs font-semibold mb-2">Key Physical Processes:</p>
                     <ul className="text-xs space-y-1 list-disc list-inside">
-                      <li>Fluctuating tides drive erosion</li>
-                      <li>Shallow water waves affect deposition</li>
-                      <li>Common site for sediment accumulation</li>
+                      <li><strong>Tidal forcing:</strong> Ebb and flow cycles transport material</li>
+                      <li><strong>Velocity sorting:</strong> Larger particles settle first</li>
+                      <li><strong>Bank erosion:</strong> Water movement removes shoreline material</li>
                     </ul>
                   </div>
                 </div>
@@ -67,8 +97,8 @@ const HumansOcean = () => {
             </CardContent>
           </Card>
 
-          {/* Photo 9: Wide Shot of River */}
-          <Card className="border-primary/20">
+          {/* Photo 2: Wide Shot of River */}
+          <Card className="border-primary/20 shadow-lg">
             <CardContent className="p-6">
               <div className="grid md:grid-cols-2 gap-6">
                 <div className="space-y-4">
@@ -81,9 +111,9 @@ const HumansOcean = () => {
                     </div>
                   </div>
                   <div>
-                    <h3 className="font-semibold text-lg mb-2">Estuarine Environment</h3>
+                    <h3 className="font-semibold text-xl mb-2 text-primary">Estuarine Environment</h3>
                     <p className="text-muted-foreground mb-3">
-                      The Charles River estuary with urban development and hard stabilization
+                      The Charles River estuary with urban infrastructure and engineered stabilization structures
                     </p>
                     <div className="flex flex-wrap gap-2">
                       <Badge variant="secondary">Estuary</Badge>
@@ -91,19 +121,19 @@ const HumansOcean = () => {
                     </div>
                   </div>
                 </div>
-                <div className="bg-muted p-6 rounded-lg space-y-3">
-                  <h4 className="font-semibold text-primary mb-3">🌊 Estuarine Dynamics</h4>
+                <div className="bg-gradient-coral/10 p-6 rounded-lg space-y-3 border border-primary/20">
+                  <h4 className="font-semibold text-primary text-lg mb-3">🌊 Estuarine Classification</h4>
                   <p className="text-sm mb-3">
-                    This view confirms the Charles River as an <strong>estuary</strong>—a semi-enclosed coastal 
-                    body where freshwater mixes with seawater. The docks and pilings are <strong>hard stabilization 
-                    structures</strong> that affect local currents and erosion patterns.
+                    The Charles River is a classic <strong>partially mixed estuary</strong>—a semi-enclosed coastal 
+                    body where freshwater from upstream mixes with saltwater from Boston Harbor. The Charles River Dam 
+                    creates a controlled system, but tidal influence still affects water levels and salinity downstream.
                   </p>
                   <div className="bg-background p-3 rounded">
-                    <p className="text-xs font-semibold mb-1">Key Concepts:</p>
+                    <p className="text-xs font-semibold mb-2">Estuarine Characteristics:</p>
                     <ul className="text-xs space-y-1 list-disc list-inside">
-                      <li>Freshwater-saltwater mixing zone</li>
-                      <li>Tidal influence on water level</li>
-                      <li>Human structures alter flow patterns</li>
+                      <li><strong>Salinity gradient:</strong> Fresh to brackish water mixing</li>
+                      <li><strong>Tidal influence:</strong> Water level changes twice daily</li>
+                      <li><strong>Engineered structures:</strong> Docks and pilings alter flow</li>
                     </ul>
                   </div>
                 </div>
@@ -111,8 +141,8 @@ const HumansOcean = () => {
             </CardContent>
           </Card>
 
-          {/* Photo 10: Submerged Dock Area */}
-          <Card className="border-primary/20">
+          {/* Photo 3: Submerged Dock Area */}
+          <Card className="border-primary/20 shadow-lg">
             <CardContent className="p-6">
               <div className="grid md:grid-cols-2 gap-6">
                 <div className="space-y-4">
@@ -125,9 +155,9 @@ const HumansOcean = () => {
                     </div>
                   </div>
                   <div>
-                    <h3 className="font-semibold text-lg mb-2">Tidal Currents & Wave Behavior</h3>
+                    <h3 className="font-semibold text-xl mb-2 text-primary">Tidal Currents & Wave Behavior</h3>
                     <p className="text-muted-foreground mb-3">
-                      Shallow water reveals tidal influence and wave-driven sediment movement
+                      Shallow water revealing tidal influence and wave-driven sediment redistribution
                     </p>
                     <div className="flex flex-wrap gap-2">
                       <Badge variant="secondary">Tidal Currents</Badge>
@@ -135,19 +165,20 @@ const HumansOcean = () => {
                     </div>
                   </div>
                 </div>
-                <div className="bg-muted p-6 rounded-lg space-y-3">
-                  <h4 className="font-semibold text-primary mb-3">🌊 Tidal & Wave Dynamics</h4>
+                <div className="bg-gradient-coral/10 p-6 rounded-lg space-y-3 border border-primary/20">
+                  <h4 className="font-semibold text-primary text-lg mb-3">🌊 Tidal Dynamics</h4>
                   <p className="text-sm mb-3">
-                    This sheltered area is subject to <strong>flood and ebb currents</strong> driven by the tide. 
-                    The shallow depth means any boat wakes behave as <strong>shallow water waves</strong> 
-                    (wavelength {'>'} 20× water depth), impacting the surrounding banks.
+                    This area experiences <strong>flood currents</strong> (incoming tide) and <strong>ebb currents</strong> 
+                    (outgoing tide) that transport sediment in opposite directions. The shallow depth means boat wakes 
+                    behave as <strong>shallow water waves</strong> (wavelength {'>'} 20× depth), where wave energy 
+                    reaches the bottom and causes sediment suspension.
                   </p>
                   <div className="bg-background p-3 rounded">
-                    <p className="text-xs font-semibold mb-1">Key Concepts:</p>
+                    <p className="text-xs font-semibold mb-2">Wave & Current Interactions:</p>
                     <ul className="text-xs space-y-1 list-disc list-inside">
-                      <li>Flood tide: incoming water</li>
-                      <li>Ebb tide: outgoing water</li>
-                      <li>Wave energy affects bank erosion</li>
+                      <li><strong>Flood tide:</strong> Water moves upstream/inland</li>
+                      <li><strong>Ebb tide:</strong> Water moves downstream/seaward</li>
+                      <li><strong>Wave orbital motion:</strong> Affects bottom sediment</li>
                     </ul>
                   </div>
                 </div>
@@ -155,8 +186,8 @@ const HumansOcean = () => {
             </CardContent>
           </Card>
 
-          {/* Photo 11: Vegetated Bank */}
-          <Card className="border-primary/20">
+          {/* Photo 4: Vegetated Bank */}
+          <Card className="border-primary/20 shadow-lg">
             <CardContent className="p-6">
               <div className="grid md:grid-cols-2 gap-6">
                 <div className="space-y-4">
@@ -169,9 +200,9 @@ const HumansOcean = () => {
                     </div>
                   </div>
                   <div>
-                    <h3 className="font-semibold text-lg mb-2">Ecosystem Health & Bank Stabilization</h3>
+                    <h3 className="font-semibold text-xl mb-2 text-primary">Natural Bank Stabilization</h3>
                     <p className="text-muted-foreground mb-3">
-                      Dense vegetation provides natural erosion control through root systems
+                      Dense riparian vegetation providing natural erosion control through root systems
                     </p>
                     <div className="flex flex-wrap gap-2">
                       <Badge variant="secondary">Root Stabilization</Badge>
@@ -179,19 +210,110 @@ const HumansOcean = () => {
                     </div>
                   </div>
                 </div>
-                <div className="bg-muted p-6 rounded-lg space-y-3">
-                  <h4 className="font-semibold text-primary mb-3">🌊 Natural vs. Hard Stabilization</h4>
+                <div className="bg-gradient-coral/10 p-6 rounded-lg space-y-3 border border-primary/20">
+                  <h4 className="font-semibold text-primary text-lg mb-3">🌊 Soft vs. Hard Stabilization</h4>
                   <p className="text-sm mb-3">
-                    The dense vegetation on the bank is a form of <strong>soft stabilization</strong>. Root 
-                    systems anchor the terrigenous sediment and prevent rapid erosion from water movement. 
-                    This is far more sustainable than hard stabilization (concrete walls, pilings).
+                    The dense vegetation represents <strong>soft stabilization</strong>—plant roots bind terrigenous 
+                    sediment particles together, creating a cohesive mass that resists erosion. This is far more 
+                    sustainable than <strong>hard stabilization</strong> (concrete seawalls, riprap) which can redirect 
+                    wave energy and cause erosion elsewhere.
                   </p>
                   <div className="bg-background p-3 rounded">
-                    <p className="text-xs font-semibold mb-1">Key Concepts:</p>
+                    <p className="text-xs font-semibold mb-2">Vegetation Benefits:</p>
                     <ul className="text-xs space-y-1 list-disc list-inside">
-                      <li>Roots bind soil particles together</li>
-                      <li>Vegetation absorbs wave energy</li>
-                      <li>Prevents sediment runoff into river</li>
+                      <li><strong>Root networks:</strong> Bind soil particles together</li>
+                      <li><strong>Wave dampening:</strong> Vegetation absorbs energy</li>
+                      <li><strong>Sediment trapping:</strong> Slows runoff, captures particles</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </CardContent>
+          </Card>
+
+          {/* Photo 5: River Current Patterns */}
+          <Card className="border-primary/20 shadow-lg">
+            <CardContent className="p-6">
+              <div className="grid md:grid-cols-2 gap-6">
+                <div className="space-y-4">
+                  <div className="aspect-video bg-muted rounded-lg flex items-center justify-center border-2 border-dashed border-muted-foreground/30">
+                    <div className="text-center p-4">
+                      <Camera className="h-12 w-12 mx-auto mb-2 text-muted-foreground/50" />
+                      <p className="text-sm text-muted-foreground font-mono">
+                        {"INSERT PHOTO: River surface showing flow patterns or ripples"}
+                      </p>
+                    </div>
+                  </div>
+                  <div>
+                    <h3 className="font-semibold text-xl mb-2 text-primary">Surface Flow & Mixing</h3>
+                    <p className="text-muted-foreground mb-3">
+                      Visible current patterns revealing water movement and turbulent mixing
+                    </p>
+                    <div className="flex flex-wrap gap-2">
+                      <Badge variant="secondary">Laminar vs Turbulent</Badge>
+                      <Badge variant="secondary">Current Velocity</Badge>
+                    </div>
+                  </div>
+                </div>
+                <div className="bg-gradient-coral/10 p-6 rounded-lg space-y-3 border border-primary/20">
+                  <h4 className="font-semibold text-primary text-lg mb-3">🌊 Flow Dynamics</h4>
+                  <p className="text-sm mb-3">
+                    Surface ripples indicate <strong>turbulent flow</strong> rather than smooth laminar flow. Turbulence 
+                    is crucial for <strong>vertical mixing</strong>—it brings oxygen from the surface down to deeper 
+                    layers and helps distribute nutrients throughout the water column. The Reynolds number (Re = velocity × 
+                    depth / viscosity) for rivers is typically {'>'} 2000, confirming turbulent conditions.
+                  </p>
+                  <div className="bg-background p-3 rounded">
+                    <p className="text-xs font-semibold mb-2">Why Turbulence Matters:</p>
+                    <ul className="text-xs space-y-1 list-disc list-inside">
+                      <li><strong>Oxygen distribution:</strong> Prevents anoxic zones</li>
+                      <li><strong>Sediment suspension:</strong> Keeps particles moving</li>
+                      <li><strong>Nutrient cycling:</strong> Mixes dissolved compounds</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </CardContent>
+          </Card>
+
+          {/* Photo 6: Shoreline Morphology */}
+          <Card className="border-primary/20 shadow-lg">
+            <CardContent className="p-6">
+              <div className="grid md:grid-cols-2 gap-6">
+                <div className="space-y-4">
+                  <div className="aspect-video bg-muted rounded-lg flex items-center justify-center border-2 border-dashed border-muted-foreground/30">
+                    <div className="text-center p-4">
+                      <Camera className="h-12 w-12 mx-auto mb-2 text-muted-foreground/50" />
+                      <p className="text-sm text-muted-foreground font-mono">
+                        {"INSERT PHOTO: Shoreline showing bank slope or erosion features"}
+                      </p>
+                    </div>
+                  </div>
+                  <div>
+                    <h3 className="font-semibold text-xl mb-2 text-primary">Bank Morphology & Geology</h3>
+                    <p className="text-muted-foreground mb-3">
+                      Shoreline structure revealing geological composition and erosion history
+                    </p>
+                    <div className="flex flex-wrap gap-2">
+                      <Badge variant="secondary">Geological Strata</Badge>
+                      <Badge variant="secondary">Bank Angle</Badge>
+                    </div>
+                  </div>
+                </div>
+                <div className="bg-gradient-coral/10 p-6 rounded-lg space-y-3 border border-primary/20">
+                  <h4 className="font-semibold text-primary text-lg mb-3">🌊 Geological Structure</h4>
+                  <p className="text-sm mb-3">
+                    The bank slope and composition reveal the balance between <strong>erosive forces</strong> (waves, 
+                    currents) and <strong>resistance factors</strong> (soil cohesion, vegetation). Steeper banks indicate 
+                    more resistant material or recent erosion. The <strong>angle of repose</strong> (maximum stable slope) 
+                    depends on particle size and water content—sandy soils typically rest at 30-35°.
+                  </p>
+                  <div className="bg-background p-3 rounded">
+                    <p className="text-xs font-semibold mb-2">Erosion Factors:</p>
+                    <ul className="text-xs space-y-1 list-disc list-inside">
+                      <li><strong>Soil type:</strong> Clay resists erosion better than sand</li>
+                      <li><strong>Wave impact:</strong> Energy dissipated at shoreline</li>
+                      <li><strong>Freeze-thaw:</strong> Seasonal weathering weakens banks</li>
                     </ul>
                   </div>
                 </div>
@@ -202,32 +324,52 @@ const HumansOcean = () => {
           {/* Summary Card */}
           <Card className="bg-primary/5 border-primary/20">
             <CardHeader>
-              <CardTitle>Physical & Geological Summary</CardTitle>
+              <CardTitle className="text-2xl">Physical & Geological Summary</CardTitle>
             </CardHeader>
-            <CardContent>
-              <p className="text-muted-foreground mb-4">
-                The Charles River estuary demonstrates classic physical oceanography principles: tidal currents 
-                drive sediment transport, wave action causes erosion, and both natural and human-made structures 
-                influence water flow patterns. Understanding these processes is crucial for effective river 
-                management and conservation.
+            <CardContent className="space-y-6">
+              <p className="text-muted-foreground">
+                The Charles River estuary is a living laboratory for physical oceanography. Despite urban development, 
+                it demonstrates fundamental processes that govern all estuarine and coastal systems worldwide. Understanding 
+                these physical mechanisms is essential for effective river management and conservation planning.
               </p>
-              <div className="grid md:grid-cols-2 gap-4 text-sm">
-                <div className="bg-background p-4 rounded-lg">
-                  <h4 className="font-semibold mb-2">Physical Processes:</h4>
-                  <ul className="list-disc list-inside space-y-1 text-muted-foreground">
+              
+              <div className="grid md:grid-cols-3 gap-6">
+                <div className="bg-background p-5 rounded-lg">
+                  <h4 className="font-semibold mb-3 text-primary">Physical Processes</h4>
+                  <ul className="list-disc list-inside space-y-2 text-sm text-muted-foreground">
                     <li>Tidal flood and ebb currents</li>
-                    <li>Shallow water wave behavior</li>
-                    <li>Sediment transport and deposition</li>
+                    <li>Turbulent flow and mixing</li>
+                    <li>Shallow water wave dynamics</li>
+                    <li>Sediment transport mechanisms</li>
                   </ul>
                 </div>
-                <div className="bg-background p-4 rounded-lg">
-                  <h4 className="font-semibold mb-2">Geological Features:</h4>
-                  <ul className="list-disc list-inside space-y-1 text-muted-foreground">
+                <div className="bg-background p-5 rounded-lg">
+                  <h4 className="font-semibold mb-3 text-primary">Geological Features</h4>
+                  <ul className="list-disc list-inside space-y-2 text-sm text-muted-foreground">
                     <li>Terrigenous sediment inputs</li>
-                    <li>Bank erosion and stabilization</li>
-                    <li>Hard vs. soft stabilization methods</li>
+                    <li>Bank erosion patterns</li>
+                    <li>Poorly sorted deposits</li>
+                    <li>Angle of repose stability</li>
                   </ul>
                 </div>
+                <div className="bg-background p-5 rounded-lg">
+                  <h4 className="font-semibold mb-3 text-primary">Human Impacts</h4>
+                  <ul className="list-disc list-inside space-y-2 text-sm text-muted-foreground">
+                    <li>Hard stabilization structures</li>
+                    <li>Flow pattern modifications</li>
+                    <li>Soft stabilization benefits</li>
+                    <li>Conservation interventions</li>
+                  </ul>
+                </div>
+              </div>
+
+              <div className="bg-background p-5 rounded-lg border-l-4 border-primary">
+                <p className="text-sm italic text-muted-foreground">
+                  "The same physical principles that govern ocean currents, coastal erosion, and sediment transport 
+                  in the world's great ocean basins also operate in urban estuaries like the Charles River. By observing 
+                  these processes firsthand during volunteer work, we gain deeper appreciation for the interconnectedness 
+                  of Earth's water systems."
+                </p>
               </div>
             </CardContent>
           </Card>

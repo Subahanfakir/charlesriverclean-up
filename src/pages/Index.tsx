@@ -50,13 +50,10 @@ const Index = () => {
           <h3 className="text-xl md:text-2xl text-primary mb-6">
             Charles River Conservancy Cleanup — October 25, 2025
           </h3>
-          <p className="text-lg text-muted-foreground mb-8 leading-relaxed">
+          <p className="text-lg text-muted-foreground leading-relaxed">
             This project documents a volunteer cleanup event at Herter Park in Allston/Brighton, where I removed 
             litter, raked leaves, and witnessed firsthand the chemical and physical oceanography principles that 
             govern estuarine ecosystems like the Charles River.
-          </p>
-          <p className="text-base text-muted-foreground italic">
-            Applying concepts from Webb's <em>Introduction to Oceanography</em> to real-world conservation
           </p>
         </div>
       </section>
