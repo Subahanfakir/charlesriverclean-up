@@ -6,25 +6,25 @@ const ChemicalOcean = () => {
     <div className="min-h-screen bg-background">
       <Navigation />
       
-      <main className="container mx-auto px-4 pt-24 pb-16">
+      <main className="container mx-auto px-4 pt-24 pb-16 max-w-7xl">
         {/* Hero Section */}
         <div className="text-center mb-16 animate-fade-in">
-          <h1 className="text-4xl md:text-5xl font-bold mb-4 bg-gradient-ocean bg-clip-text text-transparent">
+          <h1 className="text-4xl md:text-6xl font-bold mb-6 bg-gradient-ocean bg-clip-text text-transparent">
             Chemical & Biological Impacts
           </h1>
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+          <p className="text-xl text-muted-foreground max-w-4xl mx-auto leading-relaxed">
             Exploring the chemical processes and biological consequences in the Charles River ecosystem
           </p>
         </div>
 
-        {/* Evidence Card */}
-        <Card className="mb-12 overflow-hidden border-primary/20">
-          <CardHeader className="bg-gradient-subtle">
-            <CardTitle className="text-2xl">Visual Evidence of Eutrophication</CardTitle>
-            <CardDescription>Algal bloom observed during the cleanup event</CardDescription>
+        {/* Evidence Card - Wide 2-Photo Layout */}
+        <Card className="mb-16 overflow-hidden border-primary/20 shadow-lg">
+          <CardHeader className="bg-gradient-ocean/10 py-8">
+            <CardTitle className="text-3xl text-center">Visual Evidence of Eutrophication</CardTitle>
+            <CardDescription className="text-center text-lg">Algal bloom observed during the cleanup event</CardDescription>
           </CardHeader>
-          <CardContent className="p-6">
-            <div className="grid md:grid-cols-2 gap-6">
+          <CardContent className="p-8">
+            <div className="grid lg:grid-cols-2 gap-8">
               {/* Photo Placeholder 1: Green Scummy Water */}
               <div className="space-y-3">
                 <div className="bg-muted rounded-lg aspect-video flex items-center justify-center border-2 border-dashed border-muted-foreground/25">
@@ -62,14 +62,14 @@ const ChemicalOcean = () => {
           </CardContent>
         </Card>
 
-        {/* Nutrient Budget Section */}
-        <Card className="mb-12 border-primary/20">
-          <CardHeader className="bg-gradient-subtle">
-            <CardTitle className="text-2xl">Nutrient Budget & Non-Conservative Ions</CardTitle>
-            <CardDescription>How excess nutrients fuel algal blooms</CardDescription>
+        {/* Nutrient Budget Section - Asymmetric Layout */}
+        <Card className="mb-16 border-primary/20 shadow-lg">
+          <CardHeader className="bg-gradient-wave/10 py-8">
+            <CardTitle className="text-3xl text-center">Nutrient Budget & Non-Conservative Ions</CardTitle>
+            <CardDescription className="text-center text-lg">How excess nutrients fuel algal blooms</CardDescription>
           </CardHeader>
-          <CardContent className="p-6">
-            <div className="grid md:grid-cols-2 gap-6">
+          <CardContent className="p-8">
+            <div className="grid lg:grid-cols-[1fr,1.3fr] gap-8">
               {/* Photo Placeholder 3: Bags of Leaves */}
               <div className="space-y-3">
                 <div className="bg-muted rounded-lg aspect-video flex items-center justify-center border-2 border-dashed border-muted-foreground/25">
@@ -102,13 +102,13 @@ const ChemicalOcean = () => {
           </CardContent>
         </Card>
 
-        {/* Dissolved Oxygen Section */}
-        <Card className="mb-12 border-primary/20">
-          <CardHeader className="bg-gradient-subtle">
-            <CardTitle className="text-2xl">Dissolved Oxygen & Respiration</CardTitle>
-            <CardDescription>The hidden crisis beneath the surface</CardDescription>
+        {/* Dissolved Oxygen Section - Full Width */}
+        <Card className="mb-16 border-primary/20 shadow-lg bg-primary/5">
+          <CardHeader className="py-8">
+            <CardTitle className="text-3xl text-center">Dissolved Oxygen & Respiration</CardTitle>
+            <CardDescription className="text-center text-lg">The hidden crisis beneath the surface</CardDescription>
           </CardHeader>
-          <CardContent className="p-6 space-y-4">
+          <CardContent className="p-8 space-y-6">
             <div className="prose prose-sm max-w-none text-muted-foreground">
               <p>
                 Dissolved oxygen (DO) is a <strong>conservative property</strong> in the open ocean but becomes <strong>non-conservative</strong> in eutrophic estuaries like the Charles River. Here's why:
@@ -122,7 +122,7 @@ const ChemicalOcean = () => {
             </div>
 
             {/* Photo Placeholder 4: Water's Edge */}
-            <div className="grid md:grid-cols-2 gap-6 mt-6">
+            <div className="grid lg:grid-cols-[1.3fr,1fr] gap-8 mt-8">
               <div className="space-y-3">
                 <div className="bg-muted rounded-lg aspect-video flex items-center justify-center border-2 border-dashed border-muted-foreground/25">
                   <p className="text-muted-foreground text-center px-4">
@@ -148,13 +148,13 @@ const ChemicalOcean = () => {
           </CardContent>
         </Card>
 
-        {/* pH and Ocean Acidification Analog */}
-        <Card className="border-primary/20">
-          <CardHeader className="bg-gradient-subtle">
-            <CardTitle className="text-2xl">pH Fluctuations & Acidification</CardTitle>
-            <CardDescription>Urban rivers as microcosms of global ocean chemistry</CardDescription>
+        {/* pH and Ocean Acidification Analog - Full Width */}
+        <Card className="border-primary/20 shadow-lg">
+          <CardHeader className="bg-gradient-coral/10 py-8">
+            <CardTitle className="text-3xl text-center">pH Fluctuations & Acidification</CardTitle>
+            <CardDescription className="text-center text-lg">Urban rivers as microcosms of global ocean chemistry</CardDescription>
           </CardHeader>
-          <CardContent className="p-6 space-y-4">
+          <CardContent className="p-8 space-y-6">
             <div className="prose prose-sm max-w-none text-muted-foreground">
               <p>
                 While the Charles River is not acidifying like the global ocean, it experiences <strong>dramatic pH swings</strong> due to biological activity:

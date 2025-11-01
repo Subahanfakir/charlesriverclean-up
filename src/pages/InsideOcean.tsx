@@ -25,11 +25,11 @@ const InsideOcean = () => {
 
       {/* Project Context */}
       <section className="py-16 px-4">
-        <div className="container mx-auto max-w-5xl">
+        <div className="container mx-auto max-w-7xl">
           
           {/* Introduction Cards */}
-          <div className="grid md:grid-cols-2 gap-8 mb-12">
-            <Card className="border-primary/20">
+          <div className="grid lg:grid-cols-3 gap-8 mb-12">
+            <Card className="lg:col-span-2 border-primary/20">
               <CardHeader>
                 <CardTitle className="text-2xl">The Charles River Conservancy</CardTitle>
               </CardHeader>
@@ -46,46 +46,43 @@ const InsideOcean = () => {
               </CardContent>
             </Card>
 
-            <Card className="border-primary/20">
+            <Card className="border-primary/20 bg-primary/5">
               <CardHeader>
-                <CardTitle className="text-2xl">My Volunteer Experience</CardTitle>
+                <CardTitle className="text-xl">My Volunteer Experience</CardTitle>
               </CardHeader>
-              <CardContent className="space-y-4">
-                <div className="bg-muted p-4 rounded-lg">
-                  <p className="font-semibold text-foreground mb-3">Event Details:</p>
-                  <ul className="list-disc list-inside space-y-2 text-muted-foreground">
-                    <li><strong>Date:</strong> Saturday, October 25, 2025</li>
-                    <li><strong>Time:</strong> 10:00 AM – 12:00 PM</li>
-                    <li><strong>Location:</strong> Herter Park, Allston/Brighton</li>
-                    <li><strong>Activities:</strong> Litter cleanup, leaf raking, shoreline restoration</li>
-                    <li><strong>Team:</strong> 25+ volunteers from the local community</li>
-                  </ul>
+              <CardContent className="space-y-2">
+                <div className="space-y-2 text-sm">
+                  <div><strong>Date:</strong> Saturday, October 25, 2025</div>
+                  <div><strong>Time:</strong> 10:00 AM – 12:00 PM</div>
+                  <div><strong>Location:</strong> Herter Park, Allston/Brighton</div>
+                  <div><strong>Activities:</strong> Litter cleanup, leaf raking, shoreline restoration</div>
+                  <div><strong>Team:</strong> 25+ volunteers</div>
                 </div>
               </CardContent>
             </Card>
           </div>
 
-          {/* What We Did Section */}
-          <Card className="mb-12 bg-primary/5 border-primary/20">
-            <CardHeader>
-              <CardTitle className="text-2xl">What We Accomplished</CardTitle>
+          {/* What We Did Section - Full Width */}
+          <Card className="mb-12 bg-gradient-ocean/10 border-primary/20">
+            <CardHeader className="text-center">
+              <CardTitle className="text-3xl">What We Accomplished</CardTitle>
             </CardHeader>
-            <CardContent className="space-y-4">
+            <CardContent className="space-y-6">
               <div className="grid md:grid-cols-3 gap-6">
-                <div className="text-center p-4 bg-background rounded-lg">
-                  <div className="text-3xl font-bold text-primary mb-2">12+</div>
+                <div className="text-center p-6 bg-background rounded-lg shadow-sm">
+                  <div className="text-4xl font-bold text-primary mb-2">12+</div>
                   <div className="text-sm text-muted-foreground">Bags of Litter Removed</div>
                 </div>
-                <div className="text-center p-4 bg-background rounded-lg">
-                  <div className="text-3xl font-bold text-primary mb-2">500+</div>
+                <div className="text-center p-6 bg-background rounded-lg shadow-sm">
+                  <div className="text-4xl font-bold text-primary mb-2">500+</div>
                   <div className="text-sm text-muted-foreground">Pounds of Organic Material</div>
                 </div>
-                <div className="text-center p-4 bg-background rounded-lg">
-                  <div className="text-3xl font-bold text-primary mb-2">2</div>
+                <div className="text-center p-6 bg-background rounded-lg shadow-sm">
+                  <div className="text-4xl font-bold text-primary mb-2">2</div>
                   <div className="text-sm text-muted-foreground">Hours of Active Work</div>
                 </div>
               </div>
-              <p className="text-muted-foreground pt-4">
+              <p className="text-muted-foreground text-center max-w-4xl mx-auto">
                 Our team focused on preventing <strong>terrigenous sediment</strong> (leaves, soil) and 
                 anthropogenic pollutants (plastic, trash) from entering the Charles River estuary. By removing 
                 this material before it could decompose or fragment, we helped maintain water quality and 
@@ -94,21 +91,21 @@ const InsideOcean = () => {
             </CardContent>
           </Card>
 
-          {/* Photo Gallery - INSERT YOUR PHOTOS HERE */}
-          <div className="mb-8">
-            <h2 className="text-3xl font-bold mb-4 text-center">Photo Documentation</h2>
-            <p className="text-center text-muted-foreground mb-8 max-w-2xl mx-auto">
+          {/* Photo Gallery Header */}
+          <div className="mb-12 text-center">
+            <h2 className="text-4xl font-bold mb-4 bg-gradient-ocean bg-clip-text text-transparent">Photo Documentation</h2>
+            <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
               Each photo below shows a moment from the cleanup event and connects it to an oceanography 
               principle observed in the Charles River estuarine system.
             </p>
           </div>
 
-          <div className="space-y-10">
+          <div className="space-y-12">
             
-            {/* Photo 1: Group Instructions */}
+            {/* Photo 1: Group Instructions - Wider Layout */}
             <Card className="border-primary/20 shadow-lg">
-              <CardContent className="p-6">
-                <div className="grid md:grid-cols-2 gap-6">
+              <CardContent className="p-8">
+                <div className="grid lg:grid-cols-[1.2fr,1fr] gap-8">
                   <div className="space-y-4">
                     <div className="aspect-video bg-muted rounded-lg flex items-center justify-center border-2 border-dashed border-muted-foreground/30">
                       <div className="text-center p-4">
@@ -140,10 +137,10 @@ const InsideOcean = () => {
               </CardContent>
             </Card>
 
-            {/* Photo 2: Raking Leaves */}
+            {/* Photo 2: Raking Leaves - Reverse Layout */}
             <Card className="border-primary/20 shadow-lg">
-              <CardContent className="p-6">
-                <div className="grid md:grid-cols-2 gap-6">
+              <CardContent className="p-8">
+                <div className="grid lg:grid-cols-[1fr,1.2fr] gap-8">
                   <div className="space-y-4">
                     <div className="aspect-video bg-muted rounded-lg flex items-center justify-center border-2 border-dashed border-muted-foreground/30">
                       <div className="text-center p-4">
@@ -161,7 +158,7 @@ const InsideOcean = () => {
                       <Badge variant="secondary">Terrigenous Material</Badge>
                     </div>
                   </div>
-                  <div className="bg-gradient-ocean/10 p-6 rounded-lg space-y-3 border border-primary/20">
+                  <div className="bg-gradient-ocean/10 p-6 rounded-lg space-y-3 border border-primary/20 order-first lg:order-last">
                     <h4 className="font-semibold text-primary text-lg mb-3">🌊 Preventing Sediment Load</h4>
                     <p className="text-sm">
                       Leaves are <strong>terrigenous material</strong> (land-derived sediment). If they enter the 
@@ -176,8 +173,8 @@ const InsideOcean = () => {
 
             {/* Photo 3: Litter Collection */}
             <Card className="border-primary/20 shadow-lg">
-              <CardContent className="p-6">
-                <div className="grid md:grid-cols-2 gap-6">
+              <CardContent className="p-8">
+                <div className="grid lg:grid-cols-[1.2fr,1fr] gap-8">
                   <div className="space-y-4">
                     <div className="aspect-video bg-muted rounded-lg flex items-center justify-center border-2 border-dashed border-muted-foreground/30">
                       <div className="text-center p-4">
@@ -207,10 +204,10 @@ const InsideOcean = () => {
               </CardContent>
             </Card>
 
-            {/* Photo 4: Team Work */}
+            {/* Photo 4: Team Work - Reverse */}
             <Card className="border-primary/20 shadow-lg">
-              <CardContent className="p-6">
-                <div className="grid md:grid-cols-2 gap-6">
+              <CardContent className="p-8">
+                <div className="grid lg:grid-cols-[1fr,1.2fr] gap-8">
                   <div className="space-y-4">
                     <div className="aspect-video bg-muted rounded-lg flex items-center justify-center border-2 border-dashed border-muted-foreground/30">
                       <div className="text-center p-4">
@@ -228,7 +225,7 @@ const InsideOcean = () => {
                       <Badge variant="secondary">Ecosystem Restoration</Badge>
                     </div>
                   </div>
-                  <div className="bg-gradient-ocean/10 p-6 rounded-lg space-y-3 border border-primary/20">
+                  <div className="bg-gradient-ocean/10 p-6 rounded-lg space-y-3 border border-primary/20 order-first lg:order-last">
                     <h4 className="font-semibold text-primary text-lg mb-3">🌊 Collective Impact on Ecosystem Health</h4>
                     <p className="text-sm">
                       Estuaries like the Charles River are <strong>highly productive ecosystems</strong> that support 
@@ -243,8 +240,8 @@ const InsideOcean = () => {
 
             {/* Photo 5: Close-up of Collected Debris */}
             <Card className="border-primary/20 shadow-lg">
-              <CardContent className="p-6">
-                <div className="grid md:grid-cols-2 gap-6">
+              <CardContent className="p-8">
+                <div className="grid lg:grid-cols-[1.2fr,1fr] gap-8">
                   <div className="space-y-4">
                     <div className="aspect-video bg-muted rounded-lg flex items-center justify-center border-2 border-dashed border-muted-foreground/30">
                       <div className="text-center p-4">
@@ -278,24 +275,24 @@ const InsideOcean = () => {
             
           </div>
 
-          {/* Closing Summary */}
-          <Card className="mt-12 bg-primary/5 border-primary/20">
-            <CardHeader>
-              <CardTitle className="text-2xl">Why This Work Matters</CardTitle>
+          {/* Closing Summary - Full Width Enhanced */}
+          <Card className="mt-16 bg-gradient-ocean text-white border-0 shadow-xl">
+            <CardHeader className="py-8">
+              <CardTitle className="text-4xl text-center">Why This Work Matters</CardTitle>
             </CardHeader>
-            <CardContent className="space-y-4 text-muted-foreground">
-              <p>
+            <CardContent className="space-y-6 p-8">
+              <p className="text-white/90 text-center text-lg max-w-4xl mx-auto leading-relaxed">
                 The Charles River is an <strong>estuarine ecosystem</strong>—a transition zone where freshwater 
                 meets saltwater. It's one of the most productive and sensitive aquatic environments on Earth. 
                 Our volunteer work directly impacts water quality by:
               </p>
-              <ul className="list-disc list-inside space-y-2 ml-4">
+              <ul className="list-disc list-inside space-y-3 text-white/90 max-w-3xl mx-auto text-lg">
                 <li>Reducing nutrient loading that causes harmful algal blooms</li>
                 <li>Preventing microplastic contamination of the food web</li>
                 <li>Maintaining dissolved oxygen levels for aquatic organisms</li>
                 <li>Preserving the natural beauty and recreational value of the river</li>
               </ul>
-              <p className="italic pt-2">
+              <p className="italic pt-4 text-white/90 text-center max-w-4xl mx-auto text-lg leading-relaxed">
                 Every piece of litter removed, every leaf raked, contributes to the long-term health of this 
                 vital urban waterway. This is conservation in action—oceanography principles applied to real-world 
                 environmental stewardship.

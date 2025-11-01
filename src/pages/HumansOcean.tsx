@@ -22,14 +22,14 @@ const HumansOcean = () => {
       </section>
 
       <section className="py-16 px-4">
-        <div className="container mx-auto max-w-5xl space-y-12">
+        <div className="container mx-auto max-w-7xl space-y-16">
           
-          {/* Introduction */}
-          <Card className="bg-primary/5 border-primary/20">
-            <CardHeader>
-              <CardTitle className="text-2xl">Understanding Physical Oceanography in an Urban Estuary</CardTitle>
+          {/* Introduction - Full Width */}
+          <Card className="bg-gradient-coral/10 border-primary/20 shadow-lg">
+            <CardHeader className="py-8">
+              <CardTitle className="text-3xl text-center">Understanding Physical Oceanography in an Urban Estuary</CardTitle>
             </CardHeader>
-            <CardContent className="space-y-4 text-muted-foreground">
+            <CardContent className="space-y-6 text-muted-foreground">
               <p>
                 The Charles River demonstrates fundamental <strong>physical and geological oceanography principles</strong> 
                 despite being an urban waterway. Through direct observation during the volunteer cleanup, I identified 
@@ -54,8 +54,8 @@ const HumansOcean = () => {
 
           {/* Photo 1: Water's Edge with Leaves and Trash */}
           <Card className="border-primary/20 shadow-lg">
-            <CardContent className="p-6">
-              <div className="grid md:grid-cols-2 gap-6">
+            <CardContent className="p-8">
+              <div className="grid lg:grid-cols-[1.2fr,1fr] gap-8">
                 <div className="space-y-4">
                   <div className="aspect-video bg-muted rounded-lg flex items-center justify-center border-2 border-dashed border-muted-foreground/30">
                     <div className="text-center p-4">
@@ -97,10 +97,10 @@ const HumansOcean = () => {
             </CardContent>
           </Card>
 
-          {/* Photo 2: Wide Shot of River */}
+          {/* Photo 2: Wide Shot of River - Reverse */}
           <Card className="border-primary/20 shadow-lg">
-            <CardContent className="p-6">
-              <div className="grid md:grid-cols-2 gap-6">
+            <CardContent className="p-8">
+              <div className="grid lg:grid-cols-[1fr,1.2fr] gap-8">
                 <div className="space-y-4">
                   <div className="aspect-video bg-muted rounded-lg flex items-center justify-center border-2 border-dashed border-muted-foreground/30">
                     <div className="text-center p-4">
@@ -121,7 +121,7 @@ const HumansOcean = () => {
                     </div>
                   </div>
                 </div>
-                <div className="bg-gradient-coral/10 p-6 rounded-lg space-y-3 border border-primary/20">
+                <div className="bg-gradient-coral/10 p-6 rounded-lg space-y-3 border border-primary/20 order-first lg:order-last">
                   <h4 className="font-semibold text-primary text-lg mb-3">🌊 Estuarine Classification</h4>
                   <p className="text-sm mb-3">
                     The Charles River is a classic <strong>partially mixed estuary</strong>—a semi-enclosed coastal 
@@ -143,8 +143,8 @@ const HumansOcean = () => {
 
           {/* Photo 3: Submerged Dock Area */}
           <Card className="border-primary/20 shadow-lg">
-            <CardContent className="p-6">
-              <div className="grid md:grid-cols-2 gap-6">
+            <CardContent className="p-8">
+              <div className="grid lg:grid-cols-[1.2fr,1fr] gap-8">
                 <div className="space-y-4">
                   <div className="aspect-video bg-muted rounded-lg flex items-center justify-center border-2 border-dashed border-muted-foreground/30">
                     <div className="text-center p-4">
@@ -186,10 +186,10 @@ const HumansOcean = () => {
             </CardContent>
           </Card>
 
-          {/* Photo 4: Vegetated Bank */}
+          {/* Photo 4: Vegetated Bank - Reverse */}
           <Card className="border-primary/20 shadow-lg">
-            <CardContent className="p-6">
-              <div className="grid md:grid-cols-2 gap-6">
+            <CardContent className="p-8">
+              <div className="grid lg:grid-cols-[1fr,1.2fr] gap-8">
                 <div className="space-y-4">
                   <div className="aspect-video bg-muted rounded-lg flex items-center justify-center border-2 border-dashed border-muted-foreground/30">
                     <div className="text-center p-4">
@@ -210,7 +210,7 @@ const HumansOcean = () => {
                     </div>
                   </div>
                 </div>
-                <div className="bg-gradient-coral/10 p-6 rounded-lg space-y-3 border border-primary/20">
+                <div className="bg-gradient-coral/10 p-6 rounded-lg space-y-3 border border-primary/20 order-first lg:order-last">
                   <h4 className="font-semibold text-primary text-lg mb-3">🌊 Soft vs. Hard Stabilization</h4>
                   <p className="text-sm mb-3">
                     The dense vegetation represents <strong>soft stabilization</strong>—plant roots bind terrigenous 
@@ -233,8 +233,8 @@ const HumansOcean = () => {
 
           {/* Photo 5: River Current Patterns */}
           <Card className="border-primary/20 shadow-lg">
-            <CardContent className="p-6">
-              <div className="grid md:grid-cols-2 gap-6">
+            <CardContent className="p-8">
+              <div className="grid lg:grid-cols-[1.2fr,1fr] gap-8">
                 <div className="space-y-4">
                   <div className="aspect-video bg-muted rounded-lg flex items-center justify-center border-2 border-dashed border-muted-foreground/30">
                     <div className="text-center p-4">
@@ -276,10 +276,10 @@ const HumansOcean = () => {
             </CardContent>
           </Card>
 
-          {/* Photo 6: Shoreline Morphology */}
+          {/* Photo 6: Shoreline Morphology - Reverse */}
           <Card className="border-primary/20 shadow-lg">
-            <CardContent className="p-6">
-              <div className="grid md:grid-cols-2 gap-6">
+            <CardContent className="p-8">
+              <div className="grid lg:grid-cols-[1fr,1.2fr] gap-8">
                 <div className="space-y-4">
                   <div className="aspect-video bg-muted rounded-lg flex items-center justify-center border-2 border-dashed border-muted-foreground/30">
                     <div className="text-center p-4">
@@ -300,7 +300,7 @@ const HumansOcean = () => {
                     </div>
                   </div>
                 </div>
-                <div className="bg-gradient-coral/10 p-6 rounded-lg space-y-3 border border-primary/20">
+                <div className="bg-gradient-coral/10 p-6 rounded-lg space-y-3 border border-primary/20 order-first lg:order-last">
                   <h4 className="font-semibold text-primary text-lg mb-3">🌊 Geological Structure</h4>
                   <p className="text-sm mb-3">
                     The bank slope and composition reveal the balance between <strong>erosive forces</strong> (waves, 
@@ -321,40 +321,40 @@ const HumansOcean = () => {
             </CardContent>
           </Card>
 
-          {/* Summary Card */}
-          <Card className="bg-primary/5 border-primary/20">
-            <CardHeader>
-              <CardTitle className="text-2xl">Physical & Geological Summary</CardTitle>
+          {/* Summary Card - Full Width */}
+          <Card className="bg-gradient-ocean text-white border-0 shadow-xl">
+            <CardHeader className="py-8">
+              <CardTitle className="text-3xl text-center">Physical & Geological Summary</CardTitle>
             </CardHeader>
-            <CardContent className="space-y-6">
-              <p className="text-muted-foreground">
+            <CardContent className="space-y-8 p-8">
+              <p className="text-white/90 text-center max-w-4xl mx-auto text-lg">
                 The Charles River estuary is a living laboratory for physical oceanography. Despite urban development, 
                 it demonstrates fundamental processes that govern all estuarine and coastal systems worldwide. Understanding 
                 these physical mechanisms is essential for effective river management and conservation planning.
               </p>
               
               <div className="grid md:grid-cols-3 gap-6">
-                <div className="bg-background p-5 rounded-lg">
-                  <h4 className="font-semibold mb-3 text-primary">Physical Processes</h4>
-                  <ul className="list-disc list-inside space-y-2 text-sm text-muted-foreground">
+                <div className="bg-white/10 backdrop-blur-sm p-6 rounded-lg border border-white/20">
+                  <h4 className="font-semibold mb-3 text-white text-lg">Physical Processes</h4>
+                  <ul className="list-disc list-inside space-y-2 text-sm text-white/80">
                     <li>Tidal flood and ebb currents</li>
                     <li>Turbulent flow and mixing</li>
                     <li>Shallow water wave dynamics</li>
                     <li>Sediment transport mechanisms</li>
                   </ul>
                 </div>
-                <div className="bg-background p-5 rounded-lg">
-                  <h4 className="font-semibold mb-3 text-primary">Geological Features</h4>
-                  <ul className="list-disc list-inside space-y-2 text-sm text-muted-foreground">
+                <div className="bg-white/10 backdrop-blur-sm p-6 rounded-lg border border-white/20">
+                  <h4 className="font-semibold mb-3 text-white text-lg">Geological Features</h4>
+                  <ul className="list-disc list-inside space-y-2 text-sm text-white/80">
                     <li>Terrigenous sediment inputs</li>
                     <li>Bank erosion patterns</li>
                     <li>Poorly sorted deposits</li>
                     <li>Angle of repose stability</li>
                   </ul>
                 </div>
-                <div className="bg-background p-5 rounded-lg">
-                  <h4 className="font-semibold mb-3 text-primary">Human Impacts</h4>
-                  <ul className="list-disc list-inside space-y-2 text-sm text-muted-foreground">
+                <div className="bg-white/10 backdrop-blur-sm p-6 rounded-lg border border-white/20">
+                  <h4 className="font-semibold mb-3 text-white text-lg">Human Impacts</h4>
+                  <ul className="list-disc list-inside space-y-2 text-sm text-white/80">
                     <li>Hard stabilization structures</li>
                     <li>Flow pattern modifications</li>
                     <li>Soft stabilization benefits</li>
