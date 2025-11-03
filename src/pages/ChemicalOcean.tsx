@@ -9,12 +9,14 @@ const ChemicalOcean = () => {
       <main className="container mx-auto px-4 pt-24 pb-16 max-w-7xl">
         {/* Hero Section */}
         <div className="text-center mb-16 animate-fade-in">
-          <h1 className="text-4xl md:text-6xl font-bold mb-6 bg-gradient-ocean bg-clip-text text-transparent">
-            Chemical & Biological Impacts
-          </h1>
-          <p className="text-xl text-muted-foreground max-w-4xl mx-auto leading-relaxed">
-            Exploring the chemical processes and biological consequences in the Charles River ecosystem
-          </p>
+          <div className="bg-primary/5 rounded-2xl p-8 backdrop-blur-sm border border-primary/10 max-w-5xl mx-auto">
+            <h1 className="text-4xl md:text-6xl font-bold mb-6 text-primary">
+              Chemical & Biological Impacts
+            </h1>
+            <p className="text-xl md:text-2xl text-foreground leading-relaxed">
+              Exploring the chemical processes and biological consequences in the Charles River ecosystem
+            </p>
+          </div>
         </div>
 
         {/* Evidence Card - Wide 2-Photo Layout */}

@@ -9,15 +9,16 @@ const HumansOcean = () => {
       <Navigation />
       
       {/* Hero Section */}
-      <section className="py-20 px-4 bg-gradient-coral text-white">
-        <div className="container mx-auto max-w-4xl text-center">
-          <Waves className="h-16 w-16 mx-auto mb-6 animate-wave" />
-          <h1 className="text-4xl md:text-5xl font-bold mb-6">
-            Physical & Geological Processes
-          </h1>
-          <p className="text-xl text-white/90">
-            Sediment Transport, Tidal Currents, and Estuarine Dynamics
-          </p>
+      <section className="py-20 px-4">
+        <div className="container mx-auto max-w-5xl text-center">
+          <div className="bg-primary/5 rounded-2xl p-8 backdrop-blur-sm border border-primary/10">
+            <h1 className="text-4xl md:text-6xl font-bold mb-6 text-primary">
+              Physical & Geological Processes
+            </h1>
+            <p className="text-xl md:text-2xl text-foreground leading-relaxed">
+              Sediment Transport, Tidal Currents, and Estuarine Dynamics
+            </p>
+          </div>
         </div>
       </section>
 
@@ -78,7 +79,7 @@ const HumansOcean = () => {
                 </div>
                 <div className="bg-gradient-coral/10 p-6 rounded-lg space-y-3 border border-primary/20">
                   <h4 className="font-semibold text-primary text-lg mb-3">🌊 Oceanography Connection</h4>
-                  <p className="text-sm mb-3">
+                  <p className="text-base mb-3 leading-relaxed">
                     This accumulation shows <strong>poorly sorted sediment</strong>—a mixture of leaves, sticks, dirt, 
                     and anthropogenic trash deposited by water currents. The variety of particle sizes indicates that 
                     the current velocity fluctuates, carrying larger materials during high flow and depositing them 

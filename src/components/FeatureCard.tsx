@@ -29,7 +29,7 @@ const FeatureCard = ({ title, description, icon: Icon, link, gradient = "bg-grad
       </CardHeader>
       
       <CardContent className="relative">
-        <CardDescription className="text-muted-foreground mb-4 leading-relaxed">
+        <CardDescription className="text-foreground text-base md:text-lg mb-4 leading-relaxed">
           {description}
         </CardDescription>
         <Link to={link}>

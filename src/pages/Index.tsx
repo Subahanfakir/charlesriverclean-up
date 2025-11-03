@@ -60,15 +60,17 @@ const Index = () => {
 
       {/* Features Section */}
       <section className="py-20 px-4">
-        <div className="container mx-auto max-w-6xl">
-          <div className="text-center mb-16 animate-slide-up">
-            <h2 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-ocean bg-clip-text text-transparent">
-              Oceanography Concepts in an Urban River
-            </h2>
-            <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-              From sediment transport to eutrophication, this volunteer experience reveals the physical and chemical 
-              processes shaping the Charles River—an estuarine system facing urban pollution and ecological challenges.
-            </p>
+        <div className="container mx-auto max-w-7xl">
+          <div className="text-center mb-16 animate-slide-up px-4">
+            <div className="bg-primary/5 rounded-2xl p-8 backdrop-blur-sm border border-primary/10">
+              <h2 className="text-4xl md:text-5xl font-bold mb-6 text-primary">
+                Oceanography Concepts in an Urban River
+              </h2>
+              <p className="text-xl md:text-2xl text-foreground max-w-4xl mx-auto leading-relaxed">
+                From sediment transport to eutrophication, this volunteer experience reveals the physical and chemical 
+                processes shaping the Charles River—an estuarine system facing urban pollution and ecological challenges.
+              </p>
+            </div>
           </div>
           
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">

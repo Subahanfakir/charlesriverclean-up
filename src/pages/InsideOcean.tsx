@@ -126,7 +126,7 @@ const InsideOcean = () => {
                   </div>
                   <div className="bg-gradient-ocean/10 p-6 rounded-lg space-y-3 border border-primary/20">
                     <h4 className="font-semibold text-primary text-lg mb-3">🌊 Oceanography Connection</h4>
-                    <p className="text-sm">
+                    <p className="text-base leading-relaxed">
                       This scene represents <strong>positive anthropogenic intervention</strong>—humans actively 
                       working to reverse environmental damage. Unlike negative anthropogenic impacts (pollution, 
                       development), volunteer cleanups help restore estuarine ecosystems by removing pollutants 

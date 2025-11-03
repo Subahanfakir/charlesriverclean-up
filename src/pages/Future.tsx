@@ -9,15 +9,16 @@ const Future = () => {
       <Navigation />
       
       {/* Hero Section */}
-      <section className="py-20 px-4 bg-gradient-ocean text-white">
-        <div className="container mx-auto max-w-4xl text-center">
-          <Leaf className="h-16 w-16 mx-auto mb-6" />
-          <h1 className="text-4xl md:text-5xl font-bold mb-6">
-            Pollution & Conservation
-          </h1>
-          <p className="text-xl text-white/90">
-            Anthropogenic Impacts and Solutions for Urban Estuaries
-          </p>
+      <section className="py-20 px-4">
+        <div className="container mx-auto max-w-5xl text-center">
+          <div className="bg-primary/5 rounded-2xl p-8 backdrop-blur-sm border border-primary/10">
+            <h1 className="text-4xl md:text-6xl font-bold mb-6 text-primary">
+              Pollution & Conservation
+            </h1>
+            <p className="text-xl md:text-2xl text-foreground leading-relaxed">
+              Anthropogenic Impacts and Solutions for Urban Estuaries
+            </p>
+          </div>
         </div>
       </section>
 
