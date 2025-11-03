@@ -86,8 +86,8 @@ const HumansOcean = () => {
                     when velocity decreases.
                   </p>
                   <div className="bg-background p-3 rounded">
-                    <p className="text-xs font-semibold mb-2">Key Physical Processes:</p>
-                    <ul className="text-xs space-y-1 list-disc list-inside">
+                    <p className="text-sm font-semibold mb-2">Key Physical Processes:</p>
+                    <ul className="text-sm space-y-1 list-disc list-inside">
                       <li><strong>Tidal forcing:</strong> Ebb and flow cycles transport material</li>
                       <li><strong>Velocity sorting:</strong> Larger particles settle first</li>
                       <li><strong>Bank erosion:</strong> Water movement removes shoreline material</li>
@@ -124,14 +124,14 @@ const HumansOcean = () => {
                 </div>
                 <div className="bg-gradient-coral/10 p-6 rounded-lg space-y-3 border border-primary/20 order-first lg:order-last">
                   <h4 className="font-semibold text-primary text-lg mb-3">🌊 Estuarine Classification</h4>
-                  <p className="text-sm mb-3">
+                  <p className="text-base mb-3 leading-relaxed">
                     The Charles River is a classic <strong>partially mixed estuary</strong>—a semi-enclosed coastal 
                     body where freshwater from upstream mixes with saltwater from Boston Harbor. The Charles River Dam 
                     creates a controlled system, but tidal influence still affects water levels and salinity downstream.
                   </p>
                   <div className="bg-background p-3 rounded">
-                    <p className="text-xs font-semibold mb-2">Estuarine Characteristics:</p>
-                    <ul className="text-xs space-y-1 list-disc list-inside">
+                    <p className="text-sm font-semibold mb-2">Estuarine Characteristics:</p>
+                    <ul className="text-sm space-y-1 list-disc list-inside">
                       <li><strong>Salinity gradient:</strong> Fresh to brackish water mixing</li>
                       <li><strong>Tidal influence:</strong> Water level changes twice daily</li>
                       <li><strong>Engineered structures:</strong> Docks and pilings alter flow</li>
@@ -168,15 +168,15 @@ const HumansOcean = () => {
                 </div>
                 <div className="bg-gradient-coral/10 p-6 rounded-lg space-y-3 border border-primary/20">
                   <h4 className="font-semibold text-primary text-lg mb-3">🌊 Tidal Dynamics</h4>
-                  <p className="text-sm mb-3">
+                  <p className="text-base mb-3 leading-relaxed">
                     This area experiences <strong>flood currents</strong> (incoming tide) and <strong>ebb currents</strong> 
                     (outgoing tide) that transport sediment in opposite directions. The shallow depth means boat wakes 
                     behave as <strong>shallow water waves</strong> (wavelength {'>'} 20× depth), where wave energy 
                     reaches the bottom and causes sediment suspension.
                   </p>
                   <div className="bg-background p-3 rounded">
-                    <p className="text-xs font-semibold mb-2">Wave & Current Interactions:</p>
-                    <ul className="text-xs space-y-1 list-disc list-inside">
+                    <p className="text-sm font-semibold mb-2">Wave & Current Interactions:</p>
+                    <ul className="text-sm space-y-1 list-disc list-inside">
                       <li><strong>Flood tide:</strong> Water moves upstream/inland</li>
                       <li><strong>Ebb tide:</strong> Water moves downstream/seaward</li>
                       <li><strong>Wave orbital motion:</strong> Affects bottom sediment</li>
@@ -213,15 +213,15 @@ const HumansOcean = () => {
                 </div>
                 <div className="bg-gradient-coral/10 p-6 rounded-lg space-y-3 border border-primary/20 order-first lg:order-last">
                   <h4 className="font-semibold text-primary text-lg mb-3">🌊 Soft vs. Hard Stabilization</h4>
-                  <p className="text-sm mb-3">
+                  <p className="text-base mb-3 leading-relaxed">
                     The dense vegetation represents <strong>soft stabilization</strong>—plant roots bind terrigenous 
                     sediment particles together, creating a cohesive mass that resists erosion. This is far more 
                     sustainable than <strong>hard stabilization</strong> (concrete seawalls, riprap) which can redirect 
                     wave energy and cause erosion elsewhere.
                   </p>
                   <div className="bg-background p-3 rounded">
-                    <p className="text-xs font-semibold mb-2">Vegetation Benefits:</p>
-                    <ul className="text-xs space-y-1 list-disc list-inside">
+                    <p className="text-sm font-semibold mb-2">Vegetation Benefits:</p>
+                    <ul className="text-sm space-y-1 list-disc list-inside">
                       <li><strong>Root networks:</strong> Bind soil particles together</li>
                       <li><strong>Wave dampening:</strong> Vegetation absorbs energy</li>
                       <li><strong>Sediment trapping:</strong> Slows runoff, captures particles</li>
@@ -258,15 +258,15 @@ const HumansOcean = () => {
                 </div>
                 <div className="bg-gradient-coral/10 p-6 rounded-lg space-y-3 border border-primary/20">
                   <h4 className="font-semibold text-primary text-lg mb-3">🌊 Flow Dynamics</h4>
-                  <p className="text-sm mb-3">
+                  <p className="text-base mb-3 leading-relaxed">
                     Surface ripples indicate <strong>turbulent flow</strong> rather than smooth laminar flow. Turbulence 
                     is crucial for <strong>vertical mixing</strong>—it brings oxygen from the surface down to deeper 
                     layers and helps distribute nutrients throughout the water column. The Reynolds number (Re = velocity × 
                     depth / viscosity) for rivers is typically {'>'} 2000, confirming turbulent conditions.
                   </p>
                   <div className="bg-background p-3 rounded">
-                    <p className="text-xs font-semibold mb-2">Why Turbulence Matters:</p>
-                    <ul className="text-xs space-y-1 list-disc list-inside">
+                    <p className="text-sm font-semibold mb-2">Why Turbulence Matters:</p>
+                    <ul className="text-sm space-y-1 list-disc list-inside">
                       <li><strong>Oxygen distribution:</strong> Prevents anoxic zones</li>
                       <li><strong>Sediment suspension:</strong> Keeps particles moving</li>
                       <li><strong>Nutrient cycling:</strong> Mixes dissolved compounds</li>
@@ -303,15 +303,15 @@ const HumansOcean = () => {
                 </div>
                 <div className="bg-gradient-coral/10 p-6 rounded-lg space-y-3 border border-primary/20 order-first lg:order-last">
                   <h4 className="font-semibold text-primary text-lg mb-3">🌊 Geological Structure</h4>
-                  <p className="text-sm mb-3">
+                  <p className="text-base mb-3 leading-relaxed">
                     The bank slope and composition reveal the balance between <strong>erosive forces</strong> (waves, 
                     currents) and <strong>resistance factors</strong> (soil cohesion, vegetation). Steeper banks indicate 
                     more resistant material or recent erosion. The <strong>angle of repose</strong> (maximum stable slope) 
                     depends on particle size and water content—sandy soils typically rest at 30-35°.
                   </p>
                   <div className="bg-background p-3 rounded">
-                    <p className="text-xs font-semibold mb-2">Erosion Factors:</p>
-                    <ul className="text-xs space-y-1 list-disc list-inside">
+                    <p className="text-sm font-semibold mb-2">Erosion Factors:</p>
+                    <ul className="text-sm space-y-1 list-disc list-inside">
                       <li><strong>Soil type:</strong> Clay resists erosion better than sand</li>
                       <li><strong>Wave impact:</strong> Energy dissipated at shoreline</li>
                       <li><strong>Freeze-thaw:</strong> Seasonal weathering weakens banks</li>

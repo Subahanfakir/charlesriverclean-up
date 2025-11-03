@@ -9,7 +9,7 @@ const InsideOcean = () => {
       <Navigation />
       
       {/* Hero Section */}
-      <section className="py-20 px-4 bg-gradient-ocean text-white">
+      <section className="py-20 px-4 bg-gradient-to-br from-blue-500 via-cyan-500 to-teal-400 text-white">
         <div className="container mx-auto max-w-4xl text-center">
           <h1 className="text-4xl md:text-5xl font-bold mb-6">
             Project Overview & Photos
@@ -160,7 +160,7 @@ const InsideOcean = () => {
                   </div>
                   <div className="bg-gradient-ocean/10 p-6 rounded-lg space-y-3 border border-primary/20 order-first lg:order-last">
                     <h4 className="font-semibold text-primary text-lg mb-3">🌊 Preventing Sediment Load</h4>
-                    <p className="text-sm">
+                    <p className="text-base leading-relaxed">
                       Leaves are <strong>terrigenous material</strong> (land-derived sediment). If they enter the 
                       river, they decompose, releasing nutrients (nitrogen, phosphorus) that fuel <strong>eutrophication</strong> 
                       and create algal blooms. They also increase <strong>turbidity</strong> (cloudiness) by adding 
@@ -194,7 +194,7 @@ const InsideOcean = () => {
                   </div>
                   <div className="bg-gradient-ocean/10 p-6 rounded-lg space-y-3 border border-primary/20">
                     <h4 className="font-semibold text-primary text-lg mb-3">🌊 Stopping Pollution at the Source</h4>
-                    <p className="text-sm">
+                    <p className="text-base leading-relaxed">
                       Removing litter before it breaks down into <strong>microplastics</strong> prevents long-term 
                       contamination. Plastics don't biodegrade—they photodegrade into smaller fragments that are 
                       ingested by aquatic organisms, disrupting the food web and introducing toxins into the ecosystem.
@@ -227,7 +227,7 @@ const InsideOcean = () => {
                   </div>
                   <div className="bg-gradient-ocean/10 p-6 rounded-lg space-y-3 border border-primary/20 order-first lg:order-last">
                     <h4 className="font-semibold text-primary text-lg mb-3">🌊 Collective Impact on Ecosystem Health</h4>
-                    <p className="text-sm">
+                    <p className="text-base leading-relaxed">
                       Estuaries like the Charles River are <strong>highly productive ecosystems</strong> that support 
                       diverse marine and terrestrial life. By removing pollutants collectively, volunteers help maintain 
                       the <strong>dissolved oxygen</strong> levels, water clarity, and nutrient balance necessary for 
@@ -261,7 +261,7 @@ const InsideOcean = () => {
                   </div>
                   <div className="bg-gradient-ocean/10 p-6 rounded-lg space-y-3 border border-primary/20">
                     <h4 className="font-semibold text-primary text-lg mb-3">🌊 Measuring Conservation Success</h4>
-                    <p className="text-sm">
+                    <p className="text-base leading-relaxed">
                       Each bag represents pollutants kept out of the estuarine system. This prevents <strong>non-conservative 
                       ion</strong> additions (metals, chemicals from trash), reduces <strong>biological oxygen demand (BOD)</strong> 
                       from decomposing organic matter, and maintains the river's capacity to support aerobic life.

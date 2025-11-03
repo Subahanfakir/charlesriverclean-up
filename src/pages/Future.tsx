@@ -51,15 +51,15 @@ const Future = () => {
                 </div>
                 <div className="bg-muted p-6 rounded-lg space-y-3">
                   <h4 className="font-semibold text-primary mb-3">🌊 Non-Conservative Ions</h4>
-                  <p className="text-sm mb-3">
+                  <p className="text-base mb-3 leading-relaxed">
                     These plastic, glass, and paper products represent a direct source of <strong>long-term 
                     pollutants</strong> and <strong>microplastics</strong>. Unlike conservative ions (which 
                     maintain constant proportions), these pollutants are non-conservative—they vary widely and 
                     interfere with the natural chemical budget.
                   </p>
                   <div className="bg-background p-3 rounded">
-                    <p className="text-xs font-semibold mb-1">Key Impacts:</p>
-                    <ul className="text-xs space-y-1 list-disc list-inside">
+                    <p className="text-sm font-semibold mb-1">Key Impacts:</p>
+                    <ul className="text-sm space-y-1 list-disc list-inside">
                       <li>Plastics break down into microplastics</li>
                       <li>Chemical leaching alters water chemistry</li>
                       <li>Toxins accumulate in food web</li>
