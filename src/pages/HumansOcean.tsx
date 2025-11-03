@@ -11,8 +11,8 @@ const HumansOcean = () => {
       {/* Hero Section */}
       <section className="py-20 px-4">
         <div className="container mx-auto max-w-5xl text-center">
-          <div className="bg-primary/5 rounded-2xl p-8 backdrop-blur-sm border border-primary/10">
-            <h1 className="text-4xl md:text-6xl font-bold mb-6 text-primary">
+          <div className="bg-gradient-to-br from-orange-50 via-red-50 to-pink-50 dark:from-orange-950/30 dark:via-red-950/30 dark:to-pink-950/30 rounded-2xl p-8 backdrop-blur-sm border-2 border-orange-200/50 dark:border-orange-800/50 shadow-lg">
+            <h1 className="text-4xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-orange-600 to-red-600 bg-clip-text text-transparent">
               Physical & Geological Processes
             </h1>
             <p className="text-xl md:text-2xl text-foreground leading-relaxed">

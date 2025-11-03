@@ -11,8 +11,8 @@ const Future = () => {
       {/* Hero Section */}
       <section className="py-20 px-4">
         <div className="container mx-auto max-w-5xl text-center">
-          <div className="bg-primary/5 rounded-2xl p-8 backdrop-blur-sm border border-primary/10">
-            <h1 className="text-4xl md:text-6xl font-bold mb-6 text-primary">
+          <div className="bg-gradient-to-br from-emerald-50 via-green-50 to-teal-50 dark:from-emerald-950/30 dark:via-green-950/30 dark:to-teal-950/30 rounded-2xl p-8 backdrop-blur-sm border-2 border-emerald-200/50 dark:border-emerald-800/50 shadow-lg">
+            <h1 className="text-4xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-emerald-600 to-green-600 bg-clip-text text-transparent">
               Pollution & Conservation
             </h1>
             <p className="text-xl md:text-2xl text-foreground leading-relaxed">
