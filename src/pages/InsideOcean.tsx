@@ -2,6 +2,7 @@ import Navigation from "@/components/Navigation";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Camera } from "lucide-react";
+// Use runtime URL for photos placed in project root Photos/ folder
 
 const InsideOcean = () => {
   return (
@@ -107,14 +108,12 @@ const InsideOcean = () => {
               <CardContent className="p-8">
                 <div className="grid lg:grid-cols-[1.2fr,1fr] gap-8">
                   <div className="space-y-4">
-                    <div className="aspect-video bg-muted rounded-lg flex items-center justify-center border-2 border-dashed border-muted-foreground/30">
-                      <div className="text-center p-4">
-                        <Camera className="h-12 w-12 mx-auto mb-2 text-muted-foreground/50" />
-                        <p className="text-sm text-muted-foreground font-mono">
-                          {"<img src=\"YOUR_IMAGE_URL\" alt=\"Volunteers receiving instructions\" />"}
-                        </p>
-                      </div>
-                    </div>
+                    {/* Replace dotted placeholder with actual image */}
+                    <img
+                      src={new URL("../../Photos/IMG_9325.jpeg", import.meta.url).href}
+                      alt="Volunteers receiving instructions"
+                      className="aspect-video w-full rounded-lg object-cover"
+                    />
                     <div>
                       <h3 className="font-semibold text-xl mb-2 text-primary">Volunteer Orientation</h3>
                       <p className="text-muted-foreground mb-3">
@@ -124,10 +123,10 @@ const InsideOcean = () => {
                       <Badge variant="secondary">Anthropogenic Intervention</Badge>
                     </div>
                   </div>
-                  <div className="bg-gradient-ocean/10 p-6 rounded-lg space-y-3 border border-primary/20">
+                  <div className="py-10 px-6 rounded-lg border border-primary/20 order-first lg:order-last self-center">
                     <h4 className="font-semibold text-primary text-lg mb-3">🌊 Oceanography Connection</h4>
                     <p className="text-base leading-relaxed">
-                      This scene represents <strong>positive anthropogenic intervention</strong>—humans actively 
+                      This scene represents <strong>positive anthropogenic intervention</strong>, humans actively 
                       working to reverse environmental damage. Unlike negative anthropogenic impacts (pollution, 
                       development), volunteer cleanups help restore estuarine ecosystems by removing pollutants 
                       before they alter chemical and physical water properties.
@@ -142,14 +141,11 @@ const InsideOcean = () => {
               <CardContent className="p-8">
                 <div className="grid lg:grid-cols-[1fr,1.2fr] gap-8">
                   <div className="space-y-4">
-                    <div className="aspect-video bg-muted rounded-lg flex items-center justify-center border-2 border-dashed border-muted-foreground/30">
-                      <div className="text-center p-4">
-                        <Camera className="h-12 w-12 mx-auto mb-2 text-muted-foreground/50" />
-                        <p className="text-sm text-muted-foreground font-mono">
-                          {"<img src=\"YOUR_IMAGE_URL\" alt=\"Raking leaves near shoreline\" />"}
-                        </p>
-                      </div>
-                    </div>
+                    <img
+                      src={new URL("../../Photos/IMG_9342.jpeg", import.meta.url).href}
+                      alt="Raking leaves near shoreline"
+                      className="aspect-video w-full rounded-lg object-cover h-[360px] sm:h-[440px] lg:h-[560px]"
+                    />
                     <div>
                       <h3 className="font-semibold text-xl mb-2 text-primary">Sediment Management</h3>
                       <p className="text-muted-foreground mb-3">
@@ -158,7 +154,7 @@ const InsideOcean = () => {
                       <Badge variant="secondary">Terrigenous Material</Badge>
                     </div>
                   </div>
-                  <div className="bg-gradient-ocean/10 p-6 rounded-lg space-y-3 border border-primary/20 order-first lg:order-last">
+                  <div className="bg-gradient-ocean/10 py-10 px-6 rounded-lg border border-primary/20 order-first lg:order-last self-center">
                     <h4 className="font-semibold text-primary text-lg mb-3">🌊 Preventing Sediment Load</h4>
                     <p className="text-base leading-relaxed">
                       Leaves are <strong>terrigenous material</strong> (land-derived sediment). If they enter the 
@@ -176,14 +172,11 @@ const InsideOcean = () => {
               <CardContent className="p-8">
                 <div className="grid lg:grid-cols-[1.2fr,1fr] gap-8">
                   <div className="space-y-4">
-                    <div className="aspect-video bg-muted rounded-lg flex items-center justify-center border-2 border-dashed border-muted-foreground/30">
-                      <div className="text-center p-4">
-                        <Camera className="h-12 w-12 mx-auto mb-2 text-muted-foreground/50" />
-                        <p className="text-sm text-muted-foreground font-mono">
-                          {"<img src=\"YOUR_IMAGE_URL\" alt=\"Collecting litter along riverbank\" />"}
-                        </p>
-                      </div>
-                    </div>
+                    <img
+                      src={new URL("../../Photos/IMG_9409.jpeg", import.meta.url).href}
+                      alt="Collecting litter along riverbank"
+                      className="aspect-video w-full rounded-lg object-cover h-[360px] sm:h-[440px] lg:h-[560px]"
+                    />
                     <div>
                       <h3 className="font-semibold text-xl mb-2 text-primary">Anthropogenic Pollution Removal</h3>
                       <p className="text-muted-foreground mb-3">
@@ -192,11 +185,11 @@ const InsideOcean = () => {
                       <Badge variant="secondary">Microplastics Prevention</Badge>
                     </div>
                   </div>
-                  <div className="bg-gradient-ocean/10 p-6 rounded-lg space-y-3 border border-primary/20">
+                  <div className="bg-gradient-ocean/10 py-14 px-6 rounded-lg border border-primary/20 order-first lg:order-last self-center">
                     <h4 className="font-semibold text-primary text-lg mb-3">🌊 Stopping Pollution at the Source</h4>
                     <p className="text-base leading-relaxed">
                       Removing litter before it breaks down into <strong>microplastics</strong> prevents long-term 
-                      contamination. Plastics don't biodegrade—they photodegrade into smaller fragments that are 
+                      contamination. Plastics don't biodegrade, they photodegrade into smaller fragments that are 
                       ingested by aquatic organisms, disrupting the food web and introducing toxins into the ecosystem.
                     </p>
                   </div>
@@ -209,14 +202,11 @@ const InsideOcean = () => {
               <CardContent className="p-8">
                 <div className="grid lg:grid-cols-[1fr,1.2fr] gap-8">
                   <div className="space-y-4">
-                    <div className="aspect-video bg-muted rounded-lg flex items-center justify-center border-2 border-dashed border-muted-foreground/30">
-                      <div className="text-center p-4">
-                        <Camera className="h-12 w-12 mx-auto mb-2 text-muted-foreground/50" />
-                        <p className="text-sm text-muted-foreground font-mono">
-                          {"<img src=\"YOUR_IMAGE_URL\" alt=\"Volunteers working together\" />"}
-                        </p>
-                      </div>
-                    </div>
+                    <img
+                      src={new URL("../../Photos/IMG_9347.jpeg", import.meta.url).href}
+                      alt="Volunteers working together"
+                      className="aspect-video w-full rounded-lg object-cover h-[360px] sm:h-[440px] lg:h-[560px]"
+                    />
                     <div>
                       <h3 className="font-semibold text-xl mb-2 text-primary">Community Conservation Effort</h3>
                       <p className="text-muted-foreground mb-3">
@@ -225,7 +215,7 @@ const InsideOcean = () => {
                       <Badge variant="secondary">Ecosystem Restoration</Badge>
                     </div>
                   </div>
-                  <div className="bg-gradient-ocean/10 p-6 rounded-lg space-y-3 border border-primary/20 order-first lg:order-last">
+                  <div className="bg-gradient-ocean/10 py-14 px-6 rounded-lg border border-primary/20 order-first lg:order-last self-center">
                     <h4 className="font-semibold text-primary text-lg mb-3">🌊 Collective Impact on Ecosystem Health</h4>
                     <p className="text-base leading-relaxed">
                       Estuaries like the Charles River are <strong>highly productive ecosystems</strong> that support 
@@ -243,14 +233,11 @@ const InsideOcean = () => {
               <CardContent className="p-8">
                 <div className="grid lg:grid-cols-[1.2fr,1fr] gap-8">
                   <div className="space-y-4">
-                    <div className="aspect-video bg-muted rounded-lg flex items-center justify-center border-2 border-dashed border-muted-foreground/30">
-                      <div className="text-center p-4">
-                        <Camera className="h-12 w-12 mx-auto mb-2 text-muted-foreground/50" />
-                        <p className="text-sm text-muted-foreground font-mono">
-                          {"<img src=\"YOUR_IMAGE_URL\" alt=\"Bags of collected trash and debris\" />"}
-                        </p>
-                      </div>
-                    </div>
+                    <img
+                      src={new URL("../../Photos/IMG_9424.jpeg", import.meta.url).href}
+                      alt="Bags of collected trash and debris"
+                      className="aspect-video w-full rounded-lg object-cover h-[360px] sm:h-[440px] lg:h-[560px]"
+                    />
                     <div>
                       <h3 className="font-semibold text-xl mb-2 text-primary">Quantifying the Impact</h3>
                       <p className="text-muted-foreground mb-3">
@@ -259,11 +246,11 @@ const InsideOcean = () => {
                       <Badge variant="secondary">Waste Management</Badge>
                     </div>
                   </div>
-                  <div className="bg-gradient-ocean/10 p-6 rounded-lg space-y-3 border border-primary/20">
+                  <div className="bg-gradient-ocean/10 py-14 px-6 rounded-lg border border-primary/20 order-first lg:order-last self-center">
                     <h4 className="font-semibold text-primary text-lg mb-3">🌊 Measuring Conservation Success</h4>
                     <p className="text-base leading-relaxed">
                       Each bag represents pollutants kept out of the estuarine system. This prevents <strong>non-conservative 
-                      ion</strong> additions (metals, chemicals from trash), reduces <strong>biological oxygen demand (BOD)</strong> 
+                      ion</strong> additions (metals, chemicals from trash), reduces <strong>biological oxygen demand (BOD) </strong> 
                       from decomposing organic matter, and maintains the river's capacity to support aerobic life.
                     </p>
                   </div>
@@ -282,7 +269,7 @@ const InsideOcean = () => {
             </CardHeader>
             <CardContent className="space-y-6 p-8">
               <p className="text-white/90 text-center text-lg max-w-4xl mx-auto leading-relaxed">
-                The Charles River is an <strong>estuarine ecosystem</strong>—a transition zone where freshwater 
+                The Charles River is an <strong>estuarine ecosystem</strong>, a transition zone where freshwater 
                 meets saltwater. It's one of the most productive and sensitive aquatic environments on Earth. 
                 Our volunteer work directly impacts water quality by:
               </p>
@@ -294,7 +281,7 @@ const InsideOcean = () => {
               </ul>
               <p className="italic pt-4 text-white/90 text-center max-w-4xl mx-auto text-lg leading-relaxed">
                 Every piece of litter removed, every leaf raked, contributes to the long-term health of this 
-                vital urban waterway. This is conservation in action—oceanography principles applied to real-world 
+                vital urban waterway. This is conservation in action, oceanography principles applied to real-world 
                 environmental stewardship.
               </p>
             </CardContent>

@@ -64,7 +64,7 @@ const Hero = () => {
             <Button 
               variant="outline" 
               size="lg" 
-              className="border-white/30 text-white hover:bg-white/10 backdrop-blur-sm px-8 py-3"
+              className="border-white/30 text-blue hover:bg-white/10 backdrop-blur-sm px-8 py-3"
             >
               Oceanography Concepts
             </Button>
@@ -80,9 +80,10 @@ const Hero = () => {
         </div>
       </div>
 
-      {/* Scroll indicator */}
-      <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
-        <ArrowDown className="h-6 w-6 text-white/70" />
+      {/* Scroll indicator (arrow bounces; small label added for clarity) */}
+      <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 flex flex-col items-center">
+        <ArrowDown className="h-6 w-6 text-white/70 animate-bounce" />
+        <span className="mt-1 text-xs text-white/70 uppercase tracking-widest">Scroll</span>
       </div>
     </section>
   );

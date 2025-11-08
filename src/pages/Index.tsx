@@ -68,7 +68,7 @@ const Index = () => {
               </h2>
               <p className="text-xl md:text-2xl text-foreground max-w-4xl mx-auto leading-relaxed">
                 From sediment transport to eutrophication, this volunteer experience reveals the physical and chemical 
-                processes shaping the Charles River—an estuarine system facing urban pollution and ecological challenges.
+                processes shaping the Charles River, an estuarine system facing urban pollution and ecological challenges.
               </p>
             </div>
           </div>
