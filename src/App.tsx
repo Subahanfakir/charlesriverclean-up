@@ -13,8 +13,9 @@ import NotFound from "./pages/NotFound";
 const queryClient = new QueryClient();
 
 const App = () => {
-  const isGhPages =
-    typeof window !== "undefined" && window.location.hostname.endsWith("github.io");
+  const useHashRouter =
+    import.meta.env.MODE === "production" ||
+    (typeof window !== "undefined" && window.location.hostname.endsWith("github.io"));
 
   const appRoutes = (
     <Routes>
@@ -33,7 +34,7 @@ const App = () => {
       <TooltipProvider>
         <Toaster />
         <Sonner />
-        {isGhPages ? (
+        {useHashRouter ? (
           <HashRouter>{appRoutes}</HashRouter>
         ) : (
           <BrowserRouter basename={import.meta.env.BASE_URL}>{appRoutes}</BrowserRouter>
