@@ -16,7 +16,7 @@ const HumansOcean = () => {
               Physical & Geological Processes
             </h1>
             <p className="text-xl md:text-2xl text-foreground leading-relaxed">
-              Sediment Transport, Tidal Currents, and Estuarine Dynamics
+              How Water Moves, Shapes the Land, and Carries Materials
             </p>
           </div>
         </div>
@@ -28,26 +28,27 @@ const HumansOcean = () => {
           {/* Introduction - Full Width */}
           <Card className="bg-gradient-coral/10 border-primary/20 shadow-lg">
             <CardHeader className="py-8">
-              <CardTitle className="text-3xl text-center">Understanding Physical Oceanography in an Urban Estuary</CardTitle>
+              <CardTitle className="text-3xl text-center">Seeing Oceanography in an Urban River</CardTitle>
             </CardHeader>
             <CardContent className="space-y-6 text-muted-foreground">
               <p>
-                The Charles River demonstrates fundamental <strong>physical and geological oceanography principles</strong> 
-                despite being an urban waterway. Through direct observation during the volunteer cleanup, I identified 
-                several key processes that shape estuarine environments worldwide.
+                The Charles River shows how water moves, shapes the land, and interacts with everything around it. 
+                During our cleanup day, I noticed several natural processes happening—the same ones you'd see along 
+                any coastline or estuary. These aren't just abstract concepts from textbooks; they're real forces 
+                actively shaping our local waterway.
               </p>
               <div className="grid md:grid-cols-3 gap-4 pt-4">
                 <div className="bg-background p-4 rounded-lg text-center">
-                  <div className="text-2xl font-bold text-primary mb-1">Tidal</div>
-                  <div className="text-sm">Flood & Ebb Currents</div>
+                  <div className="text-2xl font-bold text-primary mb-1">Tides</div>
+                  <div className="text-sm">Water Rising & Falling</div>
                 </div>
                 <div className="bg-background p-4 rounded-lg text-center">
-                  <div className="text-2xl font-bold text-primary mb-1">Sediment</div>
-                  <div className="text-sm">Transport & Deposition</div>
+                  <div className="text-2xl font-bold text-primary mb-1">Currents</div>
+                  <div className="text-sm">Moving & Sorting Materials</div>
                 </div>
                 <div className="bg-background p-4 rounded-lg text-center">
-                  <div className="text-2xl font-bold text-primary mb-1">Wave</div>
-                  <div className="text-sm">Energy & Erosion</div>
+                  <div className="text-2xl font-bold text-primary mb-1">Erosion</div>
+                  <div className="text-sm">Water Shaping the Shore</div>
                 </div>
               </div>
             </CardContent>
@@ -67,30 +68,30 @@ const HumansOcean = () => {
                     </div>
                   </div>
                   <div>
-                    <h3 className="font-semibold text-xl mb-2 text-primary">Sediment Transport & Erosion</h3>
+                    <h3 className="font-semibold text-xl mb-2 text-primary">Material Transport & Accumulation</h3>
                     <p className="text-muted-foreground mb-3">
-                      Accumulated debris at the water's edge reveals active sediment transport and deposition patterns
+                      Mixed debris at the waterline showing how currents move and deposit materials
                     </p>
                     <div className="flex flex-wrap gap-2">
-                      <Badge variant="secondary">Sediment Transport</Badge>
-                      <Badge variant="secondary">Erosion</Badge>
+                      <Badge variant="secondary">Current Transport</Badge>
+                      <Badge variant="secondary">Deposition Zone</Badge>
                     </div>
                   </div>
                 </div>
                 <div className="bg-gradient-coral/10 p-6 rounded-lg space-y-3 border border-primary/20">
-                  <h4 className="font-semibold text-primary text-lg mb-3">🌊 Oceanography Connection</h4>
+                  <h4 className="font-semibold text-primary text-lg mb-3">🌊 How Currents Sort Materials</h4>
                   <p className="text-base mb-3 leading-relaxed">
-                    This accumulation shows <strong>poorly sorted sediment</strong>—a mixture of leaves, sticks, dirt, 
-                    and anthropogenic trash deposited by water currents. The variety of particle sizes indicates that 
-                    the current velocity fluctuates, carrying larger materials during high flow and depositing them 
-                    when velocity decreases.
+                    This pile contains everything from tiny leaves to large sticks and plastic trash—all mixed together. 
+                    When river currents slow down, they drop whatever they're carrying. Heavier items settle first, 
+                    while lighter materials keep floating until the water becomes completely still. This natural sorting 
+                    process happens constantly as tides rise and fall.
                   </p>
                   <div className="bg-background p-3 rounded">
-                    <p className="text-sm font-semibold mb-2">Key Physical Processes:</p>
+                    <p className="text-sm font-semibold mb-2">What's Happening Here:</p>
                     <ul className="text-sm space-y-1 list-disc list-inside">
-                      <li><strong>Tidal forcing:</strong> Ebb and flow cycles transport material</li>
-                      <li><strong>Velocity sorting:</strong> Larger particles settle first</li>
-                      <li><strong>Bank erosion:</strong> Water movement removes shoreline material</li>
+                      <li><strong>Tidal cycles:</strong> Water rises and falls twice daily</li>
+                      <li><strong>Natural sorting:</strong> Heavy items drop first, light items last</li>
+                      <li><strong>Accumulation zones:</strong> Debris collects where current slows</li>
                     </ul>
                   </div>
                 </div>
@@ -156,30 +157,30 @@ const HumansOcean = () => {
                     </div>
                   </div>
                   <div>
-                    <h3 className="font-semibold text-xl mb-2 text-primary">Tidal Currents & Wave Behavior</h3>
+                    <h3 className="font-semibold text-xl mb-2 text-primary">Tide Effects & Underwater Visibility</h3>
                     <p className="text-muted-foreground mb-3">
-                      Shallow water revealing tidal influence and wave-driven sediment redistribution
+                      Clear shallow water showing tidal influence and debris that settled to the bottom
                     </p>
                     <div className="flex flex-wrap gap-2">
-                      <Badge variant="secondary">Tidal Currents</Badge>
-                      <Badge variant="secondary">Shallow Water Waves</Badge>
+                      <Badge variant="secondary">Tidal Movement</Badge>
+                      <Badge variant="secondary">Water Clarity</Badge>
                     </div>
                   </div>
                 </div>
                 <div className="bg-gradient-coral/10 p-6 rounded-lg space-y-3 border border-primary/20">
-                  <h4 className="font-semibold text-primary text-lg mb-3">🌊 Tidal Dynamics</h4>
+                  <h4 className="font-semibold text-primary text-lg mb-3">🌊 Tides in Action</h4>
                   <p className="text-base mb-3 leading-relaxed">
-                    This area experiences <strong>flood currents</strong> (incoming tide) and <strong>ebb currents</strong> 
-                    (outgoing tide) that transport sediment in opposite directions. The shallow depth means boat wakes 
-                    behave as <strong>shallow water waves</strong> (wavelength {'>'} 20× depth), where wave energy 
-                    reaches the bottom and causes sediment suspension.
+                    Even though the Charles River is controlled by a dam, you can still see tidal effects. The water 
+                    level rises and falls twice a day, pushing water upstream during <strong>flood tide</strong> and 
+                    pulling it back during <strong>ebb tide</strong>. In shallow areas like this, boat wakes create 
+                    waves that reach all the way to the bottom, stirring up leaves and sediment.
                   </p>
                   <div className="bg-background p-3 rounded">
-                    <p className="text-sm font-semibold mb-2">Wave & Current Interactions:</p>
+                    <p className="text-sm font-semibold mb-2">Observing Tidal Patterns:</p>
                     <ul className="text-sm space-y-1 list-disc list-inside">
-                      <li><strong>Flood tide:</strong> Water moves upstream/inland</li>
-                      <li><strong>Ebb tide:</strong> Water moves downstream/seaward</li>
-                      <li><strong>Wave orbital motion:</strong> Affects bottom sediment</li>
+                      <li><strong>Clear water:</strong> Shows low pollution and sediment</li>
+                      <li><strong>Bottom visible:</strong> Shallow depth typical of nearshore zones</li>
+                      <li><strong>Settled leaves:</strong> Deposited when water movement stopped</li>
                     </ul>
                   </div>
                 </div>
@@ -201,30 +202,30 @@ const HumansOcean = () => {
                     </div>
                   </div>
                   <div>
-                    <h3 className="font-semibold text-xl mb-2 text-primary">Natural Bank Stabilization</h3>
+                    <h3 className="font-semibold text-xl mb-2 text-primary">Plants Protecting the Shoreline</h3>
                     <p className="text-muted-foreground mb-3">
-                      Dense riparian vegetation providing natural erosion control through root systems
+                      Thick vegetation along the bank helping prevent soil from washing away
                     </p>
                     <div className="flex flex-wrap gap-2">
-                      <Badge variant="secondary">Root Stabilization</Badge>
-                      <Badge variant="secondary">Erosion Prevention</Badge>
+                      <Badge variant="secondary">Root Systems</Badge>
+                      <Badge variant="secondary">Natural Defense</Badge>
                     </div>
                   </div>
                 </div>
                 <div className="bg-gradient-coral/10 p-6 rounded-lg space-y-3 border border-primary/20 order-first lg:order-last">
-                  <h4 className="font-semibold text-primary text-lg mb-3">🌊 Soft vs. Hard Stabilization</h4>
+                  <h4 className="font-semibold text-primary text-lg mb-3">🌊 Nature's Erosion Control</h4>
                   <p className="text-base mb-3 leading-relaxed">
-                    The dense vegetation represents <strong>soft stabilization</strong>—plant roots bind terrigenous 
-                    sediment particles together, creating a cohesive mass that resists erosion. This is far more 
-                    sustainable than <strong>hard stabilization</strong> (concrete seawalls, riprap) which can redirect 
-                    wave energy and cause erosion elsewhere.
+                    All these plants growing along the water's edge aren't just decorative—they're actually holding 
+                    the soil together. Their roots act like a natural net underground, preventing the bank from 
+                    washing into the river. This is way better than building concrete walls, which just push the 
+                    erosion problem somewhere else. Plus, the plants slow down runoff and filter out pollutants.
                   </p>
                   <div className="bg-background p-3 rounded">
-                    <p className="text-sm font-semibold mb-2">Vegetation Benefits:</p>
+                    <p className="text-sm font-semibold mb-2">How Plants Help:</p>
                     <ul className="text-sm space-y-1 list-disc list-inside">
-                      <li><strong>Root networks:</strong> Bind soil particles together</li>
-                      <li><strong>Wave dampening:</strong> Vegetation absorbs energy</li>
-                      <li><strong>Sediment trapping:</strong> Slows runoff, captures particles</li>
+                      <li><strong>Underground roots:</strong> Lock soil in place like a web</li>
+                      <li><strong>Wave absorption:</strong> Plants slow down wave energy</li>
+                      <li><strong>Pollution filter:</strong> Trap sediment before it reaches water</li>
                     </ul>
                   </div>
                 </div>
@@ -241,35 +242,35 @@ const HumansOcean = () => {
                     <div className="text-center p-4">
                       <Camera className="h-12 w-12 mx-auto mb-2 text-muted-foreground/50" />
                       <p className="text-sm text-muted-foreground font-mono">
-                        {"INSERT PHOTO: River surface showing flow patterns or ripples"}
+                        {"INSERT PHOTO: River surface showing smooth flow patterns"}
                       </p>
                     </div>
                   </div>
                   <div>
-                    <h3 className="font-semibold text-xl mb-2 text-primary">Surface Flow & Mixing</h3>
+                    <h3 className="font-semibold text-xl mb-2 text-primary">Calm Water Movement</h3>
                     <p className="text-muted-foreground mb-3">
-                      Visible current patterns revealing water movement and turbulent mixing
+                      Smooth surface showing gentle water flow in the protected estuary
                     </p>
                     <div className="flex flex-wrap gap-2">
-                      <Badge variant="secondary">Laminar vs Turbulent</Badge>
-                      <Badge variant="secondary">Current Velocity</Badge>
+                      <Badge variant="secondary">Water Flow</Badge>
+                      <Badge variant="secondary">Oxygen Transfer</Badge>
                     </div>
                   </div>
                 </div>
                 <div className="bg-gradient-coral/10 p-6 rounded-lg space-y-3 border border-primary/20">
-                  <h4 className="font-semibold text-primary text-lg mb-3">🌊 Flow Dynamics</h4>
+                  <h4 className="font-semibold text-primary text-lg mb-3">🌊 Flow Patterns</h4>
                   <p className="text-base mb-3 leading-relaxed">
-                    Surface ripples indicate <strong>turbulent flow</strong> rather than smooth laminar flow. Turbulence 
-                    is crucial for <strong>vertical mixing</strong>—it brings oxygen from the surface down to deeper 
-                    layers and helps distribute nutrients throughout the water column. The Reynolds number (Re = velocity × 
-                    depth / viscosity) for rivers is typically {'>'} 2000, confirming turbulent conditions.
+                    The relatively calm surface shows <strong>laminar flow</strong>—smooth, layered water movement 
+                    without much disruption. In this protected section of the river, the gentle current moves 
+                    steadily, carrying nutrients and dissolved oxygen throughout the water. This peaceful flow is 
+                    typical of urban estuaries with controlled water levels.
                   </p>
                   <div className="bg-background p-3 rounded">
-                    <p className="text-sm font-semibold mb-2">Why Turbulence Matters:</p>
+                    <p className="text-sm font-semibold mb-2">What This Tells Us:</p>
                     <ul className="text-sm space-y-1 list-disc list-inside">
-                      <li><strong>Oxygen distribution:</strong> Prevents anoxic zones</li>
-                      <li><strong>Sediment suspension:</strong> Keeps particles moving</li>
-                      <li><strong>Nutrient cycling:</strong> Mixes dissolved compounds</li>
+                      <li><strong>Protected waters:</strong> Dams and structures calm the flow</li>
+                      <li><strong>Stratification:</strong> Different water layers may not mix easily</li>
+                      <li><strong>Oxygen exchange:</strong> Happens mainly at the surface</li>
                     </ul>
                   </div>
                 </div>
@@ -286,35 +287,35 @@ const HumansOcean = () => {
                     <div className="text-center p-4">
                       <Camera className="h-12 w-12 mx-auto mb-2 text-muted-foreground/50" />
                       <p className="text-sm text-muted-foreground font-mono">
-                        {"INSERT PHOTO: Shoreline showing bank slope or erosion features"}
+                        {"INSERT PHOTO: Shoreline showing gentle bank slope"}
                       </p>
                     </div>
                   </div>
                   <div>
-                    <h3 className="font-semibold text-xl mb-2 text-primary">Bank Morphology & Geology</h3>
+                    <h3 className="font-semibold text-xl mb-2 text-primary">Stable Shoreline Structure</h3>
                     <p className="text-muted-foreground mb-3">
-                      Shoreline structure revealing geological composition and erosion history
+                      Gently sloping banks showing natural stability and vegetation
                     </p>
                     <div className="flex flex-wrap gap-2">
-                      <Badge variant="secondary">Geological Strata</Badge>
-                      <Badge variant="secondary">Bank Angle</Badge>
+                      <Badge variant="secondary">Stable Banks</Badge>
+                      <Badge variant="secondary">Natural Protection</Badge>
                     </div>
                   </div>
                 </div>
                 <div className="bg-gradient-coral/10 p-6 rounded-lg space-y-3 border border-primary/20 order-first lg:order-last">
-                  <h4 className="font-semibold text-primary text-lg mb-3">🌊 Geological Structure</h4>
+                  <h4 className="font-semibold text-primary text-lg mb-3">🌊 Bank Stability</h4>
                   <p className="text-base mb-3 leading-relaxed">
-                    The bank slope and composition reveal the balance between <strong>erosive forces</strong> (waves, 
-                    currents) and <strong>resistance factors</strong> (soil cohesion, vegetation). Steeper banks indicate 
-                    more resistant material or recent erosion. The <strong>angle of repose</strong> (maximum stable slope) 
-                    depends on particle size and water content—sandy soils typically rest at 30-35°.
+                    The <strong>gentle slope</strong> of this shoreline shows a stable, well-established bank. Unlike 
+                    steeper eroding coastlines, this gradual transition from land to water indicates good soil stability 
+                    and low erosion rates. The combination of compact soil and vegetation creates a naturally protected 
+                    shoreline that resists wave action from boats and tides.
                   </p>
                   <div className="bg-background p-3 rounded">
-                    <p className="text-sm font-semibold mb-2">Erosion Factors:</p>
+                    <p className="text-sm font-semibold mb-2">Signs of Stability:</p>
                     <ul className="text-sm space-y-1 list-disc list-inside">
-                      <li><strong>Soil type:</strong> Clay resists erosion better than sand</li>
-                      <li><strong>Wave impact:</strong> Energy dissipated at shoreline</li>
-                      <li><strong>Freeze-thaw:</strong> Seasonal weathering weakens banks</li>
+                      <li><strong>Gentle slope:</strong> Indicates minimal erosion over time</li>
+                      <li><strong>Vegetation growth:</strong> Roots hold soil in place</li>
+                      <li><strong>Low wave energy:</strong> Protected urban waterway</li>
                     </ul>
                   </div>
                 </div>
@@ -323,55 +324,39 @@ const HumansOcean = () => {
           </Card>
 
           {/* Summary Card - Full Width */}
-          <Card className="bg-gradient-ocean text-white border-0 shadow-xl">
+          <Card className="bg-gradient-ocean/10 border-primary/20 shadow-lg">
             <CardHeader className="py-8">
-              <CardTitle className="text-3xl text-center">Physical & Geological Summary</CardTitle>
+              <CardTitle className="text-3xl text-center">What We Learned</CardTitle>
             </CardHeader>
-            <CardContent className="space-y-8 p-8">
-              <p className="text-white/90 text-center max-w-4xl mx-auto text-lg">
-                The Charles River estuary is a living laboratory for physical oceanography. Despite urban development, 
-                it demonstrates fundamental processes that govern all estuarine and coastal systems worldwide. Understanding 
-                these physical mechanisms is essential for effective river management and conservation planning.
+            <CardContent className="space-y-6 text-muted-foreground p-8">
+              <p className="text-center text-lg">
+                Even in this protected urban waterway, we saw real oceanography in action. The Charles River 
+                shows how water, land, and human activity all interact:
               </p>
-              
-              <div className="grid md:grid-cols-3 gap-6">
-                <div className="bg-white/10 backdrop-blur-sm p-6 rounded-lg border border-white/20">
-                  <h4 className="font-semibold mb-3 text-white text-lg">Physical Processes</h4>
-                  <ul className="list-disc list-inside space-y-2 text-sm text-white/80">
-                    <li>Tidal flood and ebb currents</li>
-                    <li>Turbulent flow and mixing</li>
-                    <li>Shallow water wave dynamics</li>
-                    <li>Sediment transport mechanisms</li>
+              <div className="grid md:grid-cols-2 gap-6">
+                <div className="space-y-3">
+                  <h3 className="font-semibold text-primary text-lg">Water Movement</h3>
+                  <ul className="list-disc list-inside space-y-2">
+                    <li>Tides push water up and down the river twice daily</li>
+                    <li>Currents sort debris by size and weight</li>
+                    <li>Calm sections allow particles to settle to the bottom</li>
+                    <li>Boat wakes create waves in shallow areas</li>
                   </ul>
                 </div>
-                <div className="bg-white/10 backdrop-blur-sm p-6 rounded-lg border border-white/20">
-                  <h4 className="font-semibold mb-3 text-white text-lg">Geological Features</h4>
-                  <ul className="list-disc list-inside space-y-2 text-sm text-white/80">
-                    <li>Terrigenous sediment inputs</li>
-                    <li>Bank erosion patterns</li>
-                    <li>Poorly sorted deposits</li>
-                    <li>Angle of repose stability</li>
-                  </ul>
-                </div>
-                <div className="bg-white/10 backdrop-blur-sm p-6 rounded-lg border border-white/20">
-                  <h4 className="font-semibold mb-3 text-white text-lg">Human Impacts</h4>
-                  <ul className="list-disc list-inside space-y-2 text-sm text-white/80">
-                    <li>Hard stabilization structures</li>
-                    <li>Flow pattern modifications</li>
-                    <li>Soft stabilization benefits</li>
-                    <li>Conservation interventions</li>
+                <div className="space-y-3">
+                  <h3 className="font-semibold text-primary text-lg">Shoreline Features</h3>
+                  <ul className="list-disc list-inside space-y-2">
+                    <li>Gentle slopes show stable, protected banks</li>
+                    <li>Plant roots hold soil in place naturally</li>
+                    <li>Vegetation filters runoff before it reaches water</li>
+                    <li>Accumulation zones reveal where currents slow down</li>
                   </ul>
                 </div>
               </div>
-
-              <div className="bg-background p-5 rounded-lg border-l-4 border-primary">
-                <p className="text-sm italic text-muted-foreground">
-                  "The same physical principles that govern ocean currents, coastal erosion, and sediment transport 
-                  in the world's great ocean basins also operate in urban estuaries like the Charles River. By observing 
-                  these processes firsthand during volunteer work, we gain deeper appreciation for the interconnectedness 
-                  of Earth's water systems."
-                </p>
-              </div>
+              <p className="pt-4 text-center italic text-lg">
+                Our cleanup work directly prevents pollution and sediment from disrupting these natural processes, 
+                helping keep the Charles River healthy for people and wildlife.
+              </p>
             </CardContent>
           </Card>
 
