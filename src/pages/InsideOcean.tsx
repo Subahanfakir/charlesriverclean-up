@@ -234,14 +234,14 @@ const InsideOcean = () => {
                 <div className="grid lg:grid-cols-[1.2fr,1fr] gap-8">
                   <div className="space-y-4">
                     <img
-                      src={new URL("../../Photos/IMG_9424.jpeg", import.meta.url).href}
+                      src={new URL("../../Photos/IMG_9425.jpeg", import.meta.url).href}
                       alt="Bags of collected trash and debris"
                       className="aspect-video w-full rounded-lg object-cover h-[360px] sm:h-[440px] lg:h-[560px]"
                     />
                     <div>
                       <h3 className="font-semibold text-xl mb-2 text-primary">Quantifying the Impact</h3>
                       <p className="text-muted-foreground mb-3">
-                        Multiple bags filled with removed litter, leaves, and debris ready for proper disposal.
+                        Multiple bags filled with removed litter, and debris ready for proper disposal.
                       </p>
                       <Badge variant="secondary">Waste Management</Badge>
                     </div>

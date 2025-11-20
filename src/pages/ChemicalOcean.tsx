@@ -29,12 +29,12 @@ const ChemicalOcean = () => {
             <div className="grid lg:grid-cols-2 gap-8">
               {/* Photo Placeholder 1: Green Scummy Water */}
               <div className="space-y-3">
-                <div className="bg-muted rounded-lg aspect-video flex items-center justify-center border-2 border-dashed border-muted-foreground/25">
-                  <p className="text-muted-foreground text-center px-4">
-                    📸 INSERT PHOTO: Bright Green, Scummy Water
-                    <br />
-                    <span className="text-sm">(Evidence of algal bloom in inlet)</span>
-                  </p>
+                <div className="bg-muted rounded-lg aspect-video flex items-center justify-center">
+                  <img
+                    src={new URL("../../Photos/IMG_9331.jpeg", import.meta.url).href}
+                    alt="Algal bloom in inlet"
+                    className="aspect-video w-full rounded-lg object-cover h-[360px] sm:h-[440px] lg:h-[500px]"
+                  />
                 </div>
                 <div className="space-y-2">
                   <h3 className="font-semibold text-primary">Eutrophication & Primary Production</h3>
@@ -46,12 +46,12 @@ const ChemicalOcean = () => {
 
               {/* Photo Placeholder 2: Surface Scum */}
               <div className="space-y-3">
-                <div className="bg-muted rounded-lg aspect-video flex items-center justify-center border-2 border-dashed border-muted-foreground/25">
-                  <p className="text-muted-foreground text-center px-4">
-                    📸 INSERT PHOTO: Green Surface Scum Near Dock
-                    <br />
-                    <span className="text-sm">(Algae + decaying leaves at water's edge)</span>
-                  </p>
+                <div className="bg-muted rounded-lg aspect-video flex items-center justify-center">
+                  <img
+                    src={new URL("../../Photos/IMG.jpeg", import.meta.url).href}
+                    alt="Algal bloom in inlet"
+                    className="aspect-video w-full rounded-lg object-cover h-[360px] sm:h-[440px] lg:h-[500px]"
+                  />
                 </div>
                 <div className="space-y-2">
                   <h3 className="font-semibold text-primary">Hypoxia Potential</h3>
@@ -71,15 +71,15 @@ const ChemicalOcean = () => {
             <CardDescription className="text-center text-lg">How excess nutrients fuel algal blooms</CardDescription>
           </CardHeader>
           <CardContent className="p-8">
-            <div className="grid lg:grid-cols-[1fr,1.3fr] gap-8">
+            <div className="grid lg:grid-cols-[1fr,1.3fr] gap-8 items-center">
               {/* Photo Placeholder 3: Bags of Leaves */}
               <div className="space-y-3">
-                <div className="bg-muted rounded-lg aspect-video flex items-center justify-center border-2 border-dashed border-muted-foreground/25">
-                  <p className="text-muted-foreground text-center px-4">
-                    📸 INSERT PHOTO: Bags of Leaves Lined Up
-                    <br />
-                    <span className="text-sm">(Massive volume of collected organic debris)</span>
-                  </p>
+                <div className="bg-muted rounded-lg aspect-video flex items-center justify-center border-muted-foreground/25">
+                  <img
+                    src={new URL("../../Photos/IMG_9424.jpeg", import.meta.url).href}
+                    alt="Algal bloom in inlet"
+                    className="aspect-video w-full rounded-lg object-cover h-[360px] sm:h-[440px] lg:h-[500px]"
+                  />
                 </div>
                 <div className="space-y-2">
                   <h3 className="font-semibold text-primary">Preventing Nutrient Loading</h3>
@@ -90,15 +90,17 @@ const ChemicalOcean = () => {
               </div>
 
               {/* Explanation Section */}
-              <div className="space-y-4">
-                <h3 className="font-semibold text-lg">The Nutrient Cycle Problem</h3>
-                <ul className="space-y-2 text-sm text-muted-foreground">
-                  <li>• <strong>Urban Runoff:</strong> Carries fertilizers, pet waste, and decomposing organic matter into the river</li>
-                  <li>• <strong>Non-Conservative Nutrients:</strong> Nitrogen (N) and Phosphorus (P) are consumed by phytoplankton, driving excessive primary production</li>
-                  <li>• <strong>Algal Blooms:</strong> Rapid growth of microscopic algae turns water green and cloudy</li>
-                  <li>• <strong>Oxygen Depletion:</strong> When algae die and decompose, bacteria consume dissolved O₂, creating "dead zones"</li>
-                  <li>• <strong>Volunteer Impact:</strong> Removing leaf litter prevents this nutrient input from ever reaching the water</li>
-                </ul>
+              <div className="flex items-center">
+                <div className="space-y-4 text-lg text-foreground">
+                  <h3 className="font-bold text-xl">The Nutrient Cycle Problem</h3>
+                  <ul className="space-y-3 text-base text-muted-foreground">
+                    <li>• <strong>Urban Runoff:</strong> Carries fertilizers, pet waste, and decomposing organic matter into the river</li>
+                    <li>• <strong>Non-Conservative Nutrients:</strong> Nitrogen (N) and Phosphorus (P) are consumed by phytoplankton, driving excessive primary production</li>
+                    <li>• <strong>Algal Blooms:</strong> Rapid growth of microscopic algae turns water green and cloudy</li>
+                    <li>• <strong>Oxygen Depletion:</strong> When algae die and decompose, bacteria consume dissolved O₂, creating "dead zones"</li>
+                    <li>• <strong>Volunteer Impact:</strong> Removing leaf litter prevents this nutrient input from ever reaching the water</li>
+                  </ul>
+                </div>
               </div>
             </div>
           </CardContent>
