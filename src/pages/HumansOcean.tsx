@@ -32,23 +32,22 @@ const HumansOcean = () => {
             </CardHeader>
             <CardContent className="space-y-6 text-muted-foreground">
               <p>
-                The Charles River shows how water moves, shapes the land, and interacts with everything around it. 
-                During our cleanup day, I noticed several natural processes happening—the same ones you'd see along 
-                any coastline or estuary. These aren't just abstract concepts from textbooks; they're real forces 
-                actively shaping our local waterway.
+                During our Charles River cleanup, I saw how water constantly moves, carries things, and shapes the shoreline. 
+                These same forces work along every river, bay, and ocean coast. Understanding them helps us see why trash 
+                ends up in certain spots and how nature protects itself from erosion.
               </p>
               <div className="grid md:grid-cols-3 gap-4 pt-4">
                 <div className="bg-background p-4 rounded-lg text-center">
                   <div className="text-2xl font-bold text-primary mb-1">Tides</div>
-                  <div className="text-sm">Water Rising & Falling</div>
+                  <div className="text-sm">Water moves up & down twice daily</div>
                 </div>
                 <div className="bg-background p-4 rounded-lg text-center">
                   <div className="text-2xl font-bold text-primary mb-1">Currents</div>
-                  <div className="text-sm">Moving & Sorting Materials</div>
+                  <div className="text-sm">Water carries and sorts debris</div>
                 </div>
                 <div className="bg-background p-4 rounded-lg text-center">
-                  <div className="text-2xl font-bold text-primary mb-1">Erosion</div>
-                  <div className="text-sm">Water Shaping the Shore</div>
+                  <div className="text-2xl font-bold text-primary mb-1">Plants</div>
+                  <div className="text-sm">Roots hold the shore in place</div>
                 </div>
               </div>
             </CardContent>
@@ -79,19 +78,19 @@ const HumansOcean = () => {
                   </div>
                 </div>
                 <div className="bg-gradient-coral/10 p-6 rounded-lg space-y-3 border border-primary/20">
-                  <h4 className="font-semibold text-primary text-lg mb-3">🌊 How Currents Sort Materials</h4>
+                  <h4 className="font-semibold text-primary text-lg mb-3">🌊 How Moving Water Sorts Trash & Debris</h4>
                   <p className="text-base mb-3 leading-relaxed">
-                    This pile contains everything from tiny leaves to large sticks and plastic trash—all mixed together. 
-                    When river currents slow down, they drop whatever they're carrying. Heavier items settle first, 
-                    while lighter materials keep floating until the water becomes completely still. This natural sorting 
-                    process happens constantly as tides rise and fall.
+                    Think of the river like a conveyor belt that suddenly stops. When water flows, it carries leaves, 
+                    sticks, and trash along with it. But when the current slows down—like when the tide stops rising—the 
+                    water drops its load. Heavy things (like waterlogged wood) sink first. Lighter things (like plastic 
+                    bottles and dry leaves) keep drifting until the water is completely still.
                   </p>
                   <div className="bg-background p-3 rounded">
-                    <p className="text-sm font-semibold mb-2">What's Happening Here:</p>
+                    <p className="text-sm font-semibold mb-2">Why Debris Piles Up Here:</p>
                     <ul className="text-sm space-y-1 list-disc list-inside">
-                      <li><strong>Tidal cycles:</strong> Water rises and falls twice daily</li>
-                      <li><strong>Natural sorting:</strong> Heavy items drop first, light items last</li>
-                      <li><strong>Accumulation zones:</strong> Debris collects where current slows</li>
+                      <li>Tides move water up and down the river twice every day</li>
+                      <li>When current slows, heavy items drop first, light items last</li>
+                      <li>Calm spots near shores become natural "trash traps"</li>
                     </ul>
                   </div>
                 </div>
@@ -124,18 +123,19 @@ const HumansOcean = () => {
                   </div>
                 </div>
                 <div className="bg-gradient-coral/10 p-6 rounded-lg space-y-3 border border-primary/20 order-first lg:order-last">
-                  <h4 className="font-semibold text-primary text-lg mb-3">🌊 Estuarine Classification</h4>
+                  <h4 className="font-semibold text-primary text-lg mb-3">🌊 Where River Meets Ocean</h4>
                   <p className="text-base mb-3 leading-relaxed">
-                    The Charles River is a classic <strong>partially mixed estuary</strong>—a semi-enclosed coastal 
-                    body where freshwater from upstream mixes with saltwater from Boston Harbor. The Charles River Dam 
-                    creates a controlled system, but tidal influence still affects water levels and salinity downstream.
+                    The Charles River is what scientists call an <strong>estuary</strong>—a place where river water 
+                    mixes with ocean water. Fresh water flows down from upstream while salty water pushes in from 
+                    Boston Harbor. The Charles River Dam controls this mixing, but you can still see the tide pushing 
+                    water levels up and down twice a day. The docks and walls built along the shore change how water flows.
                   </p>
                   <div className="bg-background p-3 rounded">
-                    <p className="text-sm font-semibold mb-2">Estuarine Characteristics:</p>
+                    <p className="text-sm font-semibold mb-2">What Makes This an Estuary:</p>
                     <ul className="text-sm space-y-1 list-disc list-inside">
-                      <li><strong>Salinity gradient:</strong> Fresh to brackish water mixing</li>
-                      <li><strong>Tidal influence:</strong> Water level changes twice daily</li>
-                      <li><strong>Engineered structures:</strong> Docks and pilings alter flow</li>
+                      <li>Fresh river water mixes with salty harbor water</li>
+                      <li>Ocean tides push water upstream, then pull it back</li>
+                      <li>Human structures like docks affect how water moves</li>
                     </ul>
                   </div>
                 </div>
@@ -168,19 +168,19 @@ const HumansOcean = () => {
                   </div>
                 </div>
                 <div className="bg-gradient-coral/10 p-6 rounded-lg space-y-3 border border-primary/20">
-                  <h4 className="font-semibold text-primary text-lg mb-3">🌊 Tides in Action</h4>
+                  <h4 className="font-semibold text-primary text-lg mb-3">🌊 How Tides Work</h4>
                   <p className="text-base mb-3 leading-relaxed">
-                    Even though the Charles River is controlled by a dam, you can still see tidal effects. The water 
-                    level rises and falls twice a day, pushing water upstream during <strong>flood tide</strong> and 
-                    pulling it back during <strong>ebb tide</strong>. In shallow areas like this, boat wakes create 
-                    waves that reach all the way to the bottom, stirring up leaves and sediment.
+                    Even with the dam upstream, you can see tides affecting the Charles River. Twice a day, the water 
+                    level rises (called "flood tide") as ocean water pushes in, then falls (called "ebb tide") as it 
+                    flows back out. In this shallow area, when boats pass by, their waves stir up the leaves sitting 
+                    on the bottom. The clear water means there's not much pollution or dirt floating around.
                   </p>
                   <div className="bg-background p-3 rounded">
-                    <p className="text-sm font-semibold mb-2">Observing Tidal Patterns:</p>
+                    <p className="text-sm font-semibold mb-2">What You Can See:</p>
                     <ul className="text-sm space-y-1 list-disc list-inside">
-                      <li><strong>Clear water:</strong> Shows low pollution and sediment</li>
-                      <li><strong>Bottom visible:</strong> Shallow depth typical of nearshore zones</li>
-                      <li><strong>Settled leaves:</strong> Deposited when water movement stopped</li>
+                      <li>Clear water shows the river is relatively clean here</li>
+                      <li>You can see the bottom because it's shallow near shore</li>
+                      <li>Leaves settle when water stops moving between tides</li>
                     </ul>
                   </div>
                 </div>
@@ -213,19 +213,19 @@ const HumansOcean = () => {
                   </div>
                 </div>
                 <div className="bg-gradient-coral/10 p-6 rounded-lg space-y-3 border border-primary/20 order-first lg:order-last">
-                  <h4 className="font-semibold text-primary text-lg mb-3">🌊 Nature's Erosion Control</h4>
+                  <h4 className="font-semibold text-primary text-lg mb-3">🌊 How Plants Protect the Shore</h4>
                   <p className="text-base mb-3 leading-relaxed">
-                    All these plants growing along the water's edge aren't just decorative—they're actually holding 
-                    the soil together. Their roots act like a natural net underground, preventing the bank from 
-                    washing into the river. This is way better than building concrete walls, which just push the 
-                    erosion problem somewhere else. Plus, the plants slow down runoff and filter out pollutants.
+                    These plants aren't just for looks—they're doing important work. Underground, their roots spread 
+                    out like a giant web, grabbing onto soil particles and holding them in place. Without these plants, 
+                    rain and waves would wash the soil right into the river. This natural protection works better than 
+                    concrete walls because it also slows down runoff and filters out pollution before it reaches the water.
                   </p>
                   <div className="bg-background p-3 rounded">
-                    <p className="text-sm font-semibold mb-2">How Plants Help:</p>
+                    <p className="text-sm font-semibold mb-2">Three Ways Plants Help:</p>
                     <ul className="text-sm space-y-1 list-disc list-inside">
-                      <li><strong>Underground roots:</strong> Lock soil in place like a web</li>
-                      <li><strong>Wave absorption:</strong> Plants slow down wave energy</li>
-                      <li><strong>Pollution filter:</strong> Trap sediment before it reaches water</li>
+                      <li>Roots grip soil underground like fingers holding sand</li>
+                      <li>Stems and leaves slow down waves and reduce their power</li>
+                      <li>Plants catch dirt and pollution before it washes into the river</li>
                     </ul>
                   </div>
                 </div>
@@ -258,19 +258,19 @@ const HumansOcean = () => {
                   </div>
                 </div>
                 <div className="bg-gradient-coral/10 p-6 rounded-lg space-y-3 border border-primary/20">
-                  <h4 className="font-semibold text-primary text-lg mb-3">🌊 Flow Patterns</h4>
+                  <h4 className="font-semibold text-primary text-lg mb-3">🌊 Smooth Water Flow</h4>
                   <p className="text-base mb-3 leading-relaxed">
-                    The relatively calm surface shows <strong>laminar flow</strong>—smooth, layered water movement 
-                    without much disruption. In this protected section of the river, the gentle current moves 
-                    steadily, carrying nutrients and dissolved oxygen throughout the water. This peaceful flow is 
-                    typical of urban estuaries with controlled water levels.
+                    The calm, smooth surface shows gentle water movement. Unlike a rushing mountain stream with white 
+                    water and splashing, this part of the river flows peacefully in layers, almost like a slow-moving 
+                    highway. The dam upstream and buildings around it protect the water from wind and fast currents. 
+                    As the water moves, it carries oxygen from the surface and spreads nutrients around for plants and fish.
                   </p>
                   <div className="bg-background p-3 rounded">
-                    <p className="text-sm font-semibold mb-2">What This Tells Us:</p>
+                    <p className="text-sm font-semibold mb-2">Why the Water is So Calm:</p>
                     <ul className="text-sm space-y-1 list-disc list-inside">
-                      <li><strong>Protected waters:</strong> Dams and structures calm the flow</li>
-                      <li><strong>Stratification:</strong> Different water layers may not mix easily</li>
-                      <li><strong>Oxygen exchange:</strong> Happens mainly at the surface</li>
+                      <li>The dam controls water flow and prevents rushing currents</li>
+                      <li>Buildings and docks block wind from creating big waves</li>
+                      <li>Oxygen from air mixes in mainly at the water's surface</li>
                     </ul>
                   </div>
                 </div>
@@ -303,19 +303,20 @@ const HumansOcean = () => {
                   </div>
                 </div>
                 <div className="bg-gradient-coral/10 p-6 rounded-lg space-y-3 border border-primary/20 order-first lg:order-last">
-                  <h4 className="font-semibold text-primary text-lg mb-3">🌊 Bank Stability</h4>
+                  <h4 className="font-semibold text-primary text-lg mb-3">🌊 A Stable, Protected Shore</h4>
                   <p className="text-base mb-3 leading-relaxed">
-                    The <strong>gentle slope</strong> of this shoreline shows a stable, well-established bank. Unlike 
-                    steeper eroding coastlines, this gradual transition from land to water indicates good soil stability 
-                    and low erosion rates. The combination of compact soil and vegetation creates a naturally protected 
-                    shoreline that resists wave action from boats and tides.
+                    Notice how the shore slopes gently into the water instead of dropping off like a cliff? That's a 
+                    good sign—it means the soil isn't washing away quickly. Steep, crumbling banks show active erosion, 
+                    but this gradual slope means the shoreline has been stable for a long time. The plants growing here 
+                    help too, with their roots holding everything together. Plus, this section of river doesn't get big 
+                    waves, so there's less force trying to tear the bank apart.
                   </p>
                   <div className="bg-background p-3 rounded">
-                    <p className="text-sm font-semibold mb-2">Signs of Stability:</p>
+                    <p className="text-sm font-semibold mb-2">Signs This Shore is Healthy:</p>
                     <ul className="text-sm space-y-1 list-disc list-inside">
-                      <li><strong>Gentle slope:</strong> Indicates minimal erosion over time</li>
-                      <li><strong>Vegetation growth:</strong> Roots hold soil in place</li>
-                      <li><strong>Low wave energy:</strong> Protected urban waterway</li>
+                      <li>Gentle slope means very little soil is washing away</li>
+                      <li>Plants grow well when the ground is stable</li>
+                      <li>Protected location means smaller waves hit the shore</li>
                     </ul>
                   </div>
                 </div>
@@ -330,32 +331,32 @@ const HumansOcean = () => {
             </CardHeader>
             <CardContent className="space-y-6 text-muted-foreground p-8">
               <p className="text-center text-lg">
-                Even in this protected urban waterway, we saw real oceanography in action. The Charles River 
-                shows how water, land, and human activity all interact:
+                Even though this is a city river, the same forces that shape ocean coasts are at work here. 
+                Understanding these natural processes helps us see why cleaning up matters:
               </p>
               <div className="grid md:grid-cols-2 gap-6">
                 <div className="space-y-3">
-                  <h3 className="font-semibold text-primary text-lg">Water Movement</h3>
+                  <h3 className="font-semibold text-primary text-lg">How Water Moves</h3>
                   <ul className="list-disc list-inside space-y-2">
-                    <li>Tides push water up and down the river twice daily</li>
-                    <li>Currents sort debris by size and weight</li>
-                    <li>Calm sections allow particles to settle to the bottom</li>
-                    <li>Boat wakes create waves in shallow areas</li>
+                    <li>Ocean tides push water upstream twice a day, then pull it back</li>
+                    <li>Flowing water carries debris and drops heavy items first</li>
+                    <li>Calm areas let particles settle on the bottom</li>
+                    <li>Boat wakes stir up shallow water</li>
                   </ul>
                 </div>
                 <div className="space-y-3">
-                  <h3 className="font-semibold text-primary text-lg">Shoreline Features</h3>
+                  <h3 className="font-semibold text-primary text-lg">How the Shore Stays Healthy</h3>
                   <ul className="list-disc list-inside space-y-2">
-                    <li>Gentle slopes show stable, protected banks</li>
-                    <li>Plant roots hold soil in place naturally</li>
-                    <li>Vegetation filters runoff before it reaches water</li>
-                    <li>Accumulation zones reveal where currents slow down</li>
+                    <li>Gentle slopes mean the bank isn't eroding quickly</li>
+                    <li>Plant roots grip soil like an underground net</li>
+                    <li>Vegetation catches pollution before it washes in</li>
+                    <li>Trash piles up where the current slows down</li>
                   </ul>
                 </div>
               </div>
               <p className="pt-4 text-center italic text-lg">
-                Our cleanup work directly prevents pollution and sediment from disrupting these natural processes, 
-                helping keep the Charles River healthy for people and wildlife.
+                When we remove trash, we protect these natural processes and help keep the Charles River 
+                healthy for everyone who depends on it.
               </p>
             </CardContent>
           </Card>
