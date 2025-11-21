@@ -30,12 +30,13 @@ const Future = () => {
             <CardContent className="p-8">
               <div className="grid lg:grid-cols-[1.3fr,1fr] gap-8">
                 <div className="space-y-4">
-                  <div className="aspect-video bg-muted rounded-lg flex items-center justify-center border-2 border-dashed border-muted-foreground/30">
-                    <div className="text-center p-4">
-                      <Camera className="h-12 w-12 mx-auto mb-2 text-muted-foreground/50" />
-                      <p className="text-sm text-muted-foreground font-mono">
-                        {"INSERT PHOTO: Close-up inside white bag showing plastic/cups/trash"}
-                      </p>
+                  <div className="aspect-video bg-muted rounded-lg flex items-center justify-center">
+                    <div className="bg-muted rounded-lg aspect-video flex items-center justify-center border-muted-foreground/25">
+                      <img
+                        src={new URL("../../Photos/IMG_9422.jpeg", import.meta.url).href}
+                        alt="Algal bloom in inlet"
+                        className="aspect-video w-full rounded-lg object-cover h-[360px] sm:h-[440px] lg:h-[450px]"
+                      />
                     </div>
                   </div>
                   <div>
@@ -54,7 +55,7 @@ const Future = () => {
                   <p className="text-base mb-3 leading-relaxed">
                     These plastic, glass, and paper products represent a direct source of <strong>long-term 
                     pollutants</strong> and <strong>microplastics</strong>. Unlike conservative ions (which 
-                    maintain constant proportions), these pollutants are non-conservative—they vary widely and 
+                    maintain constant proportions), these pollutants are non-conservative, they vary widely and 
                     interfere with the natural chemical budget.
                   </p>
                   <div className="bg-background p-3 rounded">
@@ -86,19 +87,19 @@ const Future = () => {
               </p>
               
               <div className="grid md:grid-cols-3 gap-6">
-                <div className="bg-background p-6 rounded-lg shadow-sm">
-                  <h4 className="font-semibold text-primary mb-3 text-lg">Chemical Protection</h4>
+                <div className="bg-background p-6 rounded-lg shadow-md">
+                  <h4 className="font-semibold text-primary mb-3 text-lg ">Chemical Protection</h4>
                   <p className="text-sm text-muted-foreground">
                     Preventing excess nutrients and pollutants from altering the river's dissolved oxygen and pH balance.
                   </p>
                 </div>
-                <div className="bg-background p-6 rounded-lg shadow-sm">
+                <div className="bg-background p-6 rounded-lg shadow-md">
                   <h4 className="font-semibold text-primary mb-3 text-lg">Physical Maintenance</h4>
                   <p className="text-sm text-muted-foreground">
                     Reducing terrigenous sediment load and maintaining healthy water clarity and flow patterns.
                   </p>
                 </div>
-                <div className="bg-background p-6 rounded-lg shadow-sm">
+                <div className="bg-background p-6 rounded-lg shadow-md">
                   <h4 className="font-semibold text-primary mb-3 text-lg">Ecosystem Health</h4>
                   <p className="text-sm text-muted-foreground">
                     Supporting biological productivity by maintaining balanced nutrient levels and habitat quality.
