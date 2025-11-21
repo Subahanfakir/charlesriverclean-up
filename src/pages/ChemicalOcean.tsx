@@ -128,12 +128,12 @@ const ChemicalOcean = () => {
             {/* Photo Placeholder 4: Water's Edge */}
             <div className="grid lg:grid-cols-[1.3fr,1fr] gap-8 mt-8">
               <div className="space-y-3">
-                <div className="bg-muted rounded-lg aspect-video flex items-center justify-center border-2 border-dashed border-muted-foreground/25">
-                  <p className="text-muted-foreground text-center px-4">
-                    📸 INSERT PHOTO: Water's Edge with Leaves/Trash
-                    <br />
-                    <span className="text-sm">(Accumulated organic debris)</span>
-                  </p>
+                <div className="bg-muted rounded-lg aspect-video flex items-center justify-center">
+                  <img
+                    src={new URL("../../Photos/IMG_9364.jpeg", import.meta.url).href}
+                    alt="Algal bloom in inlet"
+                    className="aspect-video w-full rounded-lg object-cover h-[360px] sm:h-[440px] lg:h-[450px]"
+                  />
                 </div>
                 <p className="text-sm text-muted-foreground">
                   This debris is a ticking time bomb for dissolved oxygen. As it decomposes, bacteria will consume O₂ faster than it can be replenished by diffusion or photosynthesis.
