@@ -140,7 +140,7 @@ const Future = () => {
                     <div className="bg-muted p-4 rounded-lg shadow-sm">
                       <p className="font-semibold mb-2 text-base">River–Harbor Connection</p>
                       <p className="text-muted-foreground">
-                        Understanding how the Lower Charles freshwater basin drains toward Boston Harbor without strong tidal mixing.
+                        Understanding how the Middle Basin of the Charles River drains toward Boston Harbor without strong tidal mixing.
                       </p>
                     </div>
                   </div>
@@ -190,9 +190,9 @@ const Future = () => {
                   microplastic pollution. Every hour spent raking was a direct intervention in the river's 
                   nutrient budget.
                 </p>
-                <p className="text-white/90 text-lg leading-relaxed">
+                  <p className="text-white/90 text-lg leading-relaxed">
                   Seeing the bright green algal bloom was a stark reminder of eutrophication's visual impact. 
-                  Understanding how the Lower Charles freshwater basin connects upstream runoff to Boston Harbor 
+                  Understanding how the Middle Basin of the Charles River connects upstream runoff to Boston Harbor 
                   made me appreciate how connected the entire system is—from river sources to the coastal ocean.
                 </p>
                 <p className="text-white/90 text-lg leading-relaxed">

@@ -52,8 +52,7 @@ const Index = () => {
           </h3>
             <p className="text-lg text-muted-foreground leading-relaxed">
               This project documents a volunteer cleanup event at Herter Park in Allston/Brighton, where I removed 
-              litter, raked leaves, and witnessed firsthand the chemical and physical processes that shape an urban 
-              freshwater river system like the Lower Charles.
+              litter, raked leaves, and witnessed firsthand the chemical and physical processes that shape the Middle Basin of the Charles River (Herter Park towards the BU Bridge).
             </p>
         </div>
       </section>
@@ -68,7 +67,7 @@ const Index = () => {
               </h2>
               <p className="text-xl md:text-2xl text-foreground max-w-4xl mx-auto leading-relaxed">
                 From sediment transport to eutrophication, this volunteer experience reveals the physical and chemical 
-                processes shaping the Lower Charles River, a freshwater urban basin facing pollution and ecological challenges.
+                processes shaping the Middle Basin of the Charles River, a freshwater urban basin facing pollution and ecological challenges.
               </p>
             </div>
           </div>

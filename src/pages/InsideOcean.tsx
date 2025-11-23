@@ -85,7 +85,7 @@ const InsideOcean = () => {
               </div>
               <p className="text-muted-foreground text-center max-w-4xl mx-auto">
                 Our team focused on preventing <strong>terrigenous sediment</strong> (leaves, soil) and 
-                anthropogenic pollutants (plastic, trash) from entering the Lower Charles River freshwater basin. 
+                anthropogenic pollutants (plastic, trash) from entering the Middle Basin of the Charles River. 
                 By removing this material before it could decompose or fragment, we helped maintain water quality and 
                 reduce nutrient loading that contributes to eutrophication.
               </p>
@@ -97,7 +97,7 @@ const InsideOcean = () => {
             <h2 className="text-4xl font-bold mb-4 bg-gradient-ocean bg-clip-text text-transparent">Photo Documentation</h2>
             <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
               Each photo below shows a moment from the cleanup event and connects it to an oceanography 
-              principle observed in the Lower Charles River freshwater basin.
+              principle observed in the Middle Basin of the Charles River.
             </p>
           </div>
 
@@ -218,7 +218,7 @@ const InsideOcean = () => {
                   <div className="bg-gradient-ocean/10 py-14 px-6 rounded-lg border border-primary/20 order-first lg:order-last self-center">
                     <h4 className="font-semibold text-primary text-lg mb-3">🌊 Collective Impact on Ecosystem Health</h4>
                       <p className="text-base leading-relaxed">
-                        Urban river systems like the Lower Charles are <strong>highly productive transition zones</strong> 
+                        Urban river systems like the Middle Basin of the Charles River are <strong>highly productive transition zones</strong> 
                         between land and ocean. By removing pollutants collectively, volunteers help maintain 
                         the <strong>dissolved oxygen</strong> levels, water clarity, and nutrient balance necessary for 
                         healthy aquatic populations.
@@ -249,7 +249,7 @@ const InsideOcean = () => {
                   <div className="bg-gradient-ocean/10 py-14 px-6 rounded-lg border border-primary/20 order-first lg:order-last self-center">
                     <h4 className="font-semibold text-primary text-lg mb-3">🌊 Measuring Conservation Success</h4>
                       <p className="text-base leading-relaxed">
-                        Each bag represents pollutants kept out of the Lower Charles River freshwater basin and nearby 
+                        Each bag represents pollutants kept out of the Middle Basin of the Charles River and nearby 
                         coastal waters. This prevents <strong>non-conservative ion</strong> additions (metals, chemicals 
                         from trash), reduces <strong>biological oxygen demand (BOD)</strong> from decomposing organic 
                         matter, and maintains the river's capacity to support aerobic life.

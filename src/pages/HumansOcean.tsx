@@ -116,7 +116,7 @@ const HumansOcean = () => {
                    <div>
                      <h3 className="font-semibold text-xl mb-2 text-primary">Freshwater Basin Setting</h3>
                      <p className="text-muted-foreground mb-3">
-                       The Lower Charles River freshwater basin with urban infrastructure and engineered stabilization structures
+                       The Middle Basin of the Charles River with urban infrastructure and engineered stabilization structures
                      </p>
                      <div className="flex flex-wrap gap-2">
                        <Badge variant="secondary">Freshwater Basin</Badge>
@@ -127,10 +127,9 @@ const HumansOcean = () => {
                  <div className="bg-gradient-coral/10 p-6 rounded-lg space-y-3 border border-primary/20 order-first lg:order-last">
                    <h4 className="font-semibold text-primary text-lg mb-3">🌊 Where River Meets City</h4>
                    <p className="text-base mb-3 leading-relaxed">
-                     The Lower Charles River acts like a massive, slow-moving freshwater basin. River water flows down 
-                     from upstream, while the dam downstream acts like a wall, stopping salty ocean tides from Boston Harbor 
-                     from rushing in. Because the dam holds the water at a steady level, this stretch of river behaves more 
-                     like a quiet lake than a rushing stream.
+                     The Middle Basin of the Charles River acts like a massive, slow-moving freshwater basin. River water flows down 
+                     from upstream, while the dam downstream acts like a wall, limiting ocean tidal influence from Boston Harbor. 
+                     Because the dam holds the water at a steady level, this stretch of river behaves more like a quiet lake than a rushing stream.
                    </p>
                    <div className="bg-background p-3 rounded">
                      <p className="text-sm font-semibold mb-2">What Makes This Area Unique:</p>
@@ -218,7 +217,7 @@ const HumansOcean = () => {
                 <div className="bg-gradient-coral/10 p-6 rounded-lg space-y-3 border border-primary/20 order-first lg:order-last">
                   <h4 className="font-semibold text-primary text-lg mb-3">🌊 How Plants Protect the Shore</h4>
                   <p className="text-base mb-3 leading-relaxed">
-                    These plants aren't just for looks—they're doing important work. Underground, their roots spread 
+                    These plants aren't just for looks, they're doing important work. Underground, their roots spread 
                     out like a giant web, grabbing onto soil particles and holding them in place. Without these plants, 
                     rain and waves would wash the soil right into the river. This natural protection works better than 
                     concrete walls because it also slows down runoff and filters out pollution before it reaches the water.
@@ -241,12 +240,15 @@ const HumansOcean = () => {
             <CardContent className="p-8">
               <div className="grid lg:grid-cols-[1.2fr,1fr] gap-8">
                 <div className="space-y-4">
-                  <div className="aspect-video bg-muted rounded-lg flex items-center justify-center border-2 border-dashed border-muted-foreground/30">
-                    <div className="text-center p-4">
-                      <Camera className="h-12 w-12 mx-auto mb-2 text-muted-foreground/50" />
-                      <p className="text-sm text-muted-foreground font-mono">
-                        {"INSERT PHOTO: River surface showing smooth flow patterns"}
-                      </p>
+                  <div className="aspect-video bg-muted rounded-lg flex items-center justify-center">
+                    <div className="w-full h-full">
+                      <video
+                        src={new URL("../../Photos/calm.mp4", import.meta.url).href}
+                        className="w-full h-full rounded-lg object-cover"
+                        controls
+                        preload="metadata"
+                        playsInline
+                      />
                     </div>
                   </div>
                   <div>
@@ -286,14 +288,13 @@ const HumansOcean = () => {
             <CardContent className="p-8">
               <div className="grid lg:grid-cols-[1fr,1.2fr] gap-8">
                 <div className="space-y-4">
-                  <div className="aspect-video bg-muted rounded-lg flex items-center justify-center border-2 border-dashed border-muted-foreground/30">
-                    <div className="text-center p-4">
-                      <Camera className="h-12 w-12 mx-auto mb-2 text-muted-foreground/50" />
-                      <p className="text-sm text-muted-foreground font-mono">
-                        {"INSERT PHOTO: Shoreline showing gentle bank slope"}
-                      </p>
-                    </div>
-                  </div>
+                <div className="bg-muted rounded-lg aspect-video flex items-center justify-center">
+                  <img
+                    src={new URL("../../Photos/IMG_9367.jpeg", import.meta.url).href}
+                    alt="Algal bloom in inlet"
+                    className="aspect-video w-full rounded-lg object-cover h-[350px] sm:h-[400px] lg:h-[450px]"
+                  />
+                </div>
                   <div>
                     <h3 className="font-semibold text-xl mb-2 text-primary">Stable Shoreline Structure</h3>
                     <p className="text-muted-foreground mb-3">
@@ -309,7 +310,7 @@ const HumansOcean = () => {
                   <h4 className="font-semibold text-primary text-lg mb-3">🌊 A Stable, Protected Shore</h4>
                   <p className="text-base mb-3 leading-relaxed">
                     Notice how the shore slopes gently into the water instead of dropping off like a cliff? That's a 
-                    good sign—it means the soil isn't washing away quickly. Steep, crumbling banks show active erosion, 
+                    good sign, it means the soil isn't washing away quickly. Steep, crumbling banks show active erosion, 
                     but this gradual slope means the shoreline has been stable for a long time. The plants growing here 
                     help too, with their roots holding everything together. Plus, this section of river doesn't get big 
                     waves, so there's less force trying to tear the bank apart.
