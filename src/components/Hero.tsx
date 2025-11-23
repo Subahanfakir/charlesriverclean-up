@@ -41,7 +41,7 @@ const Hero = () => {
         
         <h1 className="text-5xl md:text-7xl font-bold text-white mb-6 leading-tight">
           Charles River Cleanup
-          <span className="bg-gradient-wave bg-clip-text text-transparent block mt-2">
+          <span className="bg-gradient-wave bg-clip-text text-transparent block mt-2 pb-2">
             Oceanography in Action
           </span>
         </h1>

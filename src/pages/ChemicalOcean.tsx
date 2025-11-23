@@ -10,7 +10,7 @@ const ChemicalOcean = () => {
         {/* Hero Section */}
         <div className="text-center mb-16 animate-fade-in">
           <div className="bg-gradient-to-br from-cyan-50 via-blue-50 to-teal-50 dark:from-cyan-950/30 dark:via-blue-950/30 dark:to-teal-950/30 rounded-2xl p-8 backdrop-blur-sm border-2 border-cyan-200/50 dark:border-cyan-800/50 shadow-lg max-w-5xl mx-auto">
-            <h1 className="text-4xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-cyan-600 to-blue-600 bg-clip-text text-transparent">
+            <h1 className="text-4xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-cyan-600 to-blue-600 bg-clip-text text-transparent pb-2">
               Chemical & Biological Impacts
             </h1>
             <p className="text-xl md:text-2xl text-foreground leading-relaxed">
