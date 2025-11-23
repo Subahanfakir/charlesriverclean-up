@@ -9,7 +9,7 @@ const HumansOcean = () => {
       <Navigation />
       
       {/* Hero Section */}
-      <section className="py-20 px-4">
+      <section className="pt-36 pb-6 px-4">
         <div className="container mx-auto max-w-5xl text-center">
           <div className="bg-gradient-to-br from-orange-50 via-red-50 to-pink-50 dark:from-orange-950/30 dark:via-red-950/30 dark:to-pink-950/30 rounded-2xl p-8 backdrop-blur-sm border-2 border-orange-200/50 dark:border-orange-800/50 shadow-lg">
             <h1 className="text-4xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-orange-600 to-red-600 bg-clip-text text-transparent pb-2">
@@ -22,7 +22,7 @@ const HumansOcean = () => {
         </div>
       </section>
 
-      <section className="py-16 px-4">
+      <section className="pt-6 pb-16 px-4">
         <div className="container mx-auto max-w-7xl space-y-16">
           
           {/* Introduction - Full Width */}
@@ -72,7 +72,7 @@ const HumansOcean = () => {
                   <div>
                     <h3 className="font-semibold text-xl mb-2 text-primary">Material Transport & Accumulation</h3>
                     <p className="text-muted-foreground mb-3">
-                      Mixed debris at the waterline showing how currents move and deposit materials
+                      Debris at the waterline showing how currents move and deposit materials
                     </p>
                     <div className="flex flex-wrap gap-2">
                       <Badge variant="secondary">Current Transport</Badge>
@@ -131,8 +131,8 @@ const HumansOcean = () => {
                      from upstream, while the dam downstream acts like a wall, limiting ocean tidal influence from Boston Harbor. 
                      Because the dam holds the water at a steady level, this stretch of river behaves more like a quiet lake than a rushing stream.
                    </p>
-                   <div className="bg-background p-3 rounded">
-                     <p className="text-sm font-semibold mb-2">What Makes This Area Unique:</p>
+                   <div className="bg-background p-6 rounded">
+                     <p className="text-sm font-semibold mb-4">What Makes This Area Unique:</p>
                      <ul className="text-sm space-y-1 list-disc list-inside">
                        <li>The downstream dam blocks most ocean influence, creating a freshwater environment</li>
                        <li>The water level is kept almost constant instead of rising and falling with tides</li>
@@ -163,7 +163,7 @@ const HumansOcean = () => {
                   <div>
                     <h3 className="font-semibold text-xl mb-2 text-primary">Flow Effects & Underwater Visibility</h3>
                     <p className="text-muted-foreground mb-3">
-                      Clear shallow water in a slow-moving basin, with leaves and debris settled on the bottom
+                      Partly clear shallow water in a slow-moving basin, with leaves and debris settled on the bottom
                     </p>
                     <div className="flex flex-wrap gap-2">
                       <Badge variant="secondary">Slow Current</Badge>
@@ -178,10 +178,10 @@ const HumansOcean = () => {
                     when boats pass by or the wind blows across the surface, their waves stir up the leaves sitting on 
                     the bottom. Most of the time, the current is gentle enough that leaves and small debris can settle.
                   </p>
-                  <div className="bg-background p-3 rounded">
-                    <p className="text-sm font-semibold mb-2">What You Can See:</p>
+                  <div className="bg-background p-6 rounded">
+                    <p className="text-sm font-semibold mb-4">What You Can See:</p>
                     <ul className="text-sm space-y-1 list-disc list-inside">
-                      <li>Clear water shows the river is relatively clean here</li>
+                      <li>Partly clear water shows the river is relatively clean here</li>
                       <li>You can see the bottom because it's shallow near shore</li>
                       <li>Leaves settle because the current is very slow in this protected basin</li>
                     </ul>
@@ -222,9 +222,9 @@ const HumansOcean = () => {
                     rain and waves would wash the soil right into the river. This natural protection works better than 
                     concrete walls because it also slows down runoff and filters out pollution before it reaches the water.
                   </p>
-                  <div className="bg-background p-3 rounded">
-                    <p className="text-sm font-semibold mb-2">Three Ways Plants Help:</p>
-                    <ul className="text-sm space-y-1 list-disc list-inside">
+                  <div className="bg-background p-6 rounded">
+                    <p className="text-sm font-semibold mb-3">Three Ways Plants Help:</p>
+                    <ul className="text-sm space-y-3 list-disc list-inside">
                       <li>Roots grip soil underground like fingers holding sand</li>
                       <li>Stems and leaves slow down waves and reduce their power</li>
                       <li>Plants catch dirt and pollution before it washes into the river</li>
@@ -265,10 +265,11 @@ const HumansOcean = () => {
                 <div className="bg-gradient-coral/10 p-6 rounded-lg space-y-3 border border-primary/20">
                   <h4 className="font-semibold text-primary text-lg mb-3">🌊 Smooth Water Flow</h4>
                   <p className="text-base mb-3 leading-relaxed">
-                    The calm, smooth surface shows gentle water movement. Unlike a rushing mountain stream with white 
-                    water and splashing, this part of the river flows peacefully in layers, almost like a slow-moving 
-                    highway. The dam upstream and buildings around it protect the water from wind and fast currents. 
-                    As the water moves, it carries oxygen from the surface and spreads nutrients around for plants and fish.
+                    The calm, smooth surface shows gentle water movement. Unlike a rushing mountain stream 
+                    with white water and splashing, this part of the river flows peacefully in layers, almost 
+                    like a slow-moving highway. The dam downstream and buildings around the river protect the water 
+                    from wind and fast currents. As the water moves, it carries oxygen from the surface and spreads 
+                    nutrients around for plants and fish.
                   </p>
                   <div className="bg-background p-3 rounded">
                     <p className="text-sm font-semibold mb-2">Why the Water is So Calm:</p>
@@ -315,9 +316,9 @@ const HumansOcean = () => {
                     help too, with their roots holding everything together. Plus, this section of river doesn't get big 
                     waves, so there's less force trying to tear the bank apart.
                   </p>
-                  <div className="bg-background p-3 rounded">
-                    <p className="text-sm font-semibold mb-2">Signs This Shore is Healthy:</p>
-                    <ul className="text-sm space-y-1 list-disc list-inside">
+                  <div className="bg-background p-6 rounded">
+                    <p className="text-sm font-semibold mb-6">Signs This Shore is Healthy:</p>
+                    <ul className="text-sm space-y-3 list-disc list-inside">
                       <li>Gentle slope means very little soil is washing away</li>
                       <li>Plants grow well when the ground is stable</li>
                       <li>Protected location means smaller waves hit the shore</li>

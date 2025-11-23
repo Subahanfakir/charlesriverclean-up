@@ -6,9 +6,9 @@ const ChemicalOcean = () => {
     <div className="min-h-screen bg-background">
       <Navigation />
       
-      <main className="container mx-auto px-4 pt-24 pb-16 max-w-7xl">
+      <main className="container mx-auto px-4 pt-28 pb-16 max-w-7xl">
         {/* Hero Section */}
-        <div className="text-center mb-16 animate-fade-in">
+        <div className=" text-center mb-16 animate-fade-in">
           <div className="bg-gradient-to-br from-cyan-50 via-blue-50 to-teal-50 dark:from-cyan-950/30 dark:via-blue-950/30 dark:to-teal-950/30 rounded-2xl p-8 backdrop-blur-sm border-2 border-cyan-200/50 dark:border-cyan-800/50 shadow-lg max-w-5xl mx-auto">
             <h1 className="text-4xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-cyan-600 to-blue-600 bg-clip-text text-transparent pb-2">
               Chemical & Biological Impacts
@@ -108,20 +108,21 @@ const ChemicalOcean = () => {
 
         {/* Dissolved Oxygen Section - Full Width */}
         <Card className="mb-16 border-primary/20 shadow-lg bg-primary/5">
-          <CardHeader className="py-8">
+          <CardHeader className="py-8 pb-1">
             <CardTitle className="text-3xl text-center">Dissolved Oxygen & Respiration</CardTitle>
             <CardDescription className="text-center text-lg">The hidden crisis beneath the surface</CardDescription>
           </CardHeader>
           <CardContent className="p-8 space-y-6">
             <div className="prose prose-sm max-w-none text-muted-foreground">
+              {/* CORRECTION: Fixed 'Conservative' error and removed 'Estuary' */}
               <p>
-                Dissolved oxygen (DO) is a <strong>conservative property</strong> in the open ocean but becomes <strong>non-conservative</strong> in eutrophic estuaries like the Charles River. Here's why:
+                Dissolved oxygen (DO) is a <strong>non-conservative property</strong>, meaning it is biologically altered rather than just mixed by currents. In the <strong>Charles River Basin</strong>, this creates a volatile cycle:
               </p>
-              <ul>
-                <li><strong>Photosynthesis vs. Respiration:</strong> During the day, algae produce O₂ through photosynthesis. At night, they consume O₂ through respiration, along with bacteria decomposing organic matter.</li>
-                <li><strong>Temperature Dependency:</strong> Warm water (common in summer) holds less dissolved oxygen than cold water, compounding the problem.</li>
+              <ul className="leading-relaxed">
+                <li><strong>Photosynthesis vs. Respiration:</strong> During the day, algae produce O₂. At night, they consume O₂ (respiration) along with bacteria decomposing waste.</li>
+                <li><strong>Temperature Dependency:</strong> Warm water (common in summer) chemically holds less dissolved oxygen than cold water, compounding the problem.</li>
                 <li><strong>Biochemical Oxygen Demand (BOD):</strong> The amount of oxygen required to break down organic material. High BOD = rapid oxygen depletion.</li>
-                <li><strong>Hypoxic Zones:</strong> When DO drops below 2-3 mg/L, fish and invertebrates suffocate. This is a direct consequence of unchecked eutrophication.</li>
+                <li><strong>Hypoxic Zones:</strong> When DO drops below 2-3 mg/L, fish suffocate. This is a direct consequence of unchecked eutrophication.</li>
               </ul>
             </div>
 
@@ -136,15 +137,14 @@ const ChemicalOcean = () => {
                   />
                 </div>
                 <p className="text-sm text-muted-foreground">
-                  This debris is a ticking time bomb for dissolved oxygen. As it decomposes, bacteria will consume O₂ faster than it can be replenished by diffusion or photosynthesis.
+                  This debris is a ticking time bomb for dissolved oxygen. As it decomposes, bacteria will consume O₂ faster than it can be replenished.
                 </p>
               </div>
 
-            <div className="flex items-center">
-              <div className="space-y-3">
-                  {/* Increased header to text-xl */}
+              <div className="flex items-center">
+                <div className="space-y-3">
+                  {/* APPLIED: Larger text sizing per your request */}
                   <h3 className="font-semibold text-primary text-xl">Why Volunteer Cleanups Matter</h3>
-                  {/* Changed text-sm to text-base and added leading-relaxed */}
                   <p className="text-base text-muted-foreground leading-relaxed">
                     By removing organic debris before it enters the water, volunteers directly prevent oxygen depletion events. This is anthropogenic intervention with a <strong>positive</strong> impact on the chemical budget.
                   </p>
@@ -156,23 +156,24 @@ const ChemicalOcean = () => {
 
         {/* pH and Ocean Acidification Analog - Full Width */}
         <Card className="border-primary/20 shadow-lg">
-          <CardHeader className="bg-gradient-coral/10 py-8">
+          <CardHeader className="bg-gradient-to-r from-orange-100/50 to-red-100/50 py-8">
             <CardTitle className="text-3xl text-center">pH Fluctuations & Acidification</CardTitle>
             <CardDescription className="text-center text-lg">Urban rivers as microcosms of global ocean chemistry</CardDescription>
           </CardHeader>
           <CardContent className="p-8 space-y-6">
             <div className="prose prose-sm max-w-none text-muted-foreground">
               <p>
-                While the Charles River is not acidifying like the global ocean, it experiences <strong>dramatic pH swings</strong> due to biological activity:
+                While the Charles River is not acidifying exactly like the global ocean, it experiences <strong>dramatic pH swings</strong> due to biological activity:
               </p>
-              <ul>
-                <li><strong>Daytime:</strong> Algae consume CO₂ during photosynthesis, raising pH (more basic)</li>
-                <li><strong>Nighttime:</strong> Respiration releases CO₂, lowering pH (more acidic)</li>
-                <li><strong>Runoff Impact:</strong> Acid rain and pollutants can further depress pH</li>
-                <li><strong>Carbonate Chemistry:</strong> While seawater buffers pH well, freshwater systems like rivers are more vulnerable to pH changes</li>
+              <ul className="leading-relaxed">
+                <li><strong>Daytime:</strong> Algae consume CO₂ during photosynthesis, raising pH (making water more basic).</li>
+                <li><strong>Nighttime:</strong> Respiration releases CO₂, forming carbonic acid and lowering pH (making water more acidic).</li>
+                <li><strong>Runoff Impact:</strong> Acid rain and pollutants can further depress pH.</li>
+                {/* CORRECTION: Clarified buffering capacity */}
+                <li><strong>Carbonate Chemistry:</strong> Unlike the ocean, freshwater has a lower buffering capacity, making it more vulnerable to these rapid changes.</li>
               </ul>
-              <p className="mt-4">
-                This serves as a powerful analogy for <strong>ocean acidification</strong>, where rising atmospheric CO₂ dissolves in seawater, forming carbonic acid and lowering pH. In both cases, the chemistry is driven by CO₂, either from respiration/decomposition (river) or fossil fuels (ocean).
+              <p className="mt-4 border-l-4 border-primary pl-4">
+                This serves as a powerful analogy for <strong>ocean acidification</strong>. In both cases, the chemistry is driven by excess CO₂, whether from respiration (river) or fossil fuels (ocean), dissolving in water to lower pH.
               </p>
             </div>
           </CardContent>

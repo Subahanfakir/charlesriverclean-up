@@ -10,7 +10,7 @@ const InsideOcean = () => {
       <Navigation />
       
       {/* Hero Section */}
-      <section className="py-20 px-4 bg-gradient-to-br from-blue-500 via-cyan-500 to-teal-400 text-white">
+      <section className="pt-32 pb-20 px-4 bg-gradient-to-br from-blue-500 via-cyan-500 to-teal-400 text-white">
         <div className="container mx-auto max-w-4xl text-center">
           <h1 className="text-4xl md:text-5xl font-bold mb-6">
             Project Overview & Photos
@@ -158,8 +158,8 @@ const InsideOcean = () => {
                     <h4 className="font-semibold text-primary text-lg mb-3">🌊 Preventing Sediment Load</h4>
                     <p className="text-base leading-relaxed">
                       Leaves are <strong>terrigenous material</strong> (land-derived sediment). If they enter the 
-                      river, they decompose, releasing nutrients (nitrogen, phosphorus) that fuel <strong>eutrophication</strong> 
-                      and create algal blooms. They also increase <strong>turbidity</strong> (cloudiness) by adding 
+                      river, they decompose, releasing nutrients (nitrogen, phosphorus) that fuel <strong>eutrophication </strong> 
+                      and create algal blooms. They also reduce <strong>clarity level</strong> by adding 
                       suspended particles to the water column.
                     </p>
                   </div>
@@ -218,7 +218,7 @@ const InsideOcean = () => {
                   <div className="bg-gradient-ocean/10 py-14 px-6 rounded-lg border border-primary/20 order-first lg:order-last self-center">
                     <h4 className="font-semibold text-primary text-lg mb-3">🌊 Collective Impact on Ecosystem Health</h4>
                       <p className="text-base leading-relaxed">
-                        Urban river systems like the Middle Basin of the Charles River are <strong>highly productive transition zones</strong> 
+                        Urban river systems like the Middle Basin of the Charles River are <strong>highly productive transition zones </strong> 
                         between land and ocean. By removing pollutants collectively, volunteers help maintain 
                         the <strong>dissolved oxygen</strong> levels, water clarity, and nutrient balance necessary for 
                         healthy aquatic populations.
@@ -270,9 +270,9 @@ const InsideOcean = () => {
             </CardHeader>
             <CardContent className="space-y-6 p-8">
               <p className="text-white/90 text-center text-lg max-w-4xl mx-auto leading-relaxed">
-                The Charles River is an <strong>estuarine ecosystem</strong>, a transition zone where freshwater 
-                meets saltwater. It's one of the most productive and sensitive aquatic environments on Earth. 
-                Our volunteer work directly impacts water quality by:
+                The Charles River Basin is a vital freshwater ecosystem that serves as the final gateway to the ocean. 
+                It is one of the most utilized and sensitive urban aquatic environments on Earth. Our volunteer work directly impacts 
+                water quality by:
               </p>
               <ul className="list-disc list-inside space-y-3 text-white/90 max-w-3xl mx-auto text-lg">
                 <li>Reducing nutrient loading that causes harmful algal blooms</li>

@@ -9,20 +9,21 @@ const Future = () => {
       <Navigation />
       
       {/* Hero Section */}
-      <section className="py-20 px-4">
+      {/* CHANGED: 'pt-36' adds space between navbar and title */}
+      <section className="pt-36 pb-6 px-4">
         <div className="container mx-auto max-w-5xl text-center">
           <div className="bg-gradient-to-br from-emerald-50 via-green-50 to-teal-50 dark:from-emerald-950/30 dark:via-green-950/30 dark:to-teal-950/30 rounded-2xl p-8 backdrop-blur-sm border-2 border-emerald-200/50 dark:border-emerald-800/50 shadow-lg">
             <h1 className="text-4xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-emerald-600 to-green-600 bg-clip-text text-transparent">
               Pollution & Conservation
             </h1>
             <p className="text-xl md:text-2xl text-foreground leading-relaxed">
-              Anthropogenic Impacts and Solutions for Urban Rivers & Estuaries
+              Anthropogenic Impacts and Solutions for Urban Rivers
             </p>
           </div>
         </div>
       </section>
 
-      <section className="py-16 px-4">
+      <section className="pt-8 pb-16 px-4">
         <div className="container mx-auto max-w-7xl space-y-16">
           
           {/* Photo 7: Bag of Trash (Close-up) */}
@@ -34,7 +35,7 @@ const Future = () => {
                     <div className="bg-muted rounded-lg aspect-video flex items-center justify-center border-muted-foreground/25">
                       <img
                         src={new URL("../../Photos/IMG_9422.jpeg", import.meta.url).href}
-                        alt="Algal bloom in inlet"
+                        alt="Bag of trash close up"
                         className="aspect-video w-full rounded-lg object-cover h-[360px] sm:h-[440px] lg:h-[450px]"
                       />
                     </div>
@@ -50,17 +51,19 @@ const Future = () => {
                     </div>
                   </div>
                 </div>
-                <div className="bg-muted p-6 rounded-lg space-y-3">
-                  <h4 className="font-semibold text-primary mb-3">🌊 Non-Conservative Ions</h4>
-                  <p className="text-base mb-3 leading-relaxed">
+                
+                {/* CHANGED: Added 'flex flex-col justify-center h-full' to center text vertically */}
+                <div className="bg-muted p-6 rounded-lg space-y-4 flex flex-col justify-center h-full">
+                  <h4 className="font-semibold text-primary text-lg">🌊 Non-Conservative Ions</h4>
+                  <p className="text-base leading-relaxed">
                     These plastic, glass, and paper products represent a direct source of <strong>long-term 
                     pollutants</strong> and <strong>microplastics</strong>. Unlike conservative ions (which 
                     maintain constant proportions), these pollutants are non-conservative, they vary widely and 
                     interfere with the natural chemical budget.
                   </p>
-                  <div className="bg-background p-3 rounded">
-                    <p className="text-sm font-semibold mb-1">Key Impacts:</p>
-                    <ul className="text-sm space-y-1 list-disc list-inside">
+                  <div className="bg-background p-4 rounded shadow-sm">
+                    <p className="text-sm font-semibold mb-2">Key Impacts:</p>
+                    <ul className="text-sm space-y-2 list-disc list-inside">
                       <li>Plastics break down into microplastics</li>
                       <li>Chemical leaching alters water chemistry</li>
                       <li>Toxins accumulate in food web</li>
@@ -180,7 +183,8 @@ const Future = () => {
           </Card>
 
           {/* Personal Reflection - Full Width Enhanced */}
-          <Card className="bg-gradient-wave text-white border-0 shadow-xl">
+          {/* CHANGED: Switched to 'bg-slate-900' for high contrast and readability */}
+          <Card className="bg-slate-900 text-white border-0 shadow-xl">
             <CardContent className="p-12">
               <h3 className="text-4xl font-bold mb-8 text-center">Reflection: Science in Action</h3>
               <div className="max-w-5xl mx-auto space-y-6">
@@ -193,7 +197,7 @@ const Future = () => {
                   <p className="text-white/90 text-lg leading-relaxed">
                   Seeing the bright green algal bloom was a stark reminder of eutrophication's visual impact. 
                   Understanding how the Middle Basin of the Charles River connects upstream runoff to Boston Harbor 
-                  made me appreciate how connected the entire system is—from river sources to the coastal ocean.
+                  made me appreciate how connected the entire system is, from river sources to the coastal ocean.
                 </p>
                 <p className="text-white/90 text-lg leading-relaxed">
                   Most importantly, this project showed me that <strong>positive anthropogenic intervention is 
