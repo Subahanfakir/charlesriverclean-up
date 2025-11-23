@@ -22,7 +22,7 @@ const Index = () => {
     },
     {
       title: "Physical & Geological Processes",
-      description: "Sediment transport, tidal currents, erosion, and the role of terrigenous material in estuarine systems.",
+      description: "Sediment transport, slow currents, erosion, and the role of terrigenous material in urban river systems.",
       icon: Leaf,
       link: "/humans-ocean",
       gradient: "bg-gradient-coral"
@@ -50,11 +50,11 @@ const Index = () => {
           <h3 className="text-xl md:text-2xl text-primary mb-6">
             Charles River Conservancy Cleanup — October 25, 2025
           </h3>
-          <p className="text-lg text-muted-foreground leading-relaxed">
-            This project documents a volunteer cleanup event at Herter Park in Allston/Brighton, where I removed 
-            litter, raked leaves, and witnessed firsthand the chemical and physical oceanography principles that 
-            govern estuarine ecosystems like the Charles River.
-          </p>
+            <p className="text-lg text-muted-foreground leading-relaxed">
+              This project documents a volunteer cleanup event at Herter Park in Allston/Brighton, where I removed 
+              litter, raked leaves, and witnessed firsthand the chemical and physical processes that shape an urban 
+              freshwater river system like the Lower Charles.
+            </p>
         </div>
       </section>
 
@@ -68,7 +68,7 @@ const Index = () => {
               </h2>
               <p className="text-xl md:text-2xl text-foreground max-w-4xl mx-auto leading-relaxed">
                 From sediment transport to eutrophication, this volunteer experience reveals the physical and chemical 
-                processes shaping the Charles River, an estuarine system facing urban pollution and ecological challenges.
+                processes shaping the Lower Charles River, a freshwater urban basin facing pollution and ecological challenges.
               </p>
             </div>
           </div>

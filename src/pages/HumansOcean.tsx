@@ -38,8 +38,8 @@ const HumansOcean = () => {
               </p>
               <div className="grid md:grid-cols-3 gap-4 pt-4">
                 <div className="bg-background p-4 rounded-lg text-center">
-                  <div className="text-2xl font-bold text-primary mb-1">Tides</div>
-                  <div className="text-sm">Water moves up & down twice daily</div>
+                  <div className="text-2xl font-bold text-primary mb-1">Water Level</div>
+                  <div className="text-sm">Dam keeps the river level mostly steady</div>
                 </div>
                 <div className="bg-background p-4 rounded-lg text-center">
                   <div className="text-2xl font-bold text-primary mb-1">Currents</div>
@@ -84,14 +84,14 @@ const HumansOcean = () => {
                   <h4 className="font-semibold text-primary text-lg mb-3">🌊 How Moving Water Sorts Trash & Debris</h4>
                   <p className="text-base mb-3 leading-relaxed">
                     Think of the river like a conveyor belt that suddenly stops. When water flows, it carries leaves, 
-                    sticks, and trash along with it. But when the current slows down, like when the tide stops rising, the 
+                    sticks, and trash along with it. But when the current slows down or spreads out near the shore, the 
                     water drops its load. Heavy things (like waterlogged wood) sink first. Lighter things (like plastic 
                     bottles and dry leaves) keep drifting until the water is completely still.
                   </p>
                   <div className="bg-background p-3 rounded">
                     <p className="text-sm font-semibold mb-2">Why Debris Piles Up Here:</p>
                     <ul className="text-sm space-y-1 list-disc list-inside">
-                      <li>Tides move water up and down the river twice every day</li>
+                      <li>Slow-moving water gently pushes floating debris toward the shore</li>
                       <li>When current slows, heavy items drop first, light items last</li>
                       <li>Calm spots near shores become natural "trash traps"</li>
                     </ul>
@@ -104,44 +104,44 @@ const HumansOcean = () => {
           {/* Photo 2: Wide Shot of River - Reverse */}
           <Card className="border-primary/20 shadow-lg">
             <CardContent className="p-8">
-              <div className="grid lg:grid-cols-[1fr,1.2fr] gap-8">
-                <div className="space-y-4">
-                <div className="bg-muted rounded-lg aspect-video flex items-center justify-center">
-                  <img
-                    src={new URL("../../Photos/IMG_9394.jpeg", import.meta.url).href}
-                    alt="Algal bloom in inlet"
-                    className="aspect-video w-full rounded-lg object-cover h-[360px] sm:h-[400px] lg:h-[400px]"
-                  />
-                </div>
-                  <div>
-                    <h3 className="font-semibold text-xl mb-2 text-primary">Estuarine Environment</h3>
-                    <p className="text-muted-foreground mb-3">
-                      The Charles River estuary with urban infrastructure and engineered stabilization structures
-                    </p>
-                    <div className="flex flex-wrap gap-2">
-                      <Badge variant="secondary">Estuary</Badge>
-                      <Badge variant="secondary">Hard Stabilization</Badge>
-                    </div>
-                  </div>
-                </div>
-                <div className="bg-gradient-coral/10 p-6 rounded-lg space-y-3 border border-primary/20 order-first lg:order-last">
-                  <h4 className="font-semibold text-primary text-lg mb-3">🌊 Where River Meets Ocean</h4>
-                  <p className="text-base mb-3 leading-relaxed">
-                    The Charles River is what scientists call an <strong>estuary</strong>, a place where river water 
-                    mixes with ocean water. Fresh water flows down from upstream while salty water pushes in from 
-                    Boston Harbor. The Charles River Dam controls this mixing, but you can still see the tide pushing 
-                    water levels up and down twice a day. The docks and walls built along the shore change how water flows.
-                  </p>
-                  <div className="bg-background p-3 rounded">
-                    <p className="text-sm font-semibold mb-2">What Makes This an Estuary:</p>
-                    <ul className="text-sm space-y-1 list-disc list-inside">
-                      <li>Fresh river water mixes with salty harbor water</li>
-                      <li>Ocean tides push water upstream, then pull it back</li>
-                      <li>Human structures like docks affect how water moves</li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
+               <div className="grid lg:grid-cols-[1fr,1.2fr] gap-8">
+                 <div className="space-y-4">
+                 <div className="bg-muted rounded-lg aspect-video flex items-center justify-center">
+                   <img
+                     src={new URL("../../Photos/IMG_9394.jpeg", import.meta.url).href}
+                     alt="Algal bloom in inlet"
+                     className="aspect-video w-full rounded-lg object-cover h-[360px] sm:h-[400px] lg:h-[400px]"
+                   />
+                 </div>
+                   <div>
+                     <h3 className="font-semibold text-xl mb-2 text-primary">Freshwater Basin Setting</h3>
+                     <p className="text-muted-foreground mb-3">
+                       The Lower Charles River freshwater basin with urban infrastructure and engineered stabilization structures
+                     </p>
+                     <div className="flex flex-wrap gap-2">
+                       <Badge variant="secondary">Freshwater Basin</Badge>
+                       <Badge variant="secondary">Hard Stabilization</Badge>
+                     </div>
+                   </div>
+                 </div>
+                 <div className="bg-gradient-coral/10 p-6 rounded-lg space-y-3 border border-primary/20 order-first lg:order-last">
+                   <h4 className="font-semibold text-primary text-lg mb-3">🌊 Where River Meets City</h4>
+                   <p className="text-base mb-3 leading-relaxed">
+                     The Lower Charles River acts like a massive, slow-moving freshwater basin. River water flows down 
+                     from upstream, while the dam downstream acts like a wall, stopping salty ocean tides from Boston Harbor 
+                     from rushing in. Because the dam holds the water at a steady level, this stretch of river behaves more 
+                     like a quiet lake than a rushing stream.
+                   </p>
+                   <div className="bg-background p-3 rounded">
+                     <p className="text-sm font-semibold mb-2">What Makes This Area Unique:</p>
+                     <ul className="text-sm space-y-1 list-disc list-inside">
+                       <li>The downstream dam blocks most ocean influence, creating a freshwater environment</li>
+                       <li>The water level is kept almost constant instead of rising and falling with tides</li>
+                       <li>Human structures like docks and walls change how water flows along the shore</li>
+                     </ul>
+                   </div>
+                 </div>
+               </div>
             </CardContent>
           </Card>
 
@@ -162,30 +162,29 @@ const HumansOcean = () => {
                     </div>
                   </div>
                   <div>
-                    <h3 className="font-semibold text-xl mb-2 text-primary">Tide Effects & Underwater Visibility</h3>
+                    <h3 className="font-semibold text-xl mb-2 text-primary">Flow Effects & Underwater Visibility</h3>
                     <p className="text-muted-foreground mb-3">
-                      Clear shallow water showing tidal influence and debris that settled to the bottom
+                      Clear shallow water in a slow-moving basin, with leaves and debris settled on the bottom
                     </p>
                     <div className="flex flex-wrap gap-2">
-                      <Badge variant="secondary">Tidal Movement</Badge>
+                      <Badge variant="secondary">Slow Current</Badge>
                       <Badge variant="secondary">Water Clarity</Badge>
                     </div>
                   </div>
                 </div>
                 <div className="bg-gradient-coral/10 p-6 rounded-lg space-y-3 border border-primary/20">
-                  <h4 className="font-semibold text-primary text-lg mb-3">🌊 How Tides Work</h4>
+                  <h4 className="font-semibold text-primary text-lg mb-3">🌊 Flow Effects & Underwater Visibility</h4>
                   <p className="text-base mb-3 leading-relaxed">
-                    Even with the dam upstream, you can see tides affecting the Charles River. Twice a day, the water 
-                    level rises (called "flood tide") as ocean water pushes in, then falls (called "ebb tide") as it 
-                    flows back out. In this shallow area, when boats pass by, their waves stir up the leaves sitting 
-                    on the bottom.
+                    Even without tides, the water here is always moving slowly toward the ocean. In this shallow area, 
+                    when boats pass by or the wind blows across the surface, their waves stir up the leaves sitting on 
+                    the bottom. Most of the time, the current is gentle enough that leaves and small debris can settle.
                   </p>
                   <div className="bg-background p-3 rounded">
                     <p className="text-sm font-semibold mb-2">What You Can See:</p>
                     <ul className="text-sm space-y-1 list-disc list-inside">
                       <li>Clear water shows the river is relatively clean here</li>
                       <li>You can see the bottom because it's shallow near shore</li>
-                      <li>Leaves settle when water stops moving between tides</li>
+                      <li>Leaves settle because the current is very slow in this protected basin</li>
                     </ul>
                   </div>
                 </div>
@@ -253,7 +252,7 @@ const HumansOcean = () => {
                   <div>
                     <h3 className="font-semibold text-xl mb-2 text-primary">Calm Water Movement</h3>
                     <p className="text-muted-foreground mb-3">
-                      Smooth surface showing gentle water flow in the protected estuary
+                      Smooth surface showing gentle water flow in a protected freshwater basin
                     </p>
                     <div className="flex flex-wrap gap-2">
                       <Badge variant="secondary">Water Flow</Badge>
@@ -342,7 +341,7 @@ const HumansOcean = () => {
                 <div className="space-y-3">
                   <h3 className="font-semibold text-primary text-lg">How Water Moves</h3>
                   <ul className="list-disc list-inside space-y-2">
-                    <li>Ocean tides push water upstream twice a day, then pull it back</li>
+                    <li>River flow slowly carries water and debris toward the downstream dam</li>
                     <li>Flowing water carries debris and drops heavy items first</li>
                     <li>Calm areas let particles settle on the bottom</li>
                     <li>Boat wakes stir up shallow water</li>
