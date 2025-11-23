@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { ArrowDown, Waves } from "lucide-react";
 import { Link } from "react-router-dom";
-import oceanHero from "@/assets/ocean-hero.jpg";
+import oceanHero from "@/assets/charles.jpeg";
 
 const Hero = () => {
   return (
