@@ -58,12 +58,15 @@ const HumansOcean = () => {
             <CardContent className="p-8">
               <div className="grid lg:grid-cols-[1.2fr,1fr] gap-8">
                 <div className="space-y-4">
-                  <div className="aspect-video bg-muted rounded-lg flex items-center justify-center border-2 border-dashed border-muted-foreground/30">
-                    <div className="text-center p-4">
-                      <Camera className="h-12 w-12 mx-auto mb-2 text-muted-foreground/50" />
-                      <p className="text-sm text-muted-foreground font-mono">
-                        {"INSERT PHOTO: Water's edge with accumulated leaves and trash"}
-                      </p>
+                  <div className="aspect-video bg-muted rounded-lg flex items-center justify-center">
+                    <div className="w-full h-full">
+                      <video
+                        src={new URL("../../Photos/IMG_9362.mp4", import.meta.url).href}
+                        className="w-full h-full rounded-lg object-cover"
+                        controls
+                        preload="metadata"
+                        playsInline
+                      />
                     </div>
                   </div>
                   <div>
@@ -81,7 +84,7 @@ const HumansOcean = () => {
                   <h4 className="font-semibold text-primary text-lg mb-3">🌊 How Moving Water Sorts Trash & Debris</h4>
                   <p className="text-base mb-3 leading-relaxed">
                     Think of the river like a conveyor belt that suddenly stops. When water flows, it carries leaves, 
-                    sticks, and trash along with it. But when the current slows down—like when the tide stops rising—the 
+                    sticks, and trash along with it. But when the current slows down, like when the tide stops rising, the 
                     water drops its load. Heavy things (like waterlogged wood) sink first. Lighter things (like plastic 
                     bottles and dry leaves) keep drifting until the water is completely still.
                   </p>
@@ -103,14 +106,13 @@ const HumansOcean = () => {
             <CardContent className="p-8">
               <div className="grid lg:grid-cols-[1fr,1.2fr] gap-8">
                 <div className="space-y-4">
-                  <div className="aspect-video bg-muted rounded-lg flex items-center justify-center border-2 border-dashed border-muted-foreground/30">
-                    <div className="text-center p-4">
-                      <Camera className="h-12 w-12 mx-auto mb-2 text-muted-foreground/50" />
-                      <p className="text-sm text-muted-foreground font-mono">
-                        {"INSERT PHOTO: Wide shot of river, dock, and city background"}
-                      </p>
-                    </div>
-                  </div>
+                <div className="bg-muted rounded-lg aspect-video flex items-center justify-center">
+                  <img
+                    src={new URL("../../Photos/IMG_9394.jpeg", import.meta.url).href}
+                    alt="Algal bloom in inlet"
+                    className="aspect-video w-full rounded-lg object-cover h-[360px] sm:h-[400px] lg:h-[400px]"
+                  />
+                </div>
                   <div>
                     <h3 className="font-semibold text-xl mb-2 text-primary">Estuarine Environment</h3>
                     <p className="text-muted-foreground mb-3">
@@ -125,7 +127,7 @@ const HumansOcean = () => {
                 <div className="bg-gradient-coral/10 p-6 rounded-lg space-y-3 border border-primary/20 order-first lg:order-last">
                   <h4 className="font-semibold text-primary text-lg mb-3">🌊 Where River Meets Ocean</h4>
                   <p className="text-base mb-3 leading-relaxed">
-                    The Charles River is what scientists call an <strong>estuary</strong>—a place where river water 
+                    The Charles River is what scientists call an <strong>estuary</strong>, a place where river water 
                     mixes with ocean water. Fresh water flows down from upstream while salty water pushes in from 
                     Boston Harbor. The Charles River Dam controls this mixing, but you can still see the tide pushing 
                     water levels up and down twice a day. The docks and walls built along the shore change how water flows.
@@ -148,12 +150,15 @@ const HumansOcean = () => {
             <CardContent className="p-8">
               <div className="grid lg:grid-cols-[1.2fr,1fr] gap-8">
                 <div className="space-y-4">
-                  <div className="aspect-video bg-muted rounded-lg flex items-center justify-center border-2 border-dashed border-muted-foreground/30">
-                    <div className="text-center p-4">
-                      <Camera className="h-12 w-12 mx-auto mb-2 text-muted-foreground/50" />
-                      <p className="text-sm text-muted-foreground font-mono">
-                        {"INSERT PHOTO: Submerged dock with clear water showing leaves on bottom"}
-                      </p>
+                  <div className="aspect-video bg-muted rounded-lg flex items-center justify-center">
+                    <div className="w-full h-full">
+                      <video
+                        src={new URL("../../Photos/IMG_9372.mp4", import.meta.url).href}
+                        className="w-full h-full rounded-lg object-cover"
+                        controls
+                        preload="metadata"
+                        playsInline
+                      />
                     </div>
                   </div>
                   <div>
@@ -173,7 +178,7 @@ const HumansOcean = () => {
                     Even with the dam upstream, you can see tides affecting the Charles River. Twice a day, the water 
                     level rises (called "flood tide") as ocean water pushes in, then falls (called "ebb tide") as it 
                     flows back out. In this shallow area, when boats pass by, their waves stir up the leaves sitting 
-                    on the bottom. The clear water means there's not much pollution or dirt floating around.
+                    on the bottom.
                   </p>
                   <div className="bg-background p-3 rounded">
                     <p className="text-sm font-semibold mb-2">What You Can See:</p>
@@ -193,14 +198,13 @@ const HumansOcean = () => {
             <CardContent className="p-8">
               <div className="grid lg:grid-cols-[1fr,1.2fr] gap-8">
                 <div className="space-y-4">
-                  <div className="aspect-video bg-muted rounded-lg flex items-center justify-center border-2 border-dashed border-muted-foreground/30">
-                    <div className="text-center p-4">
-                      <Camera className="h-12 w-12 mx-auto mb-2 text-muted-foreground/50" />
-                      <p className="text-sm text-muted-foreground font-mono">
-                        {"INSERT PHOTO: Me collecting debris near vegetated bank"}
-                      </p>
-                    </div>
-                  </div>
+                <div className="bg-muted rounded-lg aspect-video flex items-center justify-center">
+                  <img
+                    src={new URL("../../Photos/IMG_9543.jpeg", import.meta.url).href}
+                    alt="Algal bloom in inlet"
+                    className="aspect-video w-full rounded-lg object-cover h-[350px] sm:h-[400px] lg:h-[450px]"
+                  />
+                </div>
                   <div>
                     <h3 className="font-semibold text-xl mb-2 text-primary">Plants Protecting the Shoreline</h3>
                     <p className="text-muted-foreground mb-3">
