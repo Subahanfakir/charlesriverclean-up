@@ -16,7 +16,7 @@ const Future = () => {
               Pollution & Conservation
             </h1>
             <p className="text-xl md:text-2xl text-foreground leading-relaxed">
-              Anthropogenic Impacts and Solutions for Urban Estuaries
+              Anthropogenic Impacts and Solutions for Urban Rivers & Estuaries
             </p>
           </div>
         </div>
@@ -83,7 +83,7 @@ const Future = () => {
               <p className="text-muted-foreground text-center max-w-4xl mx-auto text-lg">
                 The Charles River Conservancy's volunteer program demonstrates that <strong>positive anthropogenic 
                 intervention</strong> can counteract negative human impacts. By removing pollutants before they 
-                enter the ecosystem, volunteers prevent cascading effects throughout the estuarine environment.
+                enter the ecosystem, volunteers prevent cascading effects throughout this urban freshwater river system.
               </p>
               
               <div className="grid md:grid-cols-3 gap-6">
@@ -122,13 +122,13 @@ const Future = () => {
                     <div className="bg-muted p-4 rounded-lg shadow-sm">
                       <p className="font-semibold mb-2 text-base">Sediment Transport</p>
                       <p className="text-muted-foreground">
-                        Understanding how tides and currents move terrigenous material through the estuary.
+                        Understanding how currents and waves move terrigenous material through river and coastal systems.
                       </p>
                     </div>
                     <div className="bg-muted p-4 rounded-lg shadow-sm">
                       <p className="font-semibold mb-2 text-base">Estuarine Circulation</p>
                       <p className="text-muted-foreground">
-                        Recognizing the mixing zone where freshwater meets tidal saltwater influence.
+                        Recognizing how freshwater river flow connects to coastal ocean waters.
                       </p>
                     </div>
                     <div className="bg-muted p-4 rounded-lg shadow-sm">
@@ -138,9 +138,9 @@ const Future = () => {
                       </p>
                     </div>
                     <div className="bg-muted p-4 rounded-lg shadow-sm">
-                      <p className="font-semibold mb-2 text-base">Tidal Dynamics</p>
+                      <p className="font-semibold mb-2 text-base">River–Harbor Connection</p>
                       <p className="text-muted-foreground">
-                        Understanding flood and ebb currents that drive water movement and mixing.
+                        Understanding how the Lower Charles freshwater basin drains toward Boston Harbor without strong tidal mixing.
                       </p>
                     </div>
                   </div>
@@ -192,8 +192,8 @@ const Future = () => {
                 </p>
                 <p className="text-white/90 text-lg leading-relaxed">
                   Seeing the bright green algal bloom was a stark reminder of eutrophication's visual impact. 
-                  Understanding the estuary's tidal dynamics made me appreciate how connected the entire system 
-                  is—from upstream runoff to downstream mixing with ocean waters.
+                  Understanding how the Lower Charles freshwater basin connects upstream runoff to Boston Harbor 
+                  made me appreciate how connected the entire system is—from river sources to the coastal ocean.
                 </p>
                 <p className="text-white/90 text-lg leading-relaxed">
                   Most importantly, this project showed me that <strong>positive anthropogenic intervention is 
