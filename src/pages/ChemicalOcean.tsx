@@ -118,7 +118,7 @@ const ChemicalOcean = () => {
                 Dissolved oxygen (DO) is a <strong>conservative property</strong> in the open ocean but becomes <strong>non-conservative</strong> in eutrophic estuaries like the Charles River. Here's why:
               </p>
               <ul>
-                <li><strong>Photosynthesis vs. Respiration:</strong> During the day, algae produce O₂ through photosynthesis. At night, they consume O₂ through respiration—along with bacteria decomposing organic matter.</li>
+                <li><strong>Photosynthesis vs. Respiration:</strong> During the day, algae produce O₂ through photosynthesis. At night, they consume O₂ through respiration, along with bacteria decomposing organic matter.</li>
                 <li><strong>Temperature Dependency:</strong> Warm water (common in summer) holds less dissolved oxygen than cold water, compounding the problem.</li>
                 <li><strong>Biochemical Oxygen Demand (BOD):</strong> The amount of oxygen required to break down organic material. High BOD = rapid oxygen depletion.</li>
                 <li><strong>Hypoxic Zones:</strong> When DO drops below 2-3 mg/L, fish and invertebrates suffocate. This is a direct consequence of unchecked eutrophication.</li>
@@ -140,11 +140,13 @@ const ChemicalOcean = () => {
                 </p>
               </div>
 
-              <div className="flex items-center">
-                <div className="space-y-3">
-                  <h3 className="font-semibold text-primary">Why Volunteer Cleanups Matter</h3>
-                  <p className="text-sm text-muted-foreground">
-                    By removing organic debris <em>before</em> it enters the water, volunteers directly prevent oxygen depletion events. This is anthropogenic intervention with a <strong>positive</strong> impact on the chemical budget.
+            <div className="flex items-center">
+              <div className="space-y-3">
+                  {/* Increased header to text-xl */}
+                  <h3 className="font-semibold text-primary text-xl">Why Volunteer Cleanups Matter</h3>
+                  {/* Changed text-sm to text-base and added leading-relaxed */}
+                  <p className="text-base text-muted-foreground leading-relaxed">
+                    By removing organic debris before it enters the water, volunteers directly prevent oxygen depletion events. This is anthropogenic intervention with a <strong>positive</strong> impact on the chemical budget.
                   </p>
                 </div>
               </div>
@@ -170,7 +172,7 @@ const ChemicalOcean = () => {
                 <li><strong>Carbonate Chemistry:</strong> While seawater buffers pH well, freshwater systems like rivers are more vulnerable to pH changes</li>
               </ul>
               <p className="mt-4">
-                This serves as a powerful analogy for <strong>ocean acidification</strong>, where rising atmospheric CO₂ dissolves in seawater, forming carbonic acid and lowering pH. In both cases, the chemistry is driven by CO₂—either from respiration/decomposition (river) or fossil fuels (ocean).
+                This serves as a powerful analogy for <strong>ocean acidification</strong>, where rising atmospheric CO₂ dissolves in seawater, forming carbonic acid and lowering pH. In both cases, the chemistry is driven by CO₂, either from respiration/decomposition (river) or fossil fuels (ocean).
               </p>
             </div>
           </CardContent>
